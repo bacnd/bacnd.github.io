@@ -2,6 +2,11 @@ $(document).ready(function() {
 
     'use strict';
 
+    var fullUrl = window.location.protocol + "//" + window.location.hostname + ":" + window.location.port + window.location.pathname;
+    var parts = fullUrl.split('/');
+    parts.pop();
+    var url = parts.join('/');
+
     $('.best-project__list').slick({
         autoplay: true,
         autoplaySpeed: 5000,
@@ -9,8 +14,8 @@ $(document).ready(function() {
         slidesToShow: 5,
         slidesToScroll: 1,
         centerMode: true,
-        prevArrow:"<div class='slick-prev'><img class='a-left control-c prev' src='../assets/images/commons/arrow-left.png'></div>",
-        nextArrow:"<div class='slick-next'><img class='a-right control-c next' src='../assets/images/commons/arrow-right.png'></div>"
+        prevArrow:"<div class='slick-prev'><img class='a-left control-c prev' src='"+url+"/assets/images/commons/arrow-left.png'></div>",
+        nextArrow:"<div class='slick-next'><img class='a-right control-c next' src='"+url+"/assets/images/commons/arrow-right.png'></div>"
     });
 
     $('#scrollUp').click(function(e){
