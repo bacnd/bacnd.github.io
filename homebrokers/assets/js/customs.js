@@ -2,6 +2,22 @@ $(document).ready(function() {
 
     'use strict';
 
+    $('.best-project__list').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        centerMode: true,
+        prevArrow:"<div class='slick-prev'><img class='a-left control-c prev' src='../assets/images/commons/arrow-left.png'></div>",
+        nextArrow:"<div class='slick-next'><img class='a-right control-c next' src='../assets/images/commons/arrow-right.png'></div>"
+    });
+
+    $('#scrollUp').click(function(e){
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, 600);
+        return false; 
+    });
 });
 
 $(function() {

@@ -10,7 +10,7 @@
 		<meta name="description" content="">
 		<!-- CSS -->
 		<link rel="stylesheet" href="assets/css/slick.css">
-		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/styles.css">
 	</head>
 	<body>
 		<div id="wrapper">
@@ -22,11 +22,27 @@
                 	<div class="container">
                 		<div class="nav-menu">
 		                	<ul class="hd-menu">
-		                		<li><a href="index.html">Trang chủ</a></li>
+		                		<li class="active"><a href="index.html">Trang chủ</a></li>
 		                		<li><a href="index.html#homebrokers">Về Homebrokers</a></li>
-		                		<li><a href="index.html#duantotnhat">Dự án tốt nhất</a></li>
+		                		<li class="has-submenu">
+		                			<a href="index.html#duantotnhat">Dự án tốt nhất</a>
+		                			<span class="arrow-menu"></span>
+		                			<ul class="submenu">
+		                				<li><a href="#">Tên dự án 1</a></li>
+		                				<li><a href="#">Tên dự án 2</a></li>
+		                				<li><a href="#">Tên dự án 3</a></li>
+		                			</ul>
+		                		</li>
 		                		<li><a href="index.html">Ý kiến</a></li>
-		                		<li><a href="index.html#tintuc">Tin tức</a></li>
+		                		<li class="has-submenu">
+		                			<a href="index.html#tintuc">Tin tức</a>
+		                			<span class="arrow-menu"></span>
+		                			<ul class="submenu">
+		                				<li><a href="#">Tin tức 1</a></li>
+		                				<li><a href="#">Tin tức 2</a></li>
+		                				<li><a href="#">Tin tức 3</a></li>
+		                			</ul>
+		                		</li>
 		                		<li><a href="index.html">Liên hệ</a></li></a></li>
 		                	</ul>
 							<div class="hd-acse">
@@ -45,10 +61,11 @@
 		    <main id="contents">
 		    	<div class="main-img">
 		    		<div class="main-img__bg">
-			    		<div class="container">
+		    			<figure class="overlay"><img src="assets/images/home/main-img.png" alt="main-img"></figure>
+		    			<div class="main-img__caption">
 			    			<p class="main-img__description">HomeBrokers giúp bạn<br />tự mình lựa chọn<br />căn hộ phù hợp nhất</p>
-			    			<a class="btn-readmore">Xem thêm</a>
-			    		</div>
+			    			<a href="#" class="btn-readmore">Xem thêm</a>
+		    			</div>
 		    		</div>
 		    	</div>
 		    	<div id="duantotnhat" class="best-project">
@@ -56,22 +73,40 @@
 		    			<h2 class="title-block">Dự án tốt nhất</h2>
 		    			<ul class="best-project__list">
 		    				<li class="best-project__item">
-		    					<a href="#" title="Tên dự án 1"><img src="assets/images/home/logo-vincity-color.png" alt="Tên dự án 1"><span class="title-duan">Tên dự án 1</span></a>
+		    					<a href="#" title="Tên dự án 1">
+		    						<figure class="gray"><img src="assets/images/home/logo-vincity-color.png" alt="Tên dự án 1"></figure>
+		    						<span class="title-duan">Tên dự án 1</span>
+		    					</a>
 		    				</li>
 		    				<li class="best-project__item">
-		    					<a href="#" title="Tên dự án 2"><img src="assets/images/home/logo-vincity-color.png" alt="Tên dự án 2"><span class="title-duan">Tên dự án 2</span></a>
+		    					<a href="#" title="Tên dự án 2">
+		    						<figure class="gray"><img src="assets/images/home/logo-vincity-color.png" alt="Tên dự án 2"></figure>
+		    						<span class="title-duan">Tên dự án 2</span>
+		    					</a>
 		    				</li>
 		    				<li class="best-project__item">
-		    					<a href="#" title="Tên dự án 3"><img src="assets/images/home/logo-vincity-color.png" alt="Tên dự án 3"><span class="title-duan">Tên dự án 3</span></a>
+		    					<a href="#" title="Tên dự án 3">
+		    						<figure class="gray"><img src="assets/images/home/logo-vincity-color.png" alt="Tên dự án 3"></figure>
+	    							<span class="title-duan">Tên dự án 3</span>
+		    					</a>
 		    				</li>
 		    				<li class="best-project__item">
-		    					<a href="#" title="Tên dự án 4"><img src="assets/images/home/logo-vincity-color.png" alt="Tên dự án 4"><span class="title-duan">Tên dự án 4</span></a>
+		    					<a href="#" title="Tên dự án 4">
+		    						<figure class="gray"><img src="assets/images/home/logo-vincity-color.png" alt="Tên dự án 4"></figure>
+		    						<span class="title-duan">Tên dự án 4</span>
+		    					</a>
 		    				</li>
 		    				<li class="best-project__item">
-		    					<a href="#" title="Tên dự án 5"><img src="assets/images/home/logo-vincity-color.png" alt="Tên dự án 5"><span class="title-duan">Tên dự án 5</span></a>
+		    					<a href="#" title="Tên dự án 5">
+		    						<figure class="gray"><img src="assets/images/home/logo-vincity-color.png" alt="Tên dự án 5"></figure>
+		    						<span class="title-duan">Tên dự án 5</span>
+		    					</a>
 		    				</li>
 		    				<li class="best-project__item">
-		    					<a href="#" title="Tên dự án 6"><img src="assets/images/home/logo-vincity-color.png" alt="Tên dự án 6"><span class="title-duan">Tên dự án 6</span></a>
+		    					<a href="#" title="Tên dự án 6">
+		    						<figure class="gray"><img src="assets/images/home/logo-vincity-color.png" alt="Tên dự án 6"></figure>
+		    						<span class="title-duan">Tên dự án 6</span>
+		    					</a>
 		    				</li>
 		    			</ul>
 		    		</div>
@@ -106,67 +141,67 @@
 		    			<h2 class="title-block">Dự án nổi bật</h2>
 		    			<div class="duannoibat__list">
 		    				<div class="duannoibat__item">
-		    					<figure><img src="assets/images/home/img-04.png" alt="Dự án nổi bật 1"></figure>
-		    					<div class="duannoibat__info">
-		    						<h2 class="duannoibat__item_title">Dự án nổi bật 1</h2>
-			    					<p>Thông tin dự án (1 dòng)<br />Thông tin dự án dòng 2</p>
-			    					<a href="#" class="duannoibat___more">Xem chi tiết</a>
+		    					<figure class="overlay"><img src="assets/images/home/img-04.png" alt="Dự án nổi bật 1"></figure>
+		    					<div class="duannoibat__ct">
+			    					<div class="duannoibat__info">
+			    						<h2 class="duannoibat__item_title">Dự án nổi bật 1</h2>
+				    					<p>Thông tin dự án (1 dòng)<br />Thông tin dự án dòng 2</p>
+				    					<a href="#" class="duannoibat___more">Xem chi tiết</a>
+			    					</div>
+			    					<ul class="duannoibat__button">
+			    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
+			    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
+			    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
+			    					</ul>
 		    					</div>
-		    					<ul class="duannoibat__button">
-		    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
-		    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
-		    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
-		    					</ul>
 		    				</div>
 		    				<div class="duannoibat__item">
-		    					<figure><img src="assets/images/home/img-05.png" alt="Dự án nổi bật 1"></figure>
-		    					<div class="duannoibat__info">
-		    						<h2 class="duannoibat__item_title">Dự án nổi bật 1</h2>
-			    					<p>Thông tin dự án (1 dòng)<br />Thông tin dự án dòng 2</p>
-			    					<a href="#" class="duannoibat___more">Xem chi tiết</a>
-		    					</div>
-		    					<ul class="duannoibat__button">
-		    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
-		    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
-		    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
-		    					</ul>
+		    					<figure class="overlay"><img src="assets/images/home/img-05.png" alt="Dự án nổi bật 1"></figure>
+		    					<div class="duannoibat__ct">
+			    					<div class="duannoibat__info">
+			    						<h2 class="duannoibat__item_title">Dự án nổi bật 1</h2>
+				    					<p>Thông tin dự án (1 dòng)<br />Thông tin dự án dòng 2</p>
+				    					<a href="#" class="duannoibat___more">Xem chi tiết</a>
+			    					</div>
+			    					<ul class="duannoibat__button">
+			    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
+			    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
+			    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
+			    					</ul>
+			    				</div>
 		    				</div>
 		    				<div class="duannoibat__item">
-		    					<figure><img src="assets/images/home/img-06.png" alt="Dự án nổi bật 1"></figure>
-		    					<div class="duannoibat__info">
-		    						<h2 class="duannoibat__item_title">Dự án nổi bật 1</h2>
-			    					<p>Thông tin dự án (1 dòng)<br />Thông tin dự án dòng 2</p>
-			    					<a href="#" class="duannoibat___more">Xem chi tiết</a>
-		    					</div>
-		    					<ul class="duannoibat__button">
-		    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
-		    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
-		    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
-		    					</ul>
+		    					<figure class="overlay"><img src="assets/images/home/img-06.png" alt="Dự án nổi bật 1"></figure>
+		    					<div class="duannoibat__ct">
+			    					<div class="duannoibat__info">
+			    						<h2 class="duannoibat__item_title">Dự án nổi bật 1</h2>
+				    					<p>Thông tin dự án (1 dòng)<br />Thông tin dự án dòng 2</p>
+				    					<a href="#" class="duannoibat___more">Xem chi tiết</a>
+			    					</div>
+			    					<ul class="duannoibat__button">
+			    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
+			    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
+			    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
+			    					</ul>
+			    				</div>
 		    				</div>
 		    			</div>
 		    			<a href="#" class="btn__more">Xem thêm dự án nổi bật</a>
 		    		</div>
 		    	</div>
 		    	<div class="about-homebrokers">
-		    		<div class="container">
-		    			<div class="about__content">
-		    				<div class="about__col">
-				    			<h2 class="about__title">Về HomeBrokers</h2>
-				    			<p>Với thế mạnh về công nghệ và cung cấp đầy đủ các dịch vụ, cùng với đội ngũ chuyên viên hiểu biết sâu sắc thị trường từng khu vực.</p>
-				    			<a href="#" class="about_more">Xem chi tiết</a>
-		    				</div>
-		    				<div class="about__col">
-		    					<figure>
-		    						<img src="assets/images/home/img-07.png" alt="Về HomeBrokers">
-		    					</figure>
-		    				</div>
-		    			</div>
-		    		</div>
+	    			<div class="about__content">
+		    			<h2 class="about__title">Về HomeBrokers</h2>
+		    			<p>Với thế mạnh về công nghệ và cung cấp đầy đủ các dịch vụ, cùng với đội ngũ chuyên viên hiểu biết sâu sắc thị trường từng khu vực.</p>
+		    			<a href="#" class="about_more">Xem chi tiết</a>
+	    			</div>
+		    		<figure class="img-lf">
+						<img src="assets/images/home/img-07.png" alt="Về HomeBrokers">
+					</figure>
 		    	</div>
 		    	<div class="tintuc">
 		    		<div class="container">
-		    			<h2 class="tintuc__title">Tin thị trường</h2>
+		    			<h2 class="title-block">Tin thị trường</h2>
 		    			<p class="tintuc__description">Tin tức mới nhất, phân tích xu hướng thị trường, cập nhật nhanh chóng và chính xác hàng ngày.</p>
 		    			<ul class="tintuc__list">
 		    				<li class="tintuc__item">
@@ -175,12 +210,111 @@
 		    						<p>12 cách chống nóng<br />cho ngôi nhà dễ làm, ít tốn</p>
 		    					</a>
 		    				</li>
-		    				<li class="tintuc__item"></li>
-		    				<li class="tintuc__item"></li>
+		    				<li class="tintuc__item">
+		    					<a href="#" title="12 cách chống nóng cho ngôi nhà dễ làm, ít tốn">
+		    						<figure><img src="assets/images/home/img-08.png" alt="12 cách chống nóng cho ngôi nhà dễ làm, ít tốn"></figure>
+		    						<p>12 cách chống nóng<br />cho ngôi nhà dễ làm, ít tốn</p>
+		    					</a>
+		    				</li>
+		    				<li class="tintuc__item">
+		    					<a href="#" title="12 cách chống nóng cho ngôi nhà dễ làm, ít tốn">
+		    						<figure><img src="assets/images/home/img-08.png" alt="12 cách chống nóng cho ngôi nhà dễ làm, ít tốn"></figure>
+		    						<p>12 cách chống nóng<br />cho ngôi nhà dễ làm, ít tốn</p>
+		    					</a>
+		    				</li>
 		    			</ul>
+		    			<a href="#" class="btn__more">Xem thêm tin thị trường</a>
 		    		</div>
 		    	</div>
 		    </main>
+		    <footer id="footer">
+				<div class="container">
+					<div class="ft-content ft-dau">
+						<div class="ft-col">
+							<div class="ft-dau-title">Hợp tác với HomeBrokers</div>
+							<ul class="ft-contact__info">
+								<li><a href="tel:0999 999 0999" title="0999 999 0999">0999 999 0999</a></li>
+								<li><a href="mailto:info@homebrokers.com" title="info@homebrokers.com">info@homebrokers.com</a></li>
+							</ul>
+						</div>
+						<div class="ft-col">
+							<div class="ft-dau-title">Kinh doanh</div>
+							<ul class="ft-contact__info">
+								<li><a href="tel:0999 999 0999" title="0999 999 0999">0999 999 0999</a></li>
+								<li><a href="mailto:info@homebrokers.com" title="info@homebrokers.com">info@homebrokers.com</a></li>
+							</ul>
+						</div>
+						<div class="ft-col">
+							<div class="ft-dau-title">Chăm sóc khách hàng</div>
+							<ul class="ft-contact__info">
+								<li><a href="tel:0999 999 0999" title="0999 999 0999">0999 999 0999</a></li>
+								<li><a href="mailto:info@homebrokers.com" title="info@homebrokers.com">info@homebrokers.com</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="ft-content ft-giua">
+						<div class="ft-col ft-com-info">
+							<div class="ft-logo">
+								<a href="#" title="logo"><img src="assets/images/commons/ft-logo.png" alt="ft logo"></a>
+							</div>
+							<div class="ft-address">Số 168, Đường, Phường, Quận, Thành phố</div>
+							<ul class="ft-social">
+								<li><a href="#" title="facebook"><img src="assets/images/commons/ic-facebook.png" alt="facebook"></a></li>
+								<li><a href="#" title="twitter"><img src="assets/images/commons/ic-twitter.png" alt="twitter"></a></li>
+								<li><a href="#" title="linked"><img src="assets/images/commons/ic-linked.png" alt="linked"></a></li>
+								<li><a href="#" title="instagram"><img src="assets/images/commons/ic-instagram.png" alt="instagram"></a></li>
+								<li><a href="#" title="youtube"><img src="assets/images/commons/ic-youtube.png" alt="youtube"></a></li>
+							</ul>
+						</div>
+						<div class="ft-col ft-lienket">
+							<h3 class="ft-lienket-title">CÔNG TY</h3>
+							<ul>
+								<li><a href="#" title="Về HomeBrokers">Về HomeBrokers</a></li>
+								<li><a href="#" title="Đội ngũ">Đội ngũ</a></li>
+								<li><a href="#" title="Tuyển dụng">Tuyển dụng</a></li>
+								<li><a href="#" title="Liên hệ">Liên hệ</a></li>
+							</ul>
+						</div>
+						<div class="ft-col ft-lienket">
+							<h3 class="ft-lienket-title">DỊCH VỤ</h3>
+							<ul>
+								<li><a href="#" title="Những dự án tốt nhất">Những dự án tốt nhất</a></li>
+								<li><a href="#" title="Lựa chọn căn hộ phù hợp">Lựa chọn căn hộ phù hợp</a></li>
+								<li><a href="#" title="So sánh căn hộ">So sánh căn hộ</a></li>
+							</ul>
+						</div>
+						<div class="ft-col ft-lienket">
+							<h3 class="ft-lienket-title">THÔNG TIN</h3>
+							<ul>
+								<li><a href="#" title="Tin tức thị trường">Tin tức thị trường</a></li>
+								<li><a href="#" title="Báo cáo & Phân tích">Báo cáo & Phân tích</a></li>
+							</ul>
+						</div>
+						<div class="ft-col ft-inputmail">
+							<h3 class="ft-inputmail-title">ĐĂNG KÝ NHẬN THÔNG TIN</h3>
+							<form action="#" method="post" accept-charset="utf-8">
+								<div class="rightiput_nhap">
+									<div class="inputnhap">
+										<input type="text" id="reg_email" name="reg_email" autocomplete="off" class="nhapemail" placeholder="Nhập Email">
+									</div>
+									<input type="submit" name="register" class="register" value="Đăng ký">
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="ft-content ft-duoi">
+						<div class="ft-col">
+							<p class="copyright">Copyright © 2019 - HomeBrokers. All Rights Reserved</p>
+						</div>
+						<ul class="ft-col ft-policy">
+							<li><a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a></li>
+							<li><a href="#" title="Điều khoản sử dụng">Điều khoản sử dụng</a></li>
+							<li><a href="#" title="Phản hồi">Phản hồi</a></li>
+						</ul>
+					</div>
+				</div>
+				<a id="scrollUp" href="#top"><img src="assets/images/commons/top-page.png" alt="top page"></a>
+			</footer>
 		</div>
 
 		<!-- jQuery -->

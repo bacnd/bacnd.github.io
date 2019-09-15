@@ -1,5 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var plumber = require('gulp-plumber');
+var notify  = require('gulp-notify');
 var browserSync = require('browser-sync').create();
 
 gulp.task('browserSync', function(done) {
@@ -15,7 +17,7 @@ gulp.task('browserSync', function(done) {
             logLevel: 'info', // 'debug', 'info', 'silent', 'warn'
             logConnections: false,
             logPrefix: "Browser-Sync",
-            notify: true
+            notify: false
         },
     });
     done();
@@ -23,6 +25,7 @@ gulp.task('browserSync', function(done) {
 
 gulp.task('sass', function(){
   	return gulp.src('./assets/sass/**/*.scss')
+        .pipe(plumber({errorHandler: notify.onError('<%= error.message %>')}))
     	.pipe(sass().on('error', sass.logError)) // Converts Sass to CSS with gulp-sass
     	.pipe(gulp.dest('./assets/css'))
     	.pipe(browserSync.reload({
@@ -41,3 +44,5 @@ function swallowError(error) {
     console.log(error.toString())
     this.emit('end')
 }
+
+gulp.task('default', ['watch']);

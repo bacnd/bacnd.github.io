@@ -138,6 +138,13 @@
 	display: flex;
 }
 
+@mixin filter($value) {
+  -webkit-filter: $value;
+     -moz-filter: $value;
+       -o-filter: $value;
+          filter: $value;
+}
+
 @mixin clearfix {
 	&:after {
 		content: '';
