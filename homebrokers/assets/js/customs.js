@@ -23,6 +23,12 @@ $(document).ready(function() {
         $('html, body').animate({ scrollTop: 0 }, 600);
         return false; 
     });
+
+    // click show menu
+    $('#navLine').click(function() {
+        $(this).toggleClass('active');
+        $('.hd-menu').toggleClass('nav-active');
+    });
 });
 
 $(function() {

@@ -34,6 +34,9 @@
 		@include dlflex;
 	    flex-direction: column;
     	justify-content: center;
+    	@media screen and (max-width: $screen-sp) {
+    		display: table;
+    	}
 	}
 	&__description {
 		font-size: 46px;
@@ -42,6 +45,13 @@
 		letter-spacing: normal;
 		color: $clr-white;
 		margin-bottom: 85px;
+		@media screen and (max-width: $screen-sp) {
+			font-size: 22px;
+			line-height: 1.36;
+			letter-spacing: normal;
+			text-align: center;
+			margin-bottom: 40px;
+		}
 	}
 	.btn-readmore {
 		@include dlflex;
@@ -55,6 +65,11 @@
 		letter-spacing: normal;
 		color: $clr-white;
 		border-radius: 50px;
+		@media screen and (max-width: $screen-sp) {
+		 	font-size: 16px;
+			letter-spacing: normal;
+			margin: auto;
+		}
 		&:hover {
 			opacity: 1;
 		    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12), 0 -1px 2px 0 rgba(0, 0, 0, 0.08);
@@ -69,6 +84,9 @@
 	letter-spacing: normal;
 	text-align: center;
 	font-weight: normal;
+	@media screen and (max-width: $screen-sp) {
+		font-size: 22px;
+	}
 }
 
 .btn__more {
@@ -95,6 +113,9 @@
 .best-project {
 	background: $clr-fbfa;
 	padding-top: 40px;
+	@media screen and (max-width: $screen-sp) {
+		padding-top: 28px;
+	}
 	&__content {
 		
 	}
@@ -167,6 +188,9 @@
 	margin-top: 45px;
 	margin-bottom: 92px;
 	.title-block {
+		@media screen and (max-width: $screen-sp) {
+			font-size: 17px;
+		}
 		.title-block--upbi {
 			color: $clr-asau;
 			font-weight: 600;
@@ -177,10 +201,24 @@
 		align-items: center;
 	   	justify-content: center;
 	   	margin-top: 47px;
+	   	@media screen and (max-width: $screen-sp) {
+			flex-direction: column;
+		}
 	   	.chuyengia__item {
 	   		width: calc(100% / 3);
 	   		padding: 0 28px;
 	   		position: relative;
+	   		@media screen and (max-width: $screen-sp) {
+				width: 100%;
+				padding: 0;
+			}
+			&__img {
+				@media screen and (max-width: $screen-sp) {
+					img {
+						width: 100%;
+					}
+				}
+			}
 	   		&__title {
 	   			font-size: 18px;
 				font-weight: normal;
@@ -188,6 +226,18 @@
 				color: $clr-mobe;
 				padding: 30px 0;
 				position: relative;
+				@media screen and (max-width: $screen-sp) {
+					padding: 5.5px 0;
+					background: $clr-asau;
+					color: $clr-white;
+					border-radius: 5px;
+					margin-top: 3px;
+					padding-left: 38px;
+
+					font-size: 12px;
+					line-height: 5.46;
+					letter-spacing: normal;
+				}
 				&:after {
 					content: '';
 					position: absolute;
@@ -215,6 +265,9 @@
 						background: url('../images/home/cta-hover.png') no-repeat;
 					}
 	   			}
+	   		}
+	   		& + .chuyengia__item {
+	   			margin-top: 37px;
 	   		}
 	   	}
 	}

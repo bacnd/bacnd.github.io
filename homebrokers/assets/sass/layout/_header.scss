@@ -9,31 +9,50 @@
 	    max-width: 1114px;
 	    margin: auto;
 	    .logo {
-		    margin: .5em 0;
+		    margin: 13.5px 0;
 		    img {
 		    	transition: all 1s ease;
     	    	-webkit-transition: all 1s ease;
 		    }
 		    @media screen and (max-width: $screen-sp) {
-		    	width: 77px;
-		    	margin: .15em auto;
+		    	width: 80px;
+		    	margin: 8px auto;
 		    }
 		}
-		.hd-content {
+		// .hd-content {
 			.nav-menu {
 				@include dlflex;
+			    align-items: center;
 				.hd-menu {
 					@include dlflex;
 					margin-right: 45px;
 					position: relative;
 				    @media screen and (max-width: $screen-sp) {
 				    	flex-direction: column;
+				    	position: fixed;
+					    top: 0;
+				        right: -100%;
+					    bottom: auto;
+					    height: 100vh;
+					    width: calc(100% - 80px);
+					    overflow: hidden;
+					    overflow-y: auto;
+					    cursor: pointer;
+						-webkit-transition: all .5s ease;
+						transition: all .5s ease;
+						z-index: 2;
+						background: $clr-asau;
+						margin-right: 0;
+					    box-shadow: 0 0 2.6875rem rgba(2, 3, 3, 0.84);
+				    	&.nav-active {
+				    		right: 0;
+				    	}
 				    }
 					> li {
 						padding: 10px 0;
 						@media screen and (max-width: $screen-sp) {
 					    	margin: 0 !important;
-					    	padding: 14px 0;
+					    	padding: 10px 20px;
 					    }
 						a {
 							color: #4e4e50;
@@ -91,6 +110,9 @@
 							a {
 								font-weight: 600;
 								color: $clr-abay;
+								@media screen and (max-width: $screen-sp) {
+									color: $clr-white;
+								}
 							}
 						}
 						&:not(:last-child) {
@@ -103,6 +125,11 @@
 				}
 				.hd-acse {
 					margin-left: 45px;
+					@media screen and (max-width: $screen-sp) {
+				    	margin-left: 0;
+			    	    position: absolute;
+    					right: 10px;
+				    }
 					.box-acse {
 						@include dlflex;
 						li {
@@ -151,7 +178,7 @@
 			// 	    transform: translate3d(0, 0, 0);
 			// 	}
 			// }
-		}
+		// }
 		.nav-toggle {
 	        background-color: transparent;
 	        color: #4c4c4e;
@@ -167,13 +194,13 @@
 	        outline: none;
 	        z-index: 999;
             display: none;
-            right: 20px;
+            left: 10px;
 			@media screen and (max-width: $screen-sp) {
 				display: block;
 			}
 	        span {
 	            background-color: #4c4c4e;
-	            height: 4px;
+	            height: 3px;
 	            border-radius: 0;
 	            position: relative;
 	            display: block;
@@ -184,7 +211,7 @@
 	                content: "";
 	                position: absolute;
 	                width: 30px;
-	                height: 4px;
+	                height: 3px;
 	                left: 0;
 	                top: -10px;
 	                border-radius: 0;
