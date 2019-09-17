@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+html{
+	font-size: $font-html;
+}
+
+html:not(.lt-ie10) .not-animated{
+	opacity: 0;
+}
+
+ul, li {
+	list-style: none;
+	padding: 0;
+}
+
+textarea:focus, input:focus, button:focus, select:focus {
+    outline: none;
+}
+select::-ms-expand { 
+    display: none; /* hide the default arrow in ie10 and ie11 */
+}
+button {
+	border: none;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+input {
+	height: auto;
+}
+img {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+:not(output):-moz-ui-invalid {
+  box-shadow: none;
+}
+
+:not(output):-moz-ui-invalid:-moz-focusring {
+  box-shadow: none;
+}
+
+output:-moz-ui-invalid {
+  color: none;
+}
+
+.container {
+	max-width: 1030px;
+	width: 100%;
+	margin: 0 auto;
+	@include padding-sp;
+}
+
+.dl-pc{
+	display: block;
+	@media screen and (max-width: 768px){
+		display: none !important;
+	}
+}
+
+.dl-sp{
+	display: none;
+	@media screen and (max-width: 768px){
+		display: block !important;
+	}
+}

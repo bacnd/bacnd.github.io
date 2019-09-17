@@ -13,29 +13,33 @@ footer {
 		a {
 			color: $clr-white;
 		}
-    	// @media screen and (max-width: $screen-sp) {
-    	// 	height: auto;
-	    // 	flex-direction: column;
-	    // 	justify-content: center;
-	    // 	.ft-col {
-	    // 		text-align: center;
-	    // 		&:first-child {
-	    // 			order: 2;
-	    // 			font-size: 10px;
-	    // 		}
-	    // 		&:last-child {
-	    // 			order: 1;
-	    // 			font-size: 12px;
-	    // 		}
-	    // 		p {
-	    // 			margin: 0 0 .5rem;
-	    // 		}
-	    // 	}
-	    // }
+    	@media screen and (max-width: $screen-sp) {
+    		height: auto;
+	    	flex-direction: column;
+	    	justify-content: center;
+	    	// .ft-col {
+	    	// 	text-align: center;
+	    	// 	&:first-child {
+	    	// 		order: 2;
+	    	// 		font-size: 10px;
+	    	// 	}
+	    	// 	&:last-child {
+	    	// 		order: 1;
+	    	// 		font-size: 12px;
+	    	// 	}
+	    	// 	p {
+	    	// 		margin: 0 0 .5rem;
+	    	// 	}
+	    	// }
+	    }
 	    & + .ft-content {
 	    	border-top: 1px solid rgba($clr-white, .3);
 	    	margin-top: 27px;
 	    	padding-top: 29px;
+	    	@media screen and (max-width: $screen-sp) {
+	    		border: none;
+	    		margin-top: 0;
+	    	}
 	    }
 	    &.ft-dau {
 	    	padding-top: 26px;
@@ -43,6 +47,12 @@ footer {
 	    		width: calc(100% / 3);
 	    		padding-left: 29px;
 	    		position: relative;
+	    		@media screen and (max-width: $screen-sp) {
+	    			width: 100%;
+	    			& + .ft-col {
+	    				margin-top: 20px;
+	    			}
+	    		}
     			&:before {
     				content: '';
     				position: absolute;
@@ -61,6 +71,9 @@ footer {
     					font-weight: 600;
 						letter-spacing: normal;
 						position: relative;
+						@media screen and (max-width: $screen-sp) {
+							font-weight: normal;
+						}
 						a {
 							color: $clr-asau;
 						}
@@ -83,20 +96,43 @@ footer {
 	    	}
 	    }
 	    &.ft-giua {
+	    	.ft-col {
+	    		@media screen and (max-width: $screen-sp) {
+	    			border-top: 1px solid rgba($clr-white, .1);
+    			    padding: 6px 0;
+	    		}
+	    	}
 	    	.ft-com-info {
 	    		width: 187px;
+	    		@media screen and (max-width: $screen-sp) {
+	    			width: 100%;
+	    			order: 2;
+	    			padding-top: 30px;
+	    		}
+	    		.ft-logo {
+	    			@media screen and (max-width: $screen-sp) {
+		    			display: none;
+		    		}
+	    		}
 	    		.ft-address {
     			    margin-top: 17px;
     			    font-size: 12px;
 					line-height: 2;
 					letter-spacing: normal;
 					color: $clr-ceko;
+					@media screen and (max-width: $screen-sp) {
+		    			display: none;
+		    		}
 	    		}
 	    		.ft-social {
 	    			@include dlflex;
 	    			justify-content: space-between;
 	    			max-width: 119px;
 	    			margin-top: 13px;
+	    			@media screen and (max-width: $screen-sp) {
+		    			max-width: 132px;
+		    			margin: auto;
+		    		}
 	    		}
 	    	}
 	    	.ft-lienket {
@@ -109,16 +145,32 @@ footer {
 	    			font-weight: 600;
 	    			color: $clr-white;
 	    		}
+	    		ul {
+	    			@media screen and (max-width: $screen-sp) {
+		    			display: none;
+		    			padding-right: 10px;
+		    			padding-left: 10px;
+		    			&.active {
+		    				display: block;
+		    			}
+		    		}
+	    		}
 	    	}
 	    	.ft-inputmail {
-	    		&-title {
-	    			font-size: 14px;
-	    			font-weight: 600;
-	    			color: $clr-white;
+	    		#form_email {
+	    			@media screen and (max-width: $screen-sp) {
+		    			display: none;
+		    			&.active {
+		    				display: block;
+		    			}
+		    		}
 	    		}
 	    		.rightiput_nhap {
 	    			@include dlflex;
 	    			margin-top: 18px;
+	    			@media screen and (max-width: $screen-sp) {
+	    				margin: 10px 0 10px 10px;
+	    			}
 	    			.inputnhap {
 	    				.nhapemail {
 		    				width: 158px;
@@ -127,6 +179,9 @@ footer {
 							border: none;
 							padding: 7px;
 							color: $clr-tabe;
+							@media screen and (max-width: $screen-sp) {
+			    				width: 200px;
+			    			}
 		    			}
 	    			}
 	    			.register {
@@ -145,11 +200,18 @@ footer {
 			color: $clr-ceko;
 			padding-top: 17px;
 			padding-bottom: 15px;
+			@media screen and (max-width: $screen-sp) {
+    			text-align: center;
+    			padding-top: 19px;
+    		}
 			a {
 				color: $clr-ceko;
 			}
 	    	.ft-policy {
     			@include dlflex;
+    			@media screen and (max-width: $screen-sp) {
+	    			display: none;
+	    		}
     			li {
     				&:not(:last-child) {
 						margin-right: 30px;
@@ -164,5 +226,8 @@ footer {
 	    right: 30px;
 	    position: absolute;
 	    opacity: 1;
+	    @media screen and (max-width: $screen-sp) {
+			display: none;
+		}
 	}
 }

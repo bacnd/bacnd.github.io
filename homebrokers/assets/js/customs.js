@@ -29,6 +29,11 @@ $(document).ready(function() {
         $(this).toggleClass('active');
         $('.hd-menu').toggleClass('nav-active');
     });
+
+    $('.ft-lienket-title').click(function() {
+        $(this).toggleClass('active');
+        $(this).next().toggleClass('active');
+    });
 });
 
 $(function() {

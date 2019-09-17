@@ -1,0 +1,885 @@
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+body {
+  margin: 0; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden],
+template {
+  display: none; }
+
+a {
+  background-color: transparent; }
+
+a:active, a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+button {
+  overflow: visible; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+/* base valiables */
+/*keyframes*/
+/* common mixins */
+/* base valiables */
+html {
+  font-size: 62.5%; }
+
+html:not(.lt-ie10) .not-animated {
+  opacity: 0; }
+
+ul, li {
+  list-style: none;
+  padding: 0; }
+
+textarea:focus, input:focus, button:focus, select:focus {
+  outline: none; }
+
+select::-ms-expand {
+  display: none;
+  /* hide the default arrow in ie10 and ie11 */ }
+
+button {
+  border: none; }
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+input {
+  height: auto; }
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+:not(output):-moz-ui-invalid {
+  box-shadow: none; }
+
+:not(output):-moz-ui-invalid:-moz-focusring {
+  box-shadow: none; }
+
+output:-moz-ui-invalid {
+  color: none; }
+
+.container {
+  max-width: 1030px;
+  width: 100%;
+  margin: 0 auto; }
+  @media screen and (max-width: 768px) {
+    .container {
+      padding-left: 10px;
+      padding-right: 10px;
+      width: auto; } }
+
+.dl-pc {
+  display: block; }
+  @media screen and (max-width: 768px) {
+    .dl-pc {
+      display: none !important; } }
+
+.dl-sp {
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .dl-sp {
+      display: block !important; } }
+
+#pvc-card-instruction {
+  background: #f5f2e9; }
+  @media screen and (max-width: 768px) {
+    #pvc-card-instruction {
+      margin-bottom: -20px; } }
+  #pvc-card-instruction a {
+    opacity: 1;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+    #pvc-card-instruction a:hover {
+      opacity: 0.7; }
+  #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-top-page {
+    height: 145px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background: #fff; }
+    #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-top-page h2 {
+      font-size: 25px;
+      color: #757575;
+      font-weight: 400;
+      font-family: "Roboto Slab", sans-serif; }
+      #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-top-page h2 {
+        font-size: 17px; }
+        @media screen and (min-width: 320px) {
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-top-page h2 {
+            font-size: calc(17px + 8 * ((100vw - 320px) / 448)); } }
+        @media screen and (min-width: 768px) {
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-top-page h2 {
+            font-size: 25px; } }
+    #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-top-page .card-description {
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #757575;
+      font-family: "Roboto Slab", sans-serif;
+      margin-top: 1rem; }
+      #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-top-page .card-description {
+        font-size: 17px; }
+        @media screen and (min-width: 320px) {
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-top-page .card-description {
+            font-size: calc(17px + 3 * ((100vw - 320px) / 448)); } }
+        @media screen and (min-width: 768px) {
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-top-page .card-description {
+            font-size: 20px; } }
+  #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page {
+    max-width: 1030px;
+    width: 100%;
+    margin: 0 auto;
+    background: url("../images/bg_tag.png") top no-repeat;
+    padding-top: 40px;
+    padding-bottom: 35px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex; }
+    @media screen and (max-width: 1000px) {
+      #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page {
+        width: auto;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px; } }
+    #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left {
+      max-width: 820px;
+      width: 100%;
+      line-height: 1.5; }
+      @media screen and (max-width: 1000px) {
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left {
+          max-width: inherit; } }
+      #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-banner {
+        height: 250px;
+        margin-bottom: 28px; }
+        @media screen and (max-width: 768px) {
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-banner {
+            height: 100px; } }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-banner span {
+          font-size: 20px; }
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-banner span {
+            font-size: 17px; }
+            @media screen and (min-width: 320px) {
+              #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-banner span {
+                font-size: calc(17px + 3 * ((100vw - 320px) / 448)); } }
+            @media screen and (min-width: 768px) {
+              #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-banner span {
+                font-size: 20px; } }
+      #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-title {
+        height: 50px;
+        font-size: 20px;
+        background: #ffc80b;
+        border-radius: 50px;
+        text-align: center;
+        font-weight: 400;
+        display: table;
+        margin: 0 auto;
+        padding: 14px 50px;
+        position: relative;
+        margin-bottom: 27px;
+        box-shadow: 4px 4px 0px #f5f2ea, 6px 6px 0px #4b4a4b;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-title {
+          font-size: 13px; }
+          @media screen and (min-width: 320px) {
+            #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-title {
+              font-size: calc(13px + 2 * ((100vw - 320px) / 448)); } }
+          @media screen and (min-width: 768px) {
+            #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-title {
+              font-size: 15px; } }
+        @media screen and (max-width: 768px) {
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-title {
+            height: auto;
+            padding: 10px 15px;
+            min-width: 240px; } }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-title a {
+          font-family: "Roboto Slab", sans-serif; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-title span {
+          font-size: 21px;
+          color: #fff;
+          font-family: "Roboto Slab", sans-serif; }
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-title span {
+            font-size: 13px; }
+            @media screen and (min-width: 320px) {
+              #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-title span {
+                font-size: calc(13px + 2 * ((100vw - 320px) / 448)); } }
+            @media screen and (min-width: 768px) {
+              #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-title span {
+                font-size: 15px; } }
+      #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .safe-usage ul {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: flex;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: wrap; }
+        @media screen and (max-width: 768px) {
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .safe-usage ul {
+            justify-content: space-around;
+            align-items: start; } }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .safe-usage ul li {
+          -webkit-flex: 0 0 50%;
+          -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+          max-width: 50%;
+          text-align: center;
+          cursor: pointer; }
+          @media screen and (max-width: 768px) {
+            #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .safe-usage ul li {
+              -webkit-flex: 0 0 45%;
+              -ms-flex: 0 0 45%;
+              flex: 0 0 45%;
+              max-width: 45%; }
+              #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .safe-usage ul li img {
+                max-width: 110px; } }
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .safe-usage ul li span {
+            display: block;
+            margin: 29px 0;
+            font-size: 16px;
+            color: #333333; }
+            #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .safe-usage ul li span {
+              font-size: 13px; }
+              @media screen and (min-width: 320px) {
+                #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .safe-usage ul li span {
+                  font-size: calc(13px + 2 * ((100vw - 320px) / 448)); } }
+              @media screen and (min-width: 768px) {
+                #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .safe-usage ul li span {
+                  font-size: 15px; } }
+      #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .safe-usage .safe-usage-sp {
+        text-align: center;
+        margin-bottom: 30px; }
+      #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment p {
+        font-size: 21px;
+        color: #333; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment p {
+          font-size: 13px; }
+          @media screen and (min-width: 320px) {
+            #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment p {
+              font-size: calc(13px + 2 * ((100vw - 320px) / 448)); } }
+          @media screen and (min-width: 768px) {
+            #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment p {
+              font-size: 15px; } }
+      #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap {
+        margin-top: 11px; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .row {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .timeline .col-10 {
+          width: calc(100% - 100px); }
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .timeline .col-10 hr {
+            left: 13px; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .timeline .col-9 {
+          width: calc(100% - 150px); }
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .timeline .col-9 hr {
+            width: 85%; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .timeline .col-8 {
+          width: calc(100% - 200px); }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .timeline .col-1 {
+          width: 50px; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .timeline .col-2 {
+          display: flex;
+          overflow: hidden;
+          width: 100px;
+          position: relative;
+          height: 240px; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .timeline div {
+          padding: 0;
+          height: 40px; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .timeline .ba-item, #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .timeline .hai-item {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -moz-flex;
+          display: -webkit-flex;
+          display: flex;
+          align-items: center;
+          position: relative; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .timeline .ba-item {
+          justify-content: space-between; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .timeline .hai-item {
+          justify-content: space-around; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .timeline .hai-flex {
+          justify-content: space-between; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .timeline li {
+          text-align: center;
+          z-index: 1; }
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .timeline li span {
+            display: block;
+            font-size: 15px;
+            color: #333;
+            margin-top: 5px; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .timeline hr {
+          border-top: 2px dashed #ffc70a;
+          top: -55px;
+          bottom: 0;
+          margin: auto;
+          position: absolute;
+          width: 100%; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .timeline .corner {
+          border: 2px dashed #ffc70a;
+          width: 100%;
+          position: absolute;
+          border-radius: 45px;
+          height: 100%; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .timeline .left-bottom {
+          left: -45px;
+          top: calc(50% - 29px);
+          right: 0;
+          height: 100%; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .timeline .top-left {
+          left: -45%;
+          top: -63%; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .timeline .right-bottom {
+          left: 45px;
+          top: calc(50% - 29px); }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .timeline .top-right {
+          left: 45px;
+          top: -63%; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .roadmap .roadmap-sp {
+          text-align: center;
+          margin: 25px 0; }
+      #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .note {
+        margin-top: 16px; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .note strong {
+          font-size: 21px; }
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .note strong {
+            font-size: 13px; }
+            @media screen and (min-width: 320px) {
+              #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .note strong {
+                font-size: calc(13px + 2 * ((100vw - 320px) / 448)); } }
+            @media screen and (min-width: 768px) {
+              #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .note strong {
+                font-size: 15px; } }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .note .note-list {
+          margin-bottom: 50px; }
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .note .note-list .note-item {
+            font-size: 21px;
+            color: #333;
+            margin: 12px 0;
+            padding-left: 4px; }
+            #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .note .note-list .note-item {
+              font-size: 13px; }
+              @media screen and (min-width: 320px) {
+                #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .note .note-list .note-item {
+                  font-size: calc(13px + 2 * ((100vw - 320px) / 448)); } }
+              @media screen and (min-width: 768px) {
+                #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .note .note-list .note-item {
+                  font-size: 15px; } }
+            #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .note .note-list .note-item:before {
+              content: attr(data-num);
+              background: #ffc80b;
+              font-size: 17px;
+              border-radius: 50px;
+              width: 20px;
+              height: 20px;
+              display: inline-block;
+              margin-right: 8px;
+              text-align: center;
+              line-height: 23px; }
+              #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .note .note-list .note-item:before {
+                font-size: 13px; }
+                @media screen and (min-width: 320px) {
+                  #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .note .note-list .note-item:before {
+                    font-size: calc(13px + 1 * ((100vw - 320px) / 448)); } }
+                @media screen and (min-width: 768px) {
+                  #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .card-payment .note .note-list .note-item:before {
+                    font-size: 14px; } }
+      #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .discover {
+        border: 2px dashed #ffc80b;
+        border-radius: 20px;
+        margin-right: 5px;
+        margin-left: 5px;
+        padding: 0 30px; }
+        @media screen and (max-width: 768px) {
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .discover {
+            border-width: 1px;
+            padding: 0 10px; } }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .discover .card-title {
+          position: relative;
+          top: -25px; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .discover p {
+          margin-top: -26px;
+          line-height: 1.2; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .discover p, #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .discover strong, #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .discover .read-more {
+          font-size: 21px;
+          color: #333; }
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .discover p, #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .discover strong, #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .discover .read-more {
+            font-size: 13px; }
+            @media screen and (min-width: 320px) {
+              #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .discover p, #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .discover strong, #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .discover .read-more {
+                font-size: calc(13px + 2 * ((100vw - 320px) / 448)); } }
+            @media screen and (min-width: 768px) {
+              #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .discover p, #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .discover strong, #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .discover .read-more {
+                font-size: 15px; } }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .discover .read-more {
+          color: #fff;
+          text-align: center;
+          background: #0072bc;
+          border-radius: 8px;
+          display: table;
+          margin: 0 auto;
+          padding: 4px 18px;
+          margin-bottom: 16px;
+          margin-top: 18px; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .discover + .discover {
+          margin-top: 70px; }
+      #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .refer {
+        font-size: 21px;
+        margin-top: 40px; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .refer {
+          font-size: 13px; }
+          @media screen and (min-width: 320px) {
+            #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .refer {
+              font-size: calc(13px + 2 * ((100vw - 320px) / 448)); } }
+          @media screen and (min-width: 768px) {
+            #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .refer {
+              font-size: 15px; } }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .refer a {
+          font-size: 16px;
+          color: #0072bc;
+          text-decoration: underline; }
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .refer a {
+            font-size: 13px; }
+            @media screen and (min-width: 320px) {
+              #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .refer a {
+                font-size: calc(13px + 2 * ((100vw - 320px) / 448)); } }
+            @media screen and (min-width: 768px) {
+              #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-left .refer a {
+                font-size: 15px; } }
+    #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-right {
+      margin-left: 5px;
+      border-left: 1px solid #4d4d4f;
+      padding-left: 5px;
+      display: table;
+      max-width: 199px;
+      width: 100%; }
+      @media screen and (max-width: 1000px) {
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-right {
+          margin-top: 40px;
+          border: none;
+          margin-left: 0;
+          padding-left: 0; } }
+      #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-right .sidebar-col {
+        padding-left: 10px; }
+        @media screen and (max-width: 1000px) {
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-right .sidebar-col {
+            padding-left: 0; } }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-right .sidebar-col .title-sidebar {
+          color: #333;
+          font-size: 21px;
+          font-family: "Roboto Slab", sans-serif; }
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-right .sidebar-col .title-sidebar {
+            font-size: 14px; }
+            @media screen and (min-width: 320px) {
+              #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-right .sidebar-col .title-sidebar {
+                font-size: calc(14px + 2 * ((100vw - 320px) / 448)); } }
+            @media screen and (min-width: 768px) {
+              #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-right .sidebar-col .title-sidebar {
+                font-size: 16px; } }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-right .sidebar-col .list-link li {
+          position: relative;
+          padding-left: 15px;
+          margin: 11px 0 15px;
+          line-height: 22px; }
+          @media screen and (max-width: 768px) {
+            #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-right .sidebar-col .list-link li {
+              margin: 10px 0; } }
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-right .sidebar-col .list-link li:before {
+            content: '';
+            background: url("../images/dot.png") no-repeat;
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            top: 7px;
+            left: 0; }
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-right .sidebar-col .list-link li a {
+            color: #0072bc;
+            font-size: 17px; }
+            #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-right .sidebar-col .list-link li a {
+              font-size: 12px; }
+              @media screen and (min-width: 320px) {
+                #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-right .sidebar-col .list-link li a {
+                  font-size: calc(12px + 2 * ((100vw - 320px) / 448)); } }
+              @media screen and (min-width: 768px) {
+                #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-right .sidebar-col .list-link li a {
+                  font-size: 14px; } }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-right .sidebar-col:last-child .list-link li {
+          margin: 11px 0 -8px; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .card-bottom-page .card-col.col-right .sidebar-col + .sidebar-col {
+          border-top: 1px solid #4d4d4f;
+          margin-top: 20px;
+          padding-top: 13px; }
+  #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 9999;
+    text-align: center; }
+    #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner {
+      width: 100%;
+      padding: 40px 70px;
+      max-width: 820px;
+      max-height: inherit;
+      padding-top: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      border-radius: 10px;
+      background: #fff;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      line-height: 1.1; }
+      @media screen and (max-width: 768px) {
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner {
+          padding: 20px;
+          padding-bottom: 20px;
+          height: 90vh;
+          overflow: hidden;
+          display: table; } }
+      @media screen and (max-width: 768px) {
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .popup-content {
+          overflow-y: scroll;
+          height: 76vh;
+          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box; } }
+      #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .popup-title {
+        margin-bottom: 20px;
+        font-size: 18px; }
+        @media screen and (max-width: 768px) {
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .popup-title {
+            padding: 0 15px; } }
+      #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .list-method {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap; }
+        @media screen and (max-width: 768px) {
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .list-method {
+            flex-direction: column; } }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .list-method .item-method {
+          max-width: 300px;
+          width: calc(50% - 43px);
+          min-height: 160px;
+          text-align: center;
+          border: 1px solid #a5a5a5;
+          border-radius: 5px;
+          padding: 10px;
+          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box; }
+          @media screen and (max-width: 768px) {
+            #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .list-method .item-method {
+              width: 100%; }
+              #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .list-method .item-method + .item-method {
+                margin-top: 15px; } }
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .list-method .item-method img {
+            display: block;
+            margin: auto; }
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .list-method .item-method .tlt-method {
+            margin: 10px 0;
+            font-size: 14px; }
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .list-method .item-method span, #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .list-method .item-method strong {
+            font-size: 14px; }
+          @media screen and (min-width: 769px) {
+            #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .list-method .item-method:nth-child(even) {
+              margin-left: 82px; }
+            #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .list-method .item-method:nth-child(1), #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .list-method .item-method:nth-child(2) {
+              margin-bottom: 55px; } }
+      #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .notice {
+        font-size: 14px;
+        position: relative;
+        margin-top: 35px;
+        text-align: left;
+        padding-left: 90px; }
+        @media screen and (max-width: 768px) {
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .notice {
+            padding-left: 0;
+            padding-top: 60px; } }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .notice:before {
+          content: '';
+          position: absolute;
+          background: url("../images/ic-online-notice.png") no-repeat;
+          width: 70px;
+          height: 48px;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto; }
+          @media screen and (max-width: 768px) {
+            #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .notice:before {
+              bottom: inherit;
+              right: 0; } }
+      #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .list-safe {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap; }
+        #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .list-safe .item-safe {
+          max-width: 200px;
+          width: calc(33.33% - 26px);
+          min-height: 301px;
+          text-align: center;
+          border: 1px solid #a5a5a5;
+          border-radius: 5px;
+          padding: 20px 10px;
+          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box; }
+          @media screen and (max-width: 768px) {
+            #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .list-safe .item-safe {
+              width: 100%;
+              max-width: inherit;
+              min-height: inherit; }
+              #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .list-safe .item-safe + .item-safe {
+                margin-top: 15px; } }
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .list-safe .item-safe .tlt-safe {
+            margin: 10px 0; }
+          #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .list-safe .item-safe .item-img {
+            height: 80px;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+          @media screen and (min-width: 769px) {
+            #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .list-safe .item-safe + .item-safe {
+              margin-left: 40px; } }
+      #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .list-expired .item-expired {
+        max-width: 370px;
+        width: 100%;
+        min-height: 182px;
+        margin: auto;
+        text-align: center;
+        border: 1px solid #a5a5a5;
+        border-radius: 5px;
+        padding: 20px 10px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box; }
+      #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .list-expired .tlt-expired {
+        margin: 20px 0 10px; }
+      #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .popup-close {
+        display: inline-block;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        transition: ease 0.25s all;
+        -webkit-transform: translate(50%, -50%);
+        transform: translate(50%, -50%);
+        cursor: pointer; }
+      #pvc-card-instruction #pvc-card-instruction-wrapper .pvc-card-inner .popup-modal .popup-inner .popup-close:hover {
+        opacity: 1;
+        -webkit-transform: translate(50%, -50%) rotate(330deg);
+        transform: translate(50%, -50%) rotate(180deg); }

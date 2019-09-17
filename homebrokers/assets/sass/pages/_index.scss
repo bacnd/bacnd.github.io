@@ -117,7 +117,9 @@
 		padding-top: 28px;
 	}
 	&__content {
-		
+		.title-block {
+			font-weight: 600;
+		}
 	}
 	&__list {
 		margin-top: 42px;
@@ -187,9 +189,12 @@
 .chuyengia {
 	margin-top: 45px;
 	margin-bottom: 92px;
+	@media screen and (max-width: $screen-sp) {
+		margin-bottom: 30px;
+	}
 	.title-block {
 		@media screen and (max-width: $screen-sp) {
-			font-size: 17px;
+			// font-size: 17px;
 		}
 		.title-block--upbi {
 			color: $clr-asau;
@@ -203,6 +208,7 @@
 	   	margin-top: 47px;
 	   	@media screen and (max-width: $screen-sp) {
 			flex-direction: column;
+			margin-top: 23px;
 		}
 	   	.chuyengia__item {
 	   		width: calc(100% / 3);
@@ -227,15 +233,13 @@
 				padding: 30px 0;
 				position: relative;
 				@media screen and (max-width: $screen-sp) {
-					padding: 5.5px 0;
+					padding: 10px 0;
 					background: $clr-asau;
 					color: $clr-white;
 					border-radius: 5px;
 					margin-top: 3px;
 					padding-left: 38px;
-
-					font-size: 12px;
-					line-height: 5.46;
+					font-size: 14px;
 					letter-spacing: normal;
 				}
 				&:after {
@@ -259,6 +263,9 @@
     				left: 8px;
 	   				width: 100%;
 	   				height: 100%;
+					@media screen and (max-width: $screen-sp) {
+						content: none;
+					}
 	   			}
 	   			.chuyengia__item__title {
 					&:after {
@@ -277,16 +284,38 @@
 	background: url('../images/home/bg-texture.png') no-repeat;
 	background-size: cover;
 	padding-bottom: 98px;
+	@media screen and (max-width: $screen-sp) {
+		background: $clr-fbfa;
+		padding-bottom: 65px;
+	}
 	.title-block {
 		padding-top: 43px;
+		font-weight: 600;
+		@media screen and (max-width: $screen-sp) {
+			padding-top: 23px;
+		}
 	}
 	&__list {
 		@include dlflex;
 		justify-content: space-between;
 	    margin-top: 51px;
+	    @media screen and (max-width: $screen-sp) {
+			flex-direction: column;
+			margin-top: 26px;
+		}
 		.duannoibat__item {
 			position: relative;
 			color: $clr-white;
+			@media screen and (max-width: $screen-sp) {
+				border-radius: 5px;
+			}
+			figure {
+				img {
+					@media screen and (max-width: $screen-sp) {
+						width: 100%;
+					}
+				}
+			}
 			.duannoibat__ct {
 				@include dlflex;
 				justify-content: space-between;
@@ -300,6 +329,9 @@
 		    	margin-bottom: -19px;
 				transition: all 0.5s ease;
 		    	-webkit-transition: all 0.5s ease;
+		    	@media screen and (max-width: $screen-sp) {
+					margin-bottom: 7px;
+				}
 			}
 			.duannoibat__button {
 				@include dlflex;
@@ -338,6 +370,10 @@
 				letter-spacing: normal;
 				color: $clr-taha;
 				text-decoration: underline;
+				@media screen and (max-width: $screen-sp) {
+					color: $clr-ceko;
+					text-decoration: none;
+				}
 			}
 			&:hover {
 				.duannoibat__ct {
@@ -348,10 +384,18 @@
 						height: 4px;
 						width: 100%;
 						bottom: 0;
+						@media screen and (max-width: $screen-sp) {
+							content: none;
+						}
 					}
 				}
 				.duannoibat__info {
 					margin-bottom: 7px;
+				}
+			}
+			& + .duannoibat__item {
+				@media screen and (max-width: $screen-sp) {
+					margin-top: 15px;
 				}
 			}
 		}
@@ -366,10 +410,32 @@
 	max-width: 1366px;
 	width: 100%;
 	margin: auto;
+	@media screen and (max-width: $screen-sp) {
+		@include dlflex;
+		flex-direction: column;
+		height: auto;
+	}
 	.about__content {
 		max-width: 425px;
 		margin-left: 125px;
 		float: left;
+		@media screen and (max-width: $screen-sp) {
+			float: none;
+			margin: 0;
+			order: 2;
+			text-align: center;
+			max-width: 100%;
+			margin-left: 10px;
+			margin-right: 10px;
+			padding-left: 25px;
+			padding-right: 25px;
+			position: relative;
+			top: -50px;
+			z-index: 2;
+			background: $clr-white;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+		}
 		.about__title {
 			font-size: 30px;
 			font-weight: 600;
@@ -377,12 +443,20 @@
 			letter-spacing: normal;
 			color: $clr-asau;
 			padding-top: 80px;
+			@media screen and (max-width: $screen-sp) {
+				padding-top: 25px;
+				font-size: 23px;
+			}
 		}
 		p {
 			margin-top: 64px;
 			font-size: 18px;
 			line-height: 1.67;
 			letter-spacing: normal;
+			@media screen and (max-width: $screen-sp) {
+				margin-top: 30px;
+				font-size: 16px;
+			}
 		}
 		.about_more {
 			margin-top: 80px;
@@ -390,10 +464,20 @@
 			font-size: 16px;
 			letter-spacing: normal;
 			color: $clr-asau;
+			@media screen and (max-width: $screen-sp) {
+				margin-top: 30px;
+				font-size: 14px;
+			}
 		}
 	}
 	.img-lf {
 		float: right;
+		@media screen and (max-width: $screen-sp) {
+			position: relative;
+			z-index: 1;
+			float: none;
+			order: 1;
+		}
 	}
 }
 
@@ -402,6 +486,9 @@
 	padding-bottom: 50px;
 	.title-block {
 		padding-top: 40px;
+		@media screen and (max-width: $screen-sp) {
+			font-weight: 600;
+		}
 	}
 	&__description {
 		font-size: 22px;
@@ -409,6 +496,9 @@
 		text-align: center;
 		color: $clr-tabo;
 	    padding-top: 15px;
+	    @media screen and (max-width: $screen-sp) {
+			display: none;
+		}
 	}
 	&__list {
 		@include dlflex;

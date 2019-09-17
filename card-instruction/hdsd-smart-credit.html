@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>Gói Thẻ Tín Dụng Smart Credit - Hướng Dẫn Sử dụng | PVcomBank</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no, maximum-scale=1" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|Roboto+Slab:400,100,300,700|Roboto:400,300,100,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic|Lato:400,300,100,700,900,100italic,300italic,400italic,700italic,900italic|Noto+Sans:400,700,400italic,700italic&subset=latin,vietnamese" type='text/css'>
+    <link rel="stylesheet" href="assets/css/pvcombank.min.css" type='text/css'>
+    <link rel="stylesheet" href="assets/css/styles-card.css" type='text/css'>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/customs.js"></script>
+    <script type="text/javascript" src="assets/js/pvcombank.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        var searchUrl = "https://www.pvcombank.com.vn/tim-kiem.html";
+        $("#top-search").bind("enterKey",function(e){
+           window.location.href = "https://www.pvcombank.com.vn/tim-kiem.html?q="+$(this).val();
+        }).keyup(function(e){
+              if(e.keyCode == 13)
+              {
+                  $(this).trigger("enterKey");
+              }
+          });
+
+    });
+    </script>
+</head>
+
+<body>
+    <h1 style="display: none">Ngân hàng TMCP Đại Chúng Việt Nam - PVcomBank</h1>
+    <div id="top-head">
+        <div id="top-head-wrapper">
+            <span>
+                <a href="http://facebook.com/PVcomBankFanpage" target="_blank" class="fb-link"></a>
+            </span>
+            <input id="top-search" type="search" placeholder="Nhập từ khóa" name="s">
+            <p>
+                <span class="top-hidden" style="color:#005b9a">Hotline: 1900 5555 92</span><span class="top-hidden"> &nbsp;|&nbsp;</span>
+                <a href="https://www.pvcombank.com.vn/mang-luoi.html">Mạng lưới</a>&nbsp;|&nbsp;
+                <a href="https://www.pvcombank.com.vn/tinh-lai-suat-va-chuyen-doi-ti-gia">Tính lãi</a>&nbsp;|&nbsp;
+                <a href="http://tuyendung.pvcombank.com.vn">Tuyển dụng</a>&nbsp;|&nbsp;
+                <a href="https://www.pvcombank.com.vn/lien-he.html">Liên hệ</a>&nbsp;
+                |&nbsp;
+                <span id="menu-language">
+                    <a onclick="changeLang('en')" class="lang lang-en"></a>
+                </span>
+            </p>
+        </div>
+    </div><!-- End top head -->
+    <header id="frontend-header" class="frontend-header-home">
+        <div id="frontend-header-wrapper">
+            <div id="frontend-logo">
+                <a href="https://www.pvcombank.com.vn"><img id="desktop-logo" alt="PVcomBank" src="assets/images/pvcom-logo.png"/></a>
+                <a href="https://www.pvcombank.com.vn"><img id="phone-logo" alt="PVcomBank" src="assets/images/PVC-mobile-logo.jpg"/></a>
+            </div>
+            <div id="humburger-button"></div>
+            <ul id="main-menu">
+                <li class="home-link"><a href="https://www.pvcombank.com.vn"><span>Home</span></a></li>
+                <li class="ghach-dung"></li>
+                <li class="dropdown-cat " id="beau-person">
+                    <a>Cá nhân</a>
+                    <div class="mega-dropdown-menu" id="person-drop">
+                        <div class="mega-dropdown-menu-wrapper">
+                            <div class="beau-catsubview">
+                                <div class="menu-col">
+                                    <div class="noidung-menu">
+                                        <img src='https://www.pvcombank.com.vn/upload/images/productcategory/thumb/30_29F7WrgrsAoj_icon_pvcombank-05.png' />
+                                        <h3>
+                                            <a href="https://www.pvcombank.com.vn/tin-dung-dmsp3.html">Tín dụng <span class="beau-has-more"></span> </a></h3>
+                                        <ul>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/tin-dung/vay-topup-sp329.html">Vay topup</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/tin-dung/cho-vay-mua-xay-dung-sua-chua-nha-dat-sp77.html">Cho vay mua, xây dựng, sửa chữa nhà, đất </a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/tin-dung/cho-vay-mua-o-to-linh-hoat-sp211.html">Cho vay mua ô tô linh hoạt</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/tin-dung/vay-ho-kinh-doanh-sp213.html">Vay hộ kinh doanh</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="menu-col">
+                                    <div class="noidung-menu">
+                                        <img src='https://www.pvcombank.com.vn/upload/images/productcategory/thumb/30_29Zhw4EgjHHU_icon_pvcombank-04.png' />
+                                        <h3>
+                                            <a href="https://www.pvcombank.com.vn/dich-vu-chuyen-tien-dmsp5.html">Dịch vụ chuyển tiền <span class="beau-has-more"></span> </a></h3>
+                                        <ul>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/dich-vu-chuyen-tien/chuyen-tien-trong-nuoc-sp64.html">Chuyển tiền trong nước</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/dich-vu-chuyen-tien/nhan-tien-western-union-sp209.html">Nhận tiền Western Union</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/dich-vu-chuyen-tien/chuyen-tien-western-union-sp317.html">Chuyển tiền Western Union</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/dich-vu-chuyen-tien/nhan-tien-quoc-te-sp36.html">Nhận tiền quốc tế</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="menu-col last">
+                                    <div class="noidung-menu">
+                                        <img src='https://www.pvcombank.com.vn/upload/images/productcategory/thumb/30_307MxkrajS65_icon_pvcombank-10.png' />
+                                        <h3>
+                                            <a href="https://www.pvcombank.com.vn/san-pham-the-dmsp4.html">Sản phẩm thẻ <span class="beau-has-more"></span> </a></h3>
+                                        <ul>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/san-pham-the/the-tin-dung-quoc-te-pvcombank-mastercard-platinum-sp322.html">Thẻ tín dụng Quốc tế PVcomBank Mastercard Platinum</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/san-pham-the/the-tin-dung-quoc-te-pvcombank-mastercard-gold-sp326.html">Thẻ tín dụng Quốc tế PVcomBank Mastercard Gold</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/san-pham-the/the-tin-dung-quoc-te-pvcombank-mastercard-smart-sp325.html">Thẻ tín dụng Quốc tế PVcomBank Mastercard Smart</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/san-pham-the/the-ghi-no-noi-dia-phat-hanh-nhanh-pvcard-sp324.html">Thẻ ghi nợ nội địa phát hành nhanh PVcard</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                    <div class="line last"></div>
+                                </div>
+                                <div class="menu-col">
+                                    <div class="noidung-menu">
+                                        <img src='https://www.pvcombank.com.vn/upload/images/productcategory/thumb/29_30mxMA93lmbt_icon_pvcombank-08.png' />
+                                        <h3>
+                                            <a href="https://www.pvcombank.com.vn/ngan-hang-dien-tu-dmsp2.html">Ngân hàng điện tử <span class="beau-has-more"></span> </a></h3>
+                                        <ul>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/ngan-hang-dien-tu/thanh-toan-bang-vi-dien-tu-moca-sp328.html">Thanh toán bằng Ví điện tử Moca</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/ngan-hang-dien-tu/pv-qrpay-sp320.html">PV-QRPay</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/ngan-hang-dien-tu/pv-mpos-sp319.html">PV-mPOS</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/ngan-hang-dien-tu/dich-vu-thanh-toan-hoa-don-tai-quay-sp315.html">Dịch vụ thanh toán hóa đơn tại Quầy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="menu-col">
+                                    <div class="noidung-menu">
+                                        <img src='https://www.pvcombank.com.vn/upload/images/productcategory/thumb/29_29p6E0ffpIHv_icon_pvcombank-06.png' />
+                                        <h3>
+                                            <a href="https://www.pvcombank.com.vn/san-pham-khac-dmsp6.html">Sản phẩm khác <span class="beau-has-more"></span> </a></h3>
+                                        <ul>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/san-pham-khac/goi-tai-khoan-tra-luong-payroll-sp304.html">Gói tài khoản trả lương – Payroll</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/san-pham-khac/tai-khoan-thanh-toan-sp215.html">Tài khoản thanh toán</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/san-pham-khac/pv-account-sp93.html">PV - Account</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/san-pham-khac/xac-nhan-mang-ngoai-te-mat-ra-nuoc-ngoai-sp41.html">Xác nhận mang ngoại tệ mặt ra nước ngoài</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="menu-col last">
+                                    <div class="noidung-menu">
+                                        <img src='https://www.pvcombank.com.vn/upload/images/productcategory/thumb/29_29mDx917wSET_icon_pvcombank-03.png' />
+                                        <h3>
+                                            <a href="https://www.pvcombank.com.vn/tiet-kiem-dmsp1.html">Tiết kiệm <span class="beau-has-more"></span> </a></h3>
+                                        <ul>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/tiet-kiem/tien-gui-trung-nien-sp327.html">Tiền gửi Trung niên</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/tiet-kiem/tien-gui-thap-sang-niem-tin-sp318.html">Tiền gửi “Thắp Sáng Niềm Tin”</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/tiet-kiem/tien-gui-dinh-ky-tra-lai-truoc-24-thang-sp305.html">Tiền gửi Định kỳ trả lãi trước 24 tháng</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/ca-nhan/tiet-kiem/tien-gui-dinh-ky-tra-lai-truoc-13-thang-sp299.html">Tiền gửi Định kỳ trả lãi trước 13 tháng</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End drop-left-->
+                            <div class="menu-col pull-right">
+                                <div id="banner-menu-block">
+                                    <img src='assets/images/200_6yiSOceDFO_banner_menu8.jpg' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End dropdown menu -->
+                </li>
+                <li class="dropdown-cat " id="beau-business">
+                    <a>Doanh nghiệp</a>
+                    <div class="mega-dropdown-menu" id="business-drop">
+                        <div class="mega-dropdown-menu-wrapper">
+                            <div class="beau-catsubview">
+                                <div class="menu-col">
+                                    <div class="noidung-menu">
+                                        <img src='https://www.pvcombank.com.vn/upload/images/productcategory/thumb/29_290nO3hGQjPf_icon_pvcombank-02.png' />
+                                        <h3>
+                                            <a href="https://www.pvcombank.com.vn/tien-gui-dmsp20.html">Tiền gửi </a></h3>
+                                        <ul>
+                                            <li><a href="https://www.pvcombank.com.vn/doanh-nghiep/tien-gui/tra-cuu-thong-tin-hop-dong-tien-gui-sp331.html">Tra cứu thông tin hợp đồng tiền gửi</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/doanh-nghiep/tien-gui/tien-gui-thanh-toan-sp32.html">Tiền gửi thanh toán</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/doanh-nghiep/tien-gui/tien-gui-co-ky-han-dai-chung-sp34.html">Tiền gửi có kỳ hạn đại chúng</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="menu-col">
+                                    <div class="noidung-menu">
+                                        <img src='https://www.pvcombank.com.vn/upload/images/productcategory/thumb/29_30cvKzcrEc8B_icon_pvcombank-13.png' />
+                                        <h3>
+                                            <a href="https://www.pvcombank.com.vn/tin-dung-dmsp10.html">Tín dụng <span class="beau-has-more"></span> </a></h3>
+                                        <ul>
+                                            <li><a href="https://www.pvcombank.com.vn/doanh-nghiep/tin-dung/cho-vay-mua-o-to-sp303.html">Cho vay mua ô tô</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/doanh-nghiep/tin-dung/pv-ready-san-pham-cho-vay-danh-cho-doanh-nghiep-nho-sp302.html">PV Ready – Sản phẩm cho vay dành cho Doanh nghiệp nhỏ</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/doanh-nghiep/tin-dung/cho-vay-vnd-lai-suat-uu-dai-pv-fix-sp84.html">Cho vay VND lãi suất ưu đãi PV Fix</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/doanh-nghiep/tin-dung/thau-chi-tai-khoan-sp83.html">Thấu chi tài khoản</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="menu-col last">
+                                    <div class="noidung-menu">
+                                        <img src='https://www.pvcombank.com.vn/upload/images/productcategory/thumb/29_29LZJCe0TVAg_icon_pvcombank-07.png' />
+                                        <h3>
+                                            <a href="https://www.pvcombank.com.vn/tai-tro-thuong-mai-dmsp12.html">Tài trợ thương mại <span class="beau-has-more"></span> </a></h3>
+                                        <ul>
+                                            <li><a href="https://www.pvcombank.com.vn/doanh-nghiep/tai-tro-thuong-mai/xac-thuc-chung-thu-bao-lanh-sp311.html">Xác thực chứng thư bảo lãnh</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/doanh-nghiep/tai-tro-thuong-mai/bao-lanh-cho-nha-thau-cua-vietsovpetro-sp221.html">Bảo lãnh cho nhà thầu của VietsovPetro</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/doanh-nghiep/tai-tro-thuong-mai/nho-thu-xuat-khau-sp99.html">Nhờ thu xuất khẩu</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/doanh-nghiep/tai-tro-thuong-mai/nho-thu-nhap-khau-sp43.html">Nhờ thu nhập khẩu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                    <div class="line last"></div>
+                                </div>
+                                <div class="menu-col">
+                                    <div class="noidung-menu">
+                                        <img src='https://www.pvcombank.com.vn/upload/images/productcategory/thumb/30_305bgNxJH5VQ_icon_pvcombank-11.png' />
+                                        <h3>
+                                            <a href="https://www.pvcombank.com.vn/san-pham-ngoai-hoi-dmsp9.html">Sản phẩm ngoại hối <span class="beau-has-more"></span> </a></h3>
+                                        <ul>
+                                            <li><a href="https://www.pvcombank.com.vn/doanh-nghiep/san-pham-ngoai-hoi/giao-dich-ngoai-hoi-hoan-doi-sp57.html">Giao dịch ngoại hối hoán đổi</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/doanh-nghiep/san-pham-ngoai-hoi/giao-dich-hoan-doi-lai-suat-sp55.html">Giao dịch hoán đổi lãi suất</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/doanh-nghiep/san-pham-ngoai-hoi/giao-dich-quyen-chon-tien-te-sp54.html">Giao dịch quyền chọn tiền tệ</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/doanh-nghiep/san-pham-ngoai-hoi/giao-dich-mua-ban-ngoai-te-ky-han-sp53.html">Giao dịch mua bán ngoại tệ kỳ hạn</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="menu-col">
+                                    <div class="noidung-menu">
+                                        <img src='https://www.pvcombank.com.vn/upload/images/productcategory/thumb/29_305fYauNxFJ0_icon_pvcombank-12.png' />
+                                        <h3>
+                                            <a href="https://www.pvcombank.com.vn/dich-vu-tai-khoan-dmsp15.html">Dịch vụ tài khoản <span class="beau-has-more"></span> </a></h3>
+                                        <ul>
+                                            <li><a href="https://www.pvcombank.com.vn/doanh-nghiep/dich-vu-tai-khoan/dich-vu-nop-thue-dien-tu-sp220.html">Dịch vụ nộp thuế điện tử</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/doanh-nghiep/dich-vu-tai-khoan/nhan-tien-quoc-te-chuyen-den-sp71.html">Nhận tiền quốc tế chuyển đến</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/doanh-nghiep/dich-vu-tai-khoan/chuyen-tien-quoc-te-sp70.html">Chuyển tiền quốc tế</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/doanh-nghiep/dich-vu-tai-khoan/sms-banking-sp69.html">SMS Banking</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="menu-col last">
+                                    <div class="noidung-menu">
+                                        <img src='https://www.pvcombank.com.vn/upload/images/productcategory/thumb/29_29UzoIaT3LhR_icon_pvcombank-06.png' />
+                                        <h3>
+                                            <a href="https://www.pvcombank.com.vn/san-pham-khac-dmsp11.html">Sản phẩm khác </a></h3>
+                                        <ul>
+                                            <li><a href="https://www.pvcombank.com.vn/doanh-nghiep/san-pham-khac/xac-nhan-thanh-toan-qua-ngan-hang-sp162.html">Xác nhận thanh toán qua ngân hàng</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/doanh-nghiep/san-pham-khac/bao-thanh-toan-sp40.html">Bao thanh toán</a></li>
+                                            <li><a href="https://www.pvcombank.com.vn/doanh-nghiep/san-pham-khac/thu-xep-von-sp38.html">Thu xếp vốn</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End dropleft-->
+                            <div class="menu-col pull-right">
+                                <div id="banner-menu-block">
+                                    <img src='assets/images/200_diggSW562F_banner_menu4.jpg' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End dropdown menu -->
+                </li>
+                <li><a href="https://www.pvcombank.com.vn/gioi-thieu-ve-pvcombank.html">Về chúng tôi</a></li>
+                <li><a href="https://www.pvcombank.com.vn/tin-tuc.html">Tin tức</a></li>
+                <li><a href="https://www.pvcombank.com.vn/co-dong.html">Quan hệ cổ đông</a></li>
+                <li class="hiden-menu"><a href="https://www.pvcombank.com.vn/tinh-lai-suat-va-chuyen-doi-ti-gia">Tính lãi</a></li>
+                <li class="hiden-menu"><a href="https://www.pvcombank.com.vn/bieu-lai-suat.html">Lãi suất</a></li>
+                <li class="hiden-menu"><a href="https://www.pvcombank.com.vn/mang-luoi.html">Mạng lưới</a></li>
+                <li class="hiden-menu"><a href="http://tuyendung.pvcombank.com.vn">Tuyển dụng</a>
+                </li>
+                <li class="hiden-menu"><a href="https://www.pvcombank.com.vn/lien-he.html">Liên hệ</a></li>
+                <li class="beau-fix-tablet-mobile">&nbsp;</li>
+            </ul>
+        </div>
+    </header>
+    <div id="pvc-card-instruction">
+        <div id="pvc-card-instruction-wrapper">
+            <div class="pvc-card-inner">
+                <div class="card-top-page">
+                    <div class="container">
+                        <h2>Hướng dẫn sử dụng</h2>
+                        <p class="card-description">GÓI THẺ TÍN DỤNG TIÊU DÙNG THÔNG MINH SMART CREDIT</p>
+                    </div>
+                </div>
+                <div class="card-bottom-page">
+                    <div class="card-col col-left">
+                        <div class="card-banner">
+                            <img src="assets/images/card-banner.png" alt="Banner thẻ do PVcomBank cung cấp" class="dl-pc">
+                            <img src="assets/images/card-banner-sp.png" alt="Banner thẻ do PVcomBank cung cấp" class="dl-sp">
+                        </div>
+                        <div class="safe-usage">
+                            <h3 class="card-title"><a href="#su-dung-an-toan">SỬ DỤNG THẺ <span>AN TOÀN</span></a></h3>
+                            <ul>
+                                <li data-popup-open="popup-lock" class="btn-lock"><img src="assets/images/ic-lock.png" alt="lock"><span>Mở/Khoá<br />Thẻ tạm thời</span></li>
+                                <li data-popup-open="popup-payment" class="btn-payment"><img src="assets/images/ic-payment.png" alt="payment"><span>Mở/Đóng tính năng<br />Thanh toán trực tuyến</span></li>
+                                <li data-popup-open="popup-safe" class="btn-safe"><img src="assets/images/ic-safe.png" alt="safe"><span>An toàn<br />Khi thực hiện giao dịch</span></li>
+                                <li data-popup-open="popup-expired" class="btn-expired"><img src="assets/images/ic-expired.png" alt="expired"><span>Khi thẻ hết hạn</span></li>
+                            </ul>
+                        </div>
+                        <div class="card-payment">
+                            <h3 class="card-title"><a href="#mien-lai-toi-da">TIÊU TRƯỚC, TRẢ SAU, <span>MIỄN LÃI TỐI ĐA 55 NGÀY</span></a></h3>
+                            <p>Toàn bộ giao dịch của Quý khách sẽ được miễn lãi nếu được hoàn trả cho Ngân hàng trước ngày đến hạn thanh toán.<br />Để tận dụng thời gian miễn lãi tối đa 55 ngày, Quý khách cần lưu ý thanh toán toàn bộ dư nợ sao kê trước ngày đến hạn thanh toán như ví dụ sau:</p>
+                            <div class="roadmap">
+                                <div class="row timeline dl-pc">
+                                    <ul class="ba-item col-10">
+                                        <li><img src="assets/images/icon-01.png" alt="Ngày 25/04 Bắt đầu kỳ sao kê"><span>Ngày 25/04<br />Bắt đầu kỳ sao kê</span></li>
+                                        <li><img src="assets/images/icon-02.png" alt="Ngày 30/04 Mua sắm online: 1.000.000 VNĐ"><span>Ngày 30/04<br />Mua sắm online: 1.000.000 VNĐ</span></li>
+                                        <li><img src="assets/images/icon-03.png" alt="Ngày 05/05 Ăn uống: 1.500.000 VNĐ"><span>Ngày 05/05<br />Ăn uống: 1.500.000 VNĐ</span></li>
+                                        <hr>
+                                    </ul>
+                                    <div class="col-2">
+                                        <div class="corner left-bottom"></div>
+                                    </div>
+                                </div>
+                                <div class="row timeline dl-pc">
+                                    <div class="col-2">
+                                        <div class="corner right-bottom"></div>
+                                    </div>
+                                    <ul class="hai-item col-8">
+                                        <li><img src="assets/images/icon-04.png" alt="Ngày 20/05 Rút tiền mặt: 2.500.000 VNĐ"><span>Ngày 20/05<br />Rút tiền mặt: 2.500.000 VNĐ</span></li>
+                                        <li><img src="assets/images/icon-05.png" alt="Ngày 15/05 Du lịch: 6.000.000 VNĐ"><span>Ngày 15/05<br />Du lịch: 6.000.000 VNĐ</span></li>
+                                        <hr>
+                                    </ul>
+                                    <div class="col-2">
+                                        <div class="corner top-left"></div>
+                                    </div>
+                                </div>
+                                <div class="row timeline dl-pc">
+                                    <div class="col-2">
+                                        <div class="corner top-right"></div>
+                                    </div>
+                                    <ul class="hai-item hai-flex col-9">
+                                        <li><img src="assets/images/icon-07.png" alt="Ngày 25/05 Chốt sao kê"><span>Ngày 25/05<br />Chốt sao kê</span></li>
+                                        <li><img src="assets/images/icon-08.png" alt="Ngày 20/06: Đến hạn thanh toán Tổng dư nợ sao kê: 11.000.000 VNĐ"><span>Ngày 20/06: Đến hạn thanh toán<br />Tổng dư nợ sao kê: 11.000.000 VNĐ</span></li>
+                                        <hr>
+                                    </ul>
+                                    <div class="col-1"></div>
+                                </div>
+                                <div class="roadmap-sp dl-sp"><img src="assets/images/roadmap-sp.png" alt="roadmap"></div>
+                            </div>
+                            <img src="assets/images/sao-ke-smart-credit.jpg" alt="sao kê smart credit">
+                            <div class="note">
+                                <h4><strong>Chú thích:</strong></h4>
+                                <ul class="note-list">
+                                    <li class="note-item" data-num="1"><strong>Ngày sao kê:</strong> là một ngày trong tháng Chủ thẻ đã lựa chọn để nhận sao kê theo quy định của PVcomBank.</li>
+                                    <li class="note-item" data-num="2"><strong>Dư nợ kỳ trước:</strong> là tổng dư nợ thẻ tín dụng của Chủ thẻ vào cuối ngày sao kê kỳ trước.</li>
+                                    <li class="note-item" data-num="3"><strong>Dư nợ hiện tại:</strong> là tổng dư nợ thẻ tín dụng của Chủ thẻ vào cuối ngày sao kê kỳ này.</li>
+                                    <li class="note-item" data-num="4"><strong>Thanh toán tối thiểu:</strong> là khoản tiền tối thiểu Chủ thẻ phải thanh toán cho PVcomBank.</li>
+                                    <li class="note-item" data-num="5"><strong>Ngày giao dịch:</strong> là ngày Chủ thẻ thực hiện giao dịch.</li>
+                                    <li class="note-item" data-num="6"><strong>Ngày hệ thống: </strong>là ngày giá trị giao dịch được hạch toán vào tài khoản thẻ tín dụng.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="discover">
+                            <h3 class="card-title"><a href="#uu-dai-chi-tieu">KHÁM PHÁ THẾ GIỚI <span>ƯU ĐÃI PVCOMBANK PLENTII</span></a></h3>
+                            <p>Tận hưởng chương trình <strong>PVcomBank Plentii</strong> ưu đãi lên tới 50% tại nhiều nhà hàng, khách sạn,... trong hệ thống đối tác của PVcomBank. </p>
+                            <a href="https://card.pvcombank.com.vn/pvcombank-plentii.html" class="read-more">Xem chi tiết</a>
+                        </div>
+                        <div class="discover">
+                            <h3 class="card-title"><a href="#dieu-khoan-dieu-kien">ĐIỀU KHOẢN, ĐIỀU KIỆN <span>PHÁT HÀNH VÀ SỬ DỤNG</span></a></h3>
+                            <p>Vui lòng đọc kỹ điều khoản, điều kiện phát hành và sử dụng Gói thẻ tín dụng tiêu dùng thông minh Smart Credit.</p>
+                            <a href="http://cardmedia.pvcombank.com.vn/WebTools/WebCMS/files/20190819042914_DKSD_SmartCredit.pdf?utm_source=website&utm_campaign=card_instruction" class="read-more">Xem chi tiết</a>
+                        </div>
+                        <p class="refer">Tham khảo thêm <a href="#">Biểu phí sử dụng</a></p>
+                    </div>
+                    <div class="card-col col-right">
+                        <div class="sidebar-col">
+                            <div class="title-sidebar">Dịch vụ khác</div>
+                            <ul class="list-link">
+                                <li><a href="https://www.pvcombank.com.vn/ca-nhan/san-pham-the/the-tin-dung-quoc-te-pvcombank-mastercard-platinum-sp322.html" title="Thẻ tín dụng Quốc tế PVcomBank Mastercard Platinum">Thẻ tín dụng Quốc tế PVcomBank Mastercard Platinum</a></li>
+                                <li><a href="https://www.pvcombank.com.vn/ca-nhan/san-pham-the/the-tin-dung-quoc-te-pvcombank-mastercard-gold-sp326.html" title="Thẻ tín dụng Quốc tế PVcomBank Mastercard Gold">Thẻ tín dụng Quốc tế PVcomBank Mastercard Gold</a></li>
+                                <li><a href="https://www.pvcombank.com.vn/ca-nhan/san-pham-the/the-tin-dung-quoc-te-pvcombank-mastercard-smart-sp325.html" title="Thẻ tín dụng Quốc tế PVcomBank Mastercard Smart">Thẻ tín dụng Quốc tế PVcomBank Mastercard Smart</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-col">
+                            <div class="title-sidebar">Liên kết nhanh</div>
+                            <ul class="list-link">
+                                <li><a href="https://ibanking.pvcombank.com.vn/WebIB/MainIB" title="Ngân hàng điện tử">Ngân hàng điện tử</a></li>
+                                <li><a href="https://www.pvcombank.com.vn/ti-gia-ngoai-te.html" title="Tỷ giá">Tỷ giá</a></li>
+                                <li><a href="https://www.pvcombank.com.vn/bieu-lai-suat.html" title="Lãi suất">Lãi suất</a></li>
+                                <li><a href="https://www.pvcombank.com.vn/tinh-lai-suat-va-chuyen-doi-ti-gia" title="Tính lãi">Tính lãi</a></li>
+                                <li><a href="https://www.pvcombank.com.vn/mang-luoi.html" title="Mạng lưới">Mạng lưới</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-modal popup-lock" data-popup="popup-lock">
+                    <div class="popup-inner">
+                        <h4 class="popup-title">NHỮNG PHƯƠNG THỨC MỞ/KHOÁ THẺ TẠM THỜI</h4>
+                        <div class="popup-content">
+                            <ul class="list-method">
+                                <li class="item-method">
+                                    <img src="assets/images/ic-safe-sms.png" alt="safe sms">
+                                    <div class="tlt-method"><strong>SMS</strong></div>
+                                    <span>Soạn PVB LOCK/UNLOCK XXXX => 6089<br />XXXX là 4 số cuối của thẻ<br />* Chỉ áp dụng cho Thẻ tín dụng Quốc tế</span>
+                                </li>
+                                <li class="item-method">
+                                    <img src="assets/images/ic-safe-app.png" alt="safe app">
+                                    <div class="tlt-method"><strong>Ứng dụng PVcomBank Plentii</strong></div>
+                                    <span>Chọn tính năng <strong>Quản lý Thẻ</strong><br />=> <strong>Mở/Đóng</strong> thẻ tạm thời<br />* Chỉ áp dụng cho Thẻ tín dụng Quốc tế</span>
+                                </li>
+                                <li class="item-method">
+                                    <img src="assets/images/ic-safe-call.png" alt="safe call">
+                                    <div class="tlt-method"><strong>Hotline 24/7</strong></div>
+                                    <span><strong>1900 5555 92</strong> (trong nước)<br /><strong>+8424355388002</strong> (từ nước ngoài)</span>
+                                </li>
+                                <li class="item-method">
+                                    <img src="assets/images/ic-safe-branch.png" alt="safe branch">                                    
+                                    <div class="tlt-method"><strong>CN/PGD PVcomBank</strong></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="popup-close" data-popup-close="popup-lock" href="#"><img src="assets/images/ic-close.png"></a>
+                    </div>
+                </div>
+                <div class="popup-modal popup-payment" data-popup="popup-payment">
+                    <div class="popup-inner">
+                        <h4 class="popup-title">NHỮNG PHƯƠNG THỨC MỞ/KHOÁ THANH TOÁN TRỰC TUYẾN</h4>
+                        <div class="popup-content">
+                            <ul class="list-method">
+                                <li class="item-method">
+                                    <img src="assets/images/ic-safe-sms.png" alt="safe sms">
+                                    <div class="tlt-method"><strong>SMS</strong></div>
+                                    <span>Soạn PVB ECOMON/ECOMOFF XXXX => 6089<br />XXXX là 4 số cuối của thẻ<br />* Chỉ áp dụng cho Thẻ tín dụng Quốc tế</span>
+                                </li>
+                                <li class="item-method">
+                                    <img src="assets/images/ic-safe-app.png" alt="safe app">
+                                    <div class="tlt-method"><strong>Ứng dụng PVcomBank Plentii</strong></div>
+                                    <span>Chọn tính năng <strong>Quản lý Thẻ</strong><br />=> <strong>Mở/Đóng</strong> tính năng thanh toán trực tuyến<br />* Chỉ áp dụng cho Thẻ tín dụng Quốc tế</span>
+                                </li>
+                                <li class="item-method">
+                                    <img src="assets/images/ic-safe-call.png" alt="safe call">
+                                    <div class="tlt-method"><strong>Hotline 24/7</strong></div>
+                                    <span><strong>1900 5555 92</strong> (trong nước)<br /><strong>+8424355388002</strong> (từ nước ngoài)</span>
+                                </li>
+                                <li class="item-method">
+                                    <img src="assets/images/ic-safe-branch.png" alt="safe branch">                                    
+                                    <div class="tlt-method"><strong>CN/PGD PVcomBank</strong></div>
+                                </li>
+                            </ul>
+                            <div class="notice">Bảo vệ thông tin thẻ, không tiết lộ mã PIN, số CVC2 hoặc cho người khác mượn thẻ. <br />Giữ các giấy tờ liên quan tới quá trình sử dung: Biên lai thanh toán hang hoá, rút tiền mặt,…</div>
+                        </div>
+                        <a class="popup-close" data-popup-close="popup-payment" href="#"><img src="assets/images/ic-close.png"></a>
+                    </div>
+                </div>
+                <div class="popup-modal popup-safe" data-popup="popup-safe">
+                    <div class="popup-inner">
+                        <h4 class="popup-title">AN TOÀN KHI THỰC HIỆN GIAO DỊCH QUA THẺ</h4>
+                        <div class="popup-content">
+                            <ul class="list-safe">
+                                <li class="item-safe">
+                                    <div class="item-img"><img src="assets/images/ic-an-toan.png" alt="Thanh toán tại các đơn vị chấp nhận thẻ"></div>
+                                    <div class="tlt-safe"><strong>Thanh toán tại các đơn vị chấp nhận thẻ</strong></div>
+                                    <span>Không để nhân viên thu ngân cầm thẻ ra khỏi tầm mắt</span>
+                                </li>
+                                <li class="item-safe">
+                                    <div class="item-img"><img src="assets/images/ic-mua-sam-online.png" alt="Thanh toán Online"></div>
+                                    <div class="tlt-safe"><strong>Thanh toán Online</strong></div>
+                                    <span>Lựa chọn website có uy tín để tránh rủi ro<br />Kiểm tra chính xác các thông tin trước khi chấp nhận thanh toán</span>
+                                </li>
+                                <li class="item-safe">
+                                    <div class="item-img"><img src="assets/images/ic-quet-the.png" alt="Khi rút tiền mặt tại ATM"></div>
+                                    <div class="tlt-safe"><strong>Khi rút tiền mặt tại ATM</strong></div>
+                                    <span>Nhập đúng số PIN (Nhập sai số PIN 3 lần thẻ sẽ bị khoá)<br />Khi thẻ bị khoá, lập tức đến CN/PGD PVcomBank gần nhất hoặc gọi Hotline: 1900555592 (nội địa)/ +842435538800 (từ nước ngoài) để được hỗ trợ</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="popup-close" data-popup-close="popup-safe" href="#"><img src="assets/images/ic-close.png"></a>
+                    </div>
+                </div>
+                <div class="popup-modal popup-expired" data-popup="popup-expired">
+                    <div class="popup-inner">
+                        <h4 class="popup-title">AN TOÀN KHI THẺ HẾT HẠN</h4>
+                        <div class="popup-content">
+                            <ul class="list-expired">
+                                <li class="item-expired">
+                                    <div class="item-img"><img src="assets/images/ic-cutting-card.png" alt="Huỷ bỏ thẻ ngay lập tức bằng cách cắt đôi Dải băng từ/Chip"></div>
+                                    <div class="tlt-expired"><strong>Huỷ bỏ thẻ ngay lập tức bằng cách<br />cắt đôi Dải băng từ/Chip</strong></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="popup-close" data-popup-close="popup-expired" href="#"><img src="assets/images/ic-close.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="beau-toolbox-link">
+            <ul class="tool-link">
+                <li class="e-banking"><a href="https://ibanking.pvcombank.com.vn/WebIB/MainIB">Ngân hàng điện tử</a></li>
+                <li class="dolar-vnd"><a href="https://www.pvcombank.com.vn/ti-gia-ngoai-te.html">Tỉ giá</a></li>
+                <li class="population"><a href="https://www.pvcombank.com.vn/bieu-lai-suat.html">Lãi suất</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="frontend-top-footer">
+        <div id="frontend-footer-wrapper">
+            <div class="footer-col">
+                <h2>Cá nhân</h2>
+                <ul>
+                    <li><a href="https://www.pvcombank.com.vn/tin-dung-dmsp3.html">Tín dụng</a></li>
+                    <li><a href="https://www.pvcombank.com.vn/dich-vu-chuyen-tien-dmsp5.html">Dịch vụ chuyển tiền</a></li>
+                    <li><a href="https://www.pvcombank.com.vn/san-pham-the-dmsp4.html">Sản phẩm thẻ</a></li>
+                    <li><a href="https://www.pvcombank.com.vn/ngan-hang-dien-tu-dmsp2.html">Ngân hàng điện tử</a></li>
+                    <li><a href="https://www.pvcombank.com.vn/san-pham-khac-dmsp6.html">Sản phẩm khác</a></li>
+                    <li><a href="https://www.pvcombank.com.vn/tiet-kiem-dmsp1.html">Tiết kiệm</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h2>Doanh nghiệp</h2>
+                <ul>
+                    <li><a href="https://www.pvcombank.com.vn/tien-gui-dmsp20.html">Tiền gửi</a></li>
+                    <li><a href="https://www.pvcombank.com.vn/tin-dung-dmsp10.html">Tín dụng</a></li>
+                    <li><a href="https://www.pvcombank.com.vn/tai-tro-thuong-mai-dmsp12.html">Tài trợ thương mại</a></li>
+                    <li><a href="https://www.pvcombank.com.vn/san-pham-ngoai-hoi-dmsp9.html">Sản phẩm ngoại hối</a></li>
+                    <li><a href="https://www.pvcombank.com.vn/dich-vu-tai-khoan-dmsp15.html">Dịch vụ tài khoản</a></li>
+                    <li><a href="https://www.pvcombank.com.vn/san-pham-khac-dmsp11.html">Sản phẩm khác</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h2>Về PVcomBank</h2>
+                <ul>
+                    <li><a href="https://www.pvcombank.com.vn/gioi-thieu-ve-pvcombank.html">Giới thiệu</a></li>
+                    <li><a href="https://www.pvcombank.com.vn/co-cau-quan-tri.html">Cơ cấu quản trị</a></li>
+                    <li><a href="https://www.pvcombank.com.vn/co-dong.html">Quan hệ cổ đông</a></li>
+                    <li><a href="https://www.pvcombank.com.vn/mang-luoi.html">Mạng lưới</a></li>
+                    <li><a href="http://tuyendung.pvcombank.com.vn">Tuyển dụng</a></li>
+                    <li><a href="https://www.pvcombank.com.vn/lien-he.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h2>Liên kết nhanh</h2>
+                <ul>
+                    <li><a href="https://ibanking.pvcombank.com.vn/WebIB/MainIB" target="_blank">Ngân hàng điện tử</a></li>
+                    <li><a href="http://card.pvcombank.com.vn/" target="_blank">Sản phẩm thẻ</a></li>
+                    <!--<li><a href="https://www.pvcombank.com.vn/ti-gia-ngoai-te.html">Tỉ giá</a></li>-->
+                    <!--Change 04.10.2017-->
+                    <li><a href="https://www.pvcombank.com.vn/bieu-lai-suat.html">Lãi suất</a></li>
+                    <li><a href="https://www.pvcombank.com.vn/tinh-lai-suat-va-chuyen-doi-ti-gia">Tính lãi</a></li>
+                    <li><a href="https://www.pvcombank.com.vn/tin-tuc/tin-pvcombank/bieu-phi-dich-vu-qua-he-thong-ngan-hang-tmcp-dai-chung-viet-nam-pvcombank-555.html">Biểu phí</a></li>
+                    <li><a href="https://ibanking.pvcombank.com.vn/WebIB/tra-cuu-bao-lanh" target="_blank">Xác thực chứng thư bảo lãnh online</a></li>
+                    <!--Add 04.10.2017-->
+                </ul>
+            </div>
+        </div>
+    </div><!-- End frontend top footer -->
+    <footer id="backend-footer" class="clearfix">
+        <div id="footer-wrapper">
+            <div id="footer-menu" class="clearfix">
+                <ul>
+                    <li><a href="https://www.pvcombank.com.vn/so-do-trang.html">Sơ đồ trang</a></li>
+                    <li><a href="https://www.pvcombank.com.vn/lien-he.html">Liên hệ</a></li>
+                    <li><a target="_blank" href="https://mail.pvcombank.com.vn/owa">Webmail</a></li>
+                </ul>
+            </div>
+            <p id="banquyen">Bản quyền © 2014 thuộc về Ngân hàng TMCP Đại Chúng Việt Nam (PVcomBank).</p>
+        </div>
+    </footer>
+</body>
+
+</html>
