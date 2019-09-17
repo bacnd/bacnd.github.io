@@ -13,9 +13,41 @@ $(document).ready(function() {
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1,
-        centerMode: true,
-        prevArrow:"<div class='slick-prev'><img class='a-left control-c prev' src='"+url+"/assets/images/commons/arrow-left.png'></div>",
-        nextArrow:"<div class='slick-next'><img class='a-right control-c next' src='"+url+"/assets/images/commons/arrow-right.png'></div>"
+        // centerMode: true,
+        prevArrow:"<div class='slick-prev'></div>",
+        nextArrow:"<div class='slick-next'></div>",
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+            }
+        }, {
+            breakpoint: 480,
+                settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        }]
+    });
+
+    $('.tintuc__list').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        mobileFirst: true,
+        arrows: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: 'unslick'
+        }]
+    });
+
+    $(window).on('resize', function() {
+        $('.tintuc__list').slick('resize');
     });
 
     $('#scrollUp').click(function(e){
@@ -28,9 +60,10 @@ $(document).ready(function() {
     $('#navLine').click(function() {
         $(this).toggleClass('active');
         $('.hd-menu').toggleClass('nav-active');
+        $('body').toggleClass('show-menu');
     });
 
-    $('.ft-lienket-title').click(function() {
+    $('.ft-lienket-title, .arrow-menu').click(function() {
         $(this).toggleClass('active');
         $(this).next().toggleClass('active');
     });

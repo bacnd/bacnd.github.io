@@ -74,6 +74,9 @@ footer {
 						@media screen and (max-width: $screen-sp) {
 							font-weight: normal;
 						}
+						@media screen and (max-width: 375px) {
+							font-size: 12px;
+						}
 						a {
 							color: $clr-asau;
 						}
@@ -144,6 +147,30 @@ footer {
 	    			font-size: 14px;
 	    			font-weight: 600;
 	    			color: $clr-white;
+	    			@media screen and (max-width: $screen-sp) {
+	    				position: relative;
+	    				&:after {
+	    					content: '';
+	    					position: absolute;
+	    					background: url('../images/commons/ic-arrow-down.png') center no-repeat;
+	    					width: 11px;
+	    					height: 6px;
+	    					top: 0;
+	    					bottom: 0;
+	    					margin: auto;
+	    					right: 2px;
+	    					@include transition;
+	    				}
+	    				&.active {
+	    					&:after {
+		    					-webkit-transform: rotate(180deg);
+								-moz-transform: rotate(180deg);
+								-o-transform: rotate(180deg);
+								-ms-transform: rotate(180deg);
+								transform: rotate(180deg);
+		    				}
+	    				}
+	    			}
 	    		}
 	    		ul {
 	    			@media screen and (max-width: $screen-sp) {

@@ -14,12 +14,21 @@
 	}
 }
 .main-img {
+	@media screen and (max-width: $screen-sp) {
+		height: 383px;
+	}
 	&__bg {
 		position: relative;
+		@media screen and (max-width: $screen-sp) {
+			height: 100%;
+			.overlay {
+				height: 100%;
+			}
+		}
 		img {
 			width: 100%; 
             height: 100%; 
-            object-fit: contain;
+            object-fit: cover;
 		}
 	}
 	&__caption {
@@ -50,7 +59,7 @@
 			line-height: 1.36;
 			letter-spacing: normal;
 			text-align: center;
-			margin-bottom: 40px;
+			margin-bottom: 70px;
 		}
 	}
 	.btn-readmore {
@@ -115,6 +124,7 @@
 	padding-top: 40px;
 	@media screen and (max-width: $screen-sp) {
 		padding-top: 28px;
+	    padding-bottom: 41px;
 	}
 	&__content {
 		.title-block {
@@ -124,6 +134,9 @@
 	&__list {
 		margin-top: 42px;
 		padding-bottom: 75px;
+		@media screen and (max-width: $screen-sp) {
+			padding-bottom: 0;
+		}
 		.slick-arrow {
 			position: absolute;
 			bottom: 0;
@@ -143,24 +156,78 @@
 		    display: flex !important;
 		    align-items: center;
 		    justify-content: center;
+		    z-index: 2;
+		    @media screen and (max-width: $screen-sp) {
+		    	top: 0;
+		    	background: none;
+		    	width: 31px;
+		    	height: 25px;
+		    }
+		    &:after {
+		    	content: '';
+		    	width: 23px;
+		    	height: 8px;
+		    	@media screen and (max-width: $screen-sp) {
+			    	width: 11px;
+			    	height: 25px;
+			    }
+		    }
 		}
 		.slick-prev {
 			right: 46px;
 			// width: 100%;
+			@media screen and (max-width: $screen-sp) {
+				right: initial;
+				left: 0;
+			}
+			&:after {
+				background: url('../images/home/arrow-left.png') no-repeat;
+				@media screen and (max-width: $screen-sp) {
+					background: url('../images/home/arrow-left-sp.png') no-repeat;
+				}
+			}
+			&:hover {
+				&:after {
+					background: url('../images/home/arrow-left-hover.png') no-repeat;
+					@media screen and (max-width: $screen-sp) {
+						background: url('../images/home/arrow-left-sp-hover.png') no-repeat;
+					}
+				}
+			}
 		}
 		.slick-next {
 			// width: 100%;
 			padding-left: 24px;
-			&:before {
-				content: '';
-				border-left: 1px solid $clr-abay;
-			    position: absolute;
-			    left: 0;
-			    top: 0;
-			    bottom: 0;
-			    margin: auto;
-			    height: 18px;
-			    margin-left: 12px;
+			@media screen and (max-width: $screen-sp) {
+				right: 0;
+				padding-left: 0;
+			}
+			&:after {
+				background: url('../images/home/arrow-right.png') no-repeat;
+				@media screen and (max-width: $screen-sp) {
+					background: url('../images/home/arrow-right-sp.png') no-repeat;
+				}
+			}
+			&:hover {
+				&:after {
+					background: url('../images/home/arrow-right-hover.png') no-repeat;
+					@media screen and (max-width: $screen-sp) {
+						background: url('../images/home/arrow-right-sp-hover.png') no-repeat;
+					}
+				}
+			}
+			@media screen and (min-width: 769px) {
+				&:before {
+					content: '';
+					border-left: 1px solid $clr-abay;
+				    position: absolute;
+				    left: 0;
+				    top: 0;
+				    bottom: 0;
+				    margin: auto;
+				    height: 18px;
+				    margin-left: 12px;
+				}
 			}
 		}
 	}
@@ -203,7 +270,7 @@
 	}
 	&__list {
 		@include dlflex;
-		align-items: center;
+		align-items: end;
 	   	justify-content: center;
 	   	margin-top: 47px;
 	   	@media screen and (max-width: $screen-sp) {
@@ -237,8 +304,8 @@
 					background: $clr-asau;
 					color: $clr-white;
 					border-radius: 5px;
-					margin-top: 3px;
-					padding-left: 38px;
+					margin-top: 5px;
+					padding-left: 43px;
 					font-size: 14px;
 					letter-spacing: normal;
 				}
@@ -252,30 +319,88 @@
 					bottom: 0;
 					margin: auto;
 					right: 32px;
+					@media screen and (max-width: 1024px) and (min-width: 769px) {
+						content: none;
+					}
+					@media screen and (max-width: $screen-sp) {
+						background: url('../images/home/cta-sp.png') center no-repeat;
+						width: 19px;
+						height: 7px;
+						right: 18px;
+					}
 				}
 	   		}
 	   		&:hover {
 	   			&:before {
 	   				content: '';
 	   				position: absolute;
-	   				background: url('../images/home/hover.png') 0 no-repeat;
-	   				top: 8px;
-    				left: 8px;
-	   				width: 100%;
+	   				// background: url('../images/home/hover.png') 0 no-repeat;
+	   				border: 2px solid #a66636;
+	   				top: 13px;
+    				left: 11px;
+				    /* max-width: 316px; */
+				    /* max-width: 23.2vw; */
+				    width: 85.3%;
+	   				max-height: 279px;
 	   				height: 100%;
-					@media screen and (max-width: $screen-sp) {
+					@media screen and (max-width: 1024px) {
 						content: none;
 					}
 	   			}
-	   			.chuyengia__item__title {
-					&:after {
-						background: url('../images/home/cta-hover.png') no-repeat;
+	   			@media screen and (min-width: 769px) {
+		   			.chuyengia__item__title {
+						&:after {
+							background: url('../images/home/cta-hover.png') no-repeat;
+						}
+		   			}
+		   		}
+	   		}
+	   		@media screen and (max-width: $screen-sp) {
+		   		& + .chuyengia__item {
+		   			margin-top: 37px;
+		   		}
+		   	}
+			@media screen and (max-width: $screen-sp) {
+				.chuyengia__item__title {
+					&:before {
+						content: '';
+						position: absolute;
+						width: 17px;
+						height: 17px;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+						left: 15px;
 					}
-	   			}
-	   		}
-	   		& + .chuyengia__item {
-	   			margin-top: 37px;
-	   		}
+				}
+			}
+			&:nth-child(1) {
+				@media screen and (max-width: $screen-sp) {
+					.chuyengia__item__title {
+						&:before {
+							background: url('../images/home/ic-home.png') center no-repeat;
+						}
+					}
+				}
+			}
+			&:nth-child(2) {
+				@media screen and (max-width: $screen-sp) {
+					.chuyengia__item__title {
+						&:before {
+							background: url('../images/home/ic-compare.png') center no-repeat;
+						}
+					}
+				}
+			}
+			&:nth-child(3) {
+				@media screen and (max-width: $screen-sp) {
+					.chuyengia__item__title {
+						&:before {
+							background: url('../images/home/ic-review.png') center no-repeat;
+						}
+					}
+				}
+			}
 	   	}
 	}
 }
@@ -410,6 +535,7 @@
 	max-width: 1366px;
 	width: 100%;
 	margin: auto;
+	display: table;
 	@media screen and (max-width: $screen-sp) {
 		@include dlflex;
 		flex-direction: column;
@@ -419,6 +545,9 @@
 		max-width: 425px;
 		margin-left: 125px;
 		float: left;
+		@media screen and (max-width: 1300px) and (min-width: 769px) {
+			margin-left: 0;
+		}
 		@media screen and (max-width: $screen-sp) {
 			float: none;
 			margin: 0;
@@ -430,7 +559,7 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			position: relative;
-			top: -50px;
+			top: -45px;
 			z-index: 2;
 			background: $clr-white;
 			border-top-left-radius: 20px;
@@ -472,6 +601,10 @@
 	}
 	.img-lf {
 		float: right;
+		@media screen and (max-width: 1300px) and (min-width: 769px) {
+			width: 90%;
+			float: initial;
+		}
 		@media screen and (max-width: $screen-sp) {
 			position: relative;
 			z-index: 1;
@@ -488,6 +621,7 @@
 		padding-top: 40px;
 		@media screen and (max-width: $screen-sp) {
 			font-weight: 600;
+			padding-top: 28px;
 		}
 	}
 	&__description {
@@ -505,9 +639,18 @@
 		justify-content: space-between;
 		margin-bottom: 73px;
 	    margin-top: 53px;
+	    @media screen and (max-width: $screen-sp) {
+	    	margin-bottom: 60px;
+	    	margin-top: 40px;
+	    }
 		.tintuc__item {
 			background: $clr-white;
 			padding: 10px 9px;
+			&__img {
+				img {
+					width: 100%;
+				}
+			}
 			p {
 				font-size: 16px;
 				line-height: 1.5;
@@ -526,15 +669,71 @@
 		    	    bottom: 9px;
 			    }
 			}
-			&:hover {
-			    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12), 0 -1px 2px 0 rgba(0, 0, 0, 0.08);
-		        -webkit-transform: translateY(-2px);
-    			transform: translateY(-2px);
-    			border-radius: 4px;
-				p {
-					&:after {
-				    	background: url('../images/home/cta-hover.png') no-repeat;
-				    }
+			@media screen and (min-width: 769px) {
+				&:hover {
+				    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12), 0 -1px 2px 0 rgba(0, 0, 0, 0.08);
+			        -webkit-transform: translateY(-2px);
+	    			transform: translateY(-2px);
+	    			border-radius: 4px;
+					p {
+						&:after {
+					    	background: url('../images/home/cta-hover.png') no-repeat;
+					    }
+					}
+				}
+			}
+		}
+
+		.slick-dots {
+	    	position: absolute;
+		    bottom: -41px;
+		    display: block;
+		    width: 100%;
+		    padding: 0;
+		    margin: 0;
+		    list-style: none;
+		    text-align: center;
+		    li {
+			    position: relative;
+			    display: inline-block;
+			    width: 20px;
+			    height: 20px;
+			    margin: 0 5px;
+			    padding: 0;
+			    cursor: pointer;
+			    button {
+				    font-size: 0;
+				    line-height: 0;
+				    display: block;
+				    width: 13px;
+				    height: 13px;
+				    padding: 5px;
+				    cursor: pointer;
+				    color: transparent;
+				    border: 0;
+				    outline: none;
+				    background: transparent;
+				    &:before {
+					    font-family: 'slick';
+					    font-size: 55px;
+					    line-height: 13px;
+					    position: absolute;
+					    top: 0;
+					    left: 0;
+					    width: 13px;
+					    height: 13px;
+					    content: '•';
+					    text-align: center;
+					    opacity: 0.37;
+					    color: #959595;
+					    -webkit-font-smoothing: antialiased;
+					    -moz-osx-font-smoothing: grayscale;
+					}
+				}
+				&.slick-active {
+					button:before {
+					    opacity: 1;
+					}
 				}
 			}
 		}
