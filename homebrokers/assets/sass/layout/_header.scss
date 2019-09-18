@@ -79,6 +79,10 @@ body {
 								padding-right: 15px;
 								float: right;
 								top: 50%;
+								@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+								   	float: none;
+									top: auto;
+								}
 								@media screen and (max-width: $screen-sp) {
 								    top: 4px;
 								    width: 20px;
