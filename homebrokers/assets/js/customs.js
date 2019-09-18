@@ -14,8 +14,8 @@ $(document).ready(function() {
         slidesToShow: 5,
         slidesToScroll: 1,
         // centerMode: true,
-        prevArrow:"<div class='slick-prev'></div>",
-        nextArrow:"<div class='slick-next'></div>",
+        prevArrow:"<div class='arrow-slider'><span class='slick-prev'></span></div>",
+        nextArrow:"<div class='arrow-slider'><span class='slick-next'></span></div>",
         responsive: [{
             breakpoint: 768,
             settings: {
