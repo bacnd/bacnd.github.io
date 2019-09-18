@@ -1,8 +1,10 @@
 body {
-	&.show-menu {
-		margin: 0; 
-		height: 100%; 
-		overflow: hidden
+	@media screen and (max-width: $screen-sp) {
+		&.show-menu {
+			margin: 0; 
+			height: 100%; 
+			overflow: hidden
+		}
 	}
 }
 #wrapper {
@@ -96,8 +98,18 @@ body {
 										background: url('../images/commons/ic-arrow-down.png') center no-repeat;
 										width: 11px;
 										height: 6px;
+										@include transition;
 									}
 								}
+								&.active {
+			    					&:after {
+				    					-webkit-transform: rotate(180deg);
+										-moz-transform: rotate(180deg);
+										-o-transform: rotate(180deg);
+										-ms-transform: rotate(180deg);
+										transform: rotate(180deg);
+				    				}
+			    				}
 							}
 							.submenu {
 								display: none;
