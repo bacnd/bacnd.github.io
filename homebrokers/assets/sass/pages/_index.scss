@@ -455,7 +455,7 @@
 				position: absolute;
 				bottom: 0;
 				width: 100%;
-				overflow-y: hidden;
+				overflow: hidden;
 			}
 			.duannoibat__info {
 				margin-left: 20px;
@@ -517,6 +517,7 @@
 						height: 4px;
 						width: 100%;
 						bottom: 0;
+						left: 0;
 						@media screen and (max-width: $screen-sp) {
 							content: none;
 						}
