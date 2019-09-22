@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="assets/css/slick.css">
 		<link rel="stylesheet" href="assets/css/styles.css">
 	</head>
-	<body>
+	<body class="dong-san-moi-nhat">
 		<div id="wrapper">
 			<header id="header">
             	<h1 class="logo">
@@ -45,8 +45,8 @@
                 	</ul>
 					<div class="hd-acse">
 						<ul class="box-acse">
-							<li><a href="#"><img src="assets/images/commons/ic-user.png"></a></li>
-							<li><a href="#"><img src="assets/images/commons/ic-search.png"></a></li>
+							<li><a href="#"><img src="assets/images/commons/ic-user.png" alt="ic user"></a></li>
+							<li><a href="#"><img src="assets/images/commons/ic-search.png" alt="ic search"></a></li>
 						</ul>
 					</div>
                 </div>
@@ -59,15 +59,18 @@
 		    		<div class="box-search__ct">
 		    			<figure class="overlay"><img src="assets/images/dong-san-moi-nhat/main-dong-san-moi.png" alt="dong san moi nhat"></figure>
 		    			<div class="box-search__form">
-			    			<form action="#" method="POST" role="form">
+			    			<form action="#" method="POST">
 			    				<p class="box-search__form__title">Tìm kiếm dự án bất động sản mới nhất</p>
-			    				<div class="form-group">
-			    					<input type="text" class="form-control" name="tenduan" id="inputTenduan" placeholder="Nhập dự án">
-			    					<select name="chudautu" id="inputChudautu" class="form-control">
+			    				<div class="form-group-input">
+			    					<div class="form-group">
+				    					<input type="text" class="form-control" name="tenduan" id="inputTenduan" placeholder="Nhập dự án">
+				    					<div class="search-bar"></div>
+				    				</div>
+			    					<select name="chudautu" id="inputChudautu" class="form-select form-control">
 			    						<option value="">Chủ đầu tư</option>
 			    						<option value="NovaLand">NovaLand</option>
 			    					</select>
-			    					<select name="loaibatdongsan" id="inputLoaibatdongsan" class="form-control">
+			    					<select name="loaibatdongsan" id="inputLoaibatdongsan" class="form-select form-control">
 			    						<option value="">Loại bất động sản</option>
 			    						<option value="Biệt thự">Biệt thự</option>
 			    						<option value="Chung cư">Chung cư</option>
@@ -75,7 +78,6 @@
 			    						<option value="Đất nền">Đất nền</option>
 			    					</select>
 			    				</div>
-			    				<button type="submit" class="btn btn-primary">Submit</button>
 			    			</form>
 		    			</div>
 		    		</div>
@@ -85,223 +87,308 @@
 		    			<h2 class="search-results-title">Dự án nổi bật theo phân khúc</h2>
 		    			<div class="search-results__lists">
 		    				<div class="search-results__item">
-		    					<div class="search-results__label">Xem tất cả dự án Biệt thự</div>
+		    					<a href="#" class="search-results__label">Xem tất cả dự án Biệt thự</a>
 		    					<div class="search-results__header">
-		    						<figure class="search-results__img"><img src="assets/images/noi-bat-01.png" alt="noi-bat-01"></figure>
+		    						<figure class="search-results__img"><img src="assets/images/dong-san-moi-nhat/noi-bat-01.png" alt="noi-bat-01"></figure>
 		    						<ul class="btn-act">
 			    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
 			    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
 			    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
 			    					</ul>
-			    					<div class="favorite-label">134 lượt yêu thích</div>
+			    					<div class="favorite-label"><strong>134</strong>lượt yêu thích</div>
 		    					</div>
 		    					<div class="search-results__body">
-		    						<div class="search-location">Thành phố Phan Thiết</div>
-		    						<h3 class="search-results__title">NovaWorld Phan Thiết</h3>
-		    						<ul class="search-results__investor">
-		    							<li class="investor-name">Chủ đầu tư: <strong>NovaLand</strong></li>
-		    							<li class="type-real-estate">Loại bất động sản: <strong>Biệt thự</strong></li>
-		    						</ul>
-		    						<ul class="search-results__info">
-		    							<li class="results__info__item">Mật độ xây dựng: <strong>50%</strong></li>
-		    							<li class="results__info__item">Số tầng: <strong>3</strong></li>
-		    							<li class="results__info__item">Garage: <strong>2</strong></li>
-		    							<li class="results__info__item">Số phòng ngủ: <strong>3</strong></li>
-		    						</ul>
-		    						<ul class="search-results__acreage">
-		    							<li class="acreage_info"><strong>100 triệu/ m2</strong></li>
-		    							<li class="more_detail"><a href="#">Xem chi tiết</a></li>
-		    						</ul>
+		    						<div class="results__body-part">
+			    						<div class="search-location">Thành phố Phan Thiết</div>
+			    						<h3 class="search-results__title">NovaWorld Phan Thiết</h3>
+			    						<ul class="search-results__investor">
+			    							<li class="investor-name">Chủ đầu tư: <strong>NovaLand</strong></li>
+			    							<li class="type-real-estate">Loại bất động sản: <strong>Biệt thự</strong></li>
+			    						</ul>
+			    						<ul class="search-results__info">
+			    							<li class="results__info__item">Mật độ xây dựng: <strong>50%</strong></li>
+			    							<li class="results__info__item">Số tầng: <strong>3</strong></li>
+			    							<li class="results__info__item">Garage: <strong>2</strong></li>
+			    							<li class="results__info__item">Số phòng ngủ: <strong>3</strong></li>
+			    						</ul>
+		    						</div>
+		    						<div class="results__body-part">
+			    						<ul class="search-results__acreage">
+			    							<li class="acreage-info"><strong>100 triệu/ m2</strong></li>
+			    							<li class="more-detail"><a href="#">Xem chi tiết</a></li>
+			    						</ul>
+		    						</div>
 		    					</div>
 		    				</div>
 		    				<div class="search-results__item">
-		    					<div class="search-results__label">Xem tất cả dự án Biệt thự</div>
+		    					<a href="#" class="search-results__label">Xem tất cả dự án chung cư</a>
 		    					<div class="search-results__header">
-		    						<figure class="search-results__img"><img src="assets/images/noi-bat-01.png" alt="noi-bat-01"></figure>
+		    						<figure class="search-results__img"><img src="assets/images/dong-san-moi-nhat/noi-bat-01.png" alt="noi-bat-01"></figure>
 		    						<ul class="btn-act">
 			    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
 			    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
 			    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
 			    					</ul>
-			    					<div class="favorite-label">134 lượt yêu thích</div>
+			    					<div class="favorite-label"><strong>134</strong>lượt yêu thích</div>
 		    					</div>
 		    					<div class="search-results__body">
-		    						<div class="search-location">Diamond Island - Đảo Kim Cương • Quận 2</div>
-		    						<h3 class="search-results__title">Đảo Kim Cương - Diamond Island</h3>
-		    						<ul class="search-results__investor">
-		    							<li class="investor-name">Chủ đầu tư: <strong>NovaLand</strong></li>
-		    							<li class="type-real-estate">Loại bất động sản: <strong>Chung cư</strong></li>
-		    						</ul>
-		    						<ul class="search-results__info">
-		    							<li class="results__info__item">Số tầng hầm: <strong>50%</strong></li>
-		    							<li class="results__info__item">Số phòng ngủ: <strong>3</strong></li>
-		    							<li class="results__info__item">Diện tích căn điển hình: <strong>2</strong></li>
-		    							<li class="results__info__item">Khu đỗ xe: <strong>3</strong></li>
-		    							<li class="results__info__item">Diện tích sàn xây dựng: <strong>1000 m2</strong></li>
-		    							<li class="results__info__item">Số năm cam kết: <strong>50 năm</strong></li>
-		    						</ul>
-		    						<ul class="search-results__acreage">
-		    							<li class="acreage-info"><strong>50 triệu/ m2</strong></li>
-		    							<li class="more-detail"><a href="#">Xem chi tiết</a></li>
-		    						</ul>
+		    						<div class="results__body-part">
+			    						<div class="search-location">Diamond Island - Đảo Kim Cương • Quận 2</div>
+			    						<h3 class="search-results__title">Đảo Kim Cương - Diamond Island</h3>
+			    						<ul class="search-results__investor">
+			    							<li class="investor-name">Chủ đầu tư: <strong>NovaLand</strong></li>
+			    							<li class="type-real-estate">Loại bất động sản: <strong>Chung cư</strong></li>
+			    						</ul>
+			    						<ul class="search-results__info">
+			    							<li class="results__info__item">Số tầng hầm: <strong>50%</strong></li>
+			    							<li class="results__info__item">Số phòng ngủ: <strong>3</strong></li>
+			    							<li class="results__info__item">Diện tích căn điển hình: <strong>2</strong></li>
+			    							<li class="results__info__item">Khu đỗ xe: <strong>3</strong></li>
+			    							<li class="results__info__item">Diện tích sàn xây dựng: <strong>1000 m2</strong></li>
+			    							<li class="results__info__item">Số năm cam kết: <strong>50 năm</strong></li>
+			    						</ul>
+			    					</div>
+			    					<div class="results__body-part">
+			    						<ul class="search-results__acreage">
+			    							<li class="acreage-info"><strong>50 triệu/ m2</strong></li>
+			    							<li class="more-detail"><a href="#">Xem chi tiết</a></li>
+			    						</ul>
+			    					</div>
 		    					</div>
 		    				</div>
 		    				<div class="search-results__item">
-		    					<div class="search-results__label">Xem tất cả dự án Biệt thự</div>
+		    					<a href="#" class="search-results__label">Xem tất cả dự án Shop House/Liền kề</a>
 		    					<div class="search-results__header">
-		    						<figure class="search-results__img"><img src="assets/images/noi-bat-01.png" alt="noi-bat-01"></figure>
+		    						<figure class="search-results__img"><img src="assets/images/dong-san-moi-nhat/noi-bat-01.png" alt="noi-bat-01"></figure>
 		    						<ul class="btn-act">
 			    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
 			    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
 			    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
 			    					</ul>
-			    					<div class="favorite-label">134 lượt yêu thích</div>
+			    					<div class="favorite-label"><strong>134</strong>lượt yêu thích</div>
 		    					</div>
 		    					<div class="search-results__body">
-		    						<div class="search-location">Quận 9</div>
-		    						<h3 class="search-results__title">SaFira Khang Điền</h3>
-		    						<ul class="search-results__investor">
-		    							<li class="investor-name">Chủ đầu tư: <strong>NovaLand</strong></li>
-		    							<li class="type-real-estate">Loại bất động sản: <strong>Shop House</strong></li>
-		    						</ul>
-		    						<ul class="search-results__info">
-		    							<li class="results__info__item">Mặt tiền: <strong>50%</strong></li>
-		    							<li class="results__info__item">Diện tích sàn xây dựng: <strong>3</strong></li>
-		    							<li class="results__info__item">Tầng cao: <strong>2</strong></li>
-		    							<li class="results__info__item">Khu đỗ xe: <strong>3</strong></li>
-		    						</ul>
-		    						<ul class="search-results__acreage">
-		    							<li class="acreage-info"><strong>70 triệu/ m2</strong></li>
-		    							<li class="more-detail"><a href="#">Xem chi tiết</a></li>
-		    						</ul>
+		    						<div class="results__body-part">
+			    						<div class="search-location">Quận 9</div>
+			    						<h3 class="search-results__title">SaFira Khang Điền</h3>
+			    						<ul class="search-results__investor">
+			    							<li class="investor-name">Chủ đầu tư: <strong>NovaLand</strong></li>
+			    							<li class="type-real-estate">Loại bất động sản: <strong>Shop House</strong></li>
+			    						</ul>
+			    						<ul class="search-results__info">
+			    							<li class="results__info__item">Mặt tiền: <strong>50%</strong></li>
+			    							<li class="results__info__item">Diện tích sàn xây dựng: <strong>3</strong></li>
+			    							<li class="results__info__item">Tầng cao: <strong>2</strong></li>
+			    							<li class="results__info__item">Khu đỗ xe: <strong>3</strong></li>
+			    						</ul>
+			    					</div>
+		    						<div class="results__body-part">
+			    						<ul class="search-results__acreage">
+			    							<li class="acreage-info"><strong>70 triệu/ m2</strong></li>
+			    							<li class="more-detail"><a href="#">Xem chi tiết</a></li>
+			    						</ul>
+			    					</div>
 		    					</div>
 		    				</div>
 		    				<div class="search-results__item">
-		    					<div class="search-results__label">Xem tất cả dự án Biệt thự</div>
+		    					<a href="#" class="search-results__label">Xem tất cả đất nền</a>
 		    					<div class="search-results__header">
-		    						<figure class="search-results__img"><img src="assets/images/noi-bat-01.png" alt="noi-bat-01"></figure>
+		    						<figure class="search-results__img"><img src="assets/images/dong-san-moi-nhat/noi-bat-01.png" alt="noi-bat-01"></figure>
 		    						<ul class="btn-act">
 			    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
 			    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
 			    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
 			    					</ul>
-			    					<div class="favorite-label">134 lượt yêu thích</div>
+			    					<div class="favorite-label"><strong>134</strong>lượt yêu thích</div>
 		    					</div>
 		    					<div class="search-results__body">
-		    						<div class="search-location">Quận 2</div>
-		    						<h3 class="search-results__title">Quận 2, Thảo Điền</h3>
-		    						<ul class="search-results__investor">
-		    							<li class="investor-name">Chủ đầu tư: <strong>NovaLand</strong></li>
-		    							<li class="type-real-estate">Loại bất động sản: <strong>Đất nền</strong></li>
-		    						</ul>
-		    						<ul class="search-results__info">
-		    							<li class="results__info__item">Mật độ xây dựng: <strong>50%</strong></li>
-		    							<li class="results__info__item">Mặt tiền điển hình: <strong>3</strong></li>
-		    							<li class="results__info__item">Diện tích điển hình: <strong>2</strong></li>
-		    						</ul>
-		    						<ul class="search-results__acreage">
-		    							<li class="acreage-info"><strong>100 triệu/ m2</strong></li>
-		    							<li class="more-detail"><a href="#">Xem chi tiết</a></li>
-		    						</ul>
-		    					</div>
-		    					<div class="search-results__item">
-		    					<div class="search-results__label">Xem tất cả dự án Biệt thự</div>
-		    					<div class="search-results__header">
-		    						<figure class="search-results__img"><img src="assets/images/noi-bat-01.png" alt="noi-bat-01"></figure>
-		    						<ul class="btn-act">
-			    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
-			    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
-			    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
-			    					</ul>
-			    					<div class="favorite-label">134 lượt yêu thích</div>
-		    					</div>
-		    					<div class="search-results__body">
-		    						<div class="search-location">Thành phố Phan Thiết</div>
-		    						<h3 class="search-results__title">NovaWorld Phan Thiết</h3>
-		    						<ul class="search-results__investor">
-		    							<li class="investor-name">Chủ đầu tư: <strong>NovaLand</strong></li>
-		    							<li class="type-real-estate">Loại bất động sản: <strong>Đất nền</strong></li>
-		    						</ul>
-		    						<ul class="search-results__info">
-		    							<li class="results__info__item">Mật độ xây dựng: <strong>50%</strong></li>
-		    							<li class="results__info__item">Số tầng: <strong>3</strong></li>
-		    							<li class="results__info__item">Garage: <strong>2</strong></li>
-		    							<li class="results__info__item">Số phòng ngủ: <strong>3</strong></li>
-		    						</ul>
-		    						<ul class="search-results__acreage">
-		    							<li class="acreage-info"><strong>100 triệu/ m2</strong></li>
-		    							<li class="more-detail"><a href="#">Xem chi tiết</a></li>
-		    						</ul>
+		    						<div class="results__body-part">
+			    						<div class="search-location">Quận 2</div>
+			    						<h3 class="search-results__title">Quận 2, Thảo Điền</h3>
+			    						<ul class="search-results__investor">
+			    							<li class="investor-name">Chủ đầu tư: <strong>NovaLand</strong></li>
+			    							<li class="type-real-estate">Loại bất động sản: <strong>Đất nền</strong></li>
+			    						</ul>
+			    						<ul class="search-results__info">
+			    							<li class="results__info__item">Mật độ xây dựng: <strong>50%</strong></li>
+			    							<li class="results__info__item">Mặt tiền điển hình: <strong>3</strong></li>
+			    							<li class="results__info__item">Diện tích điển hình: <strong>2</strong></li>
+			    						</ul>
+			    					</div>
+			    					<div class="results__body-part">
+			    						<ul class="search-results__acreage">
+			    							<li class="acreage-info"><strong>100 triệu/ m2</strong></li>
+			    							<li class="more-detail"><a href="#">Xem chi tiết</a></li>
+			    						</ul>
+			    					</div>
 		    					</div>
 		    				</div>
+	    					<div class="search-results__item">
+		    					<a href="#" class="search-results__label">Xem tất cả biệt thự</a>
+		    					<div class="search-results__header">
+		    						<figure class="search-results__img"><img src="assets/images/dong-san-moi-nhat/noi-bat-01.png" alt="noi-bat-01"></figure>
+		    						<ul class="btn-act">
+			    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
+			    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
+			    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
+			    					</ul>
+			    					<div class="favorite-label"><strong>134</strong>lượt yêu thích</div>
+		    					</div>
+		    					<div class="search-results__body">
+		    						<div class="results__body-part">
+			    						<div class="search-location">Thành phố Phan Thiết</div>
+			    						<h3 class="search-results__title">NovaWorld Phan Thiết</h3>
+			    						<ul class="search-results__investor">
+			    							<li class="investor-name">Chủ đầu tư: <strong>NovaLand</strong></li>
+			    							<li class="type-real-estate">Loại bất động sản: <strong>Đất nền</strong></li>
+			    						</ul>
+			    						<ul class="search-results__info">
+			    							<li class="results__info__item">Mật độ xây dựng: <strong>50%</strong></li>
+			    							<li class="results__info__item">Số tầng: <strong>3</strong></li>
+			    							<li class="results__info__item">Garage: <strong>2</strong></li>
+			    							<li class="results__info__item">Số phòng ngủ: <strong>3</strong></li>
+			    						</ul>
+			    					</div>
+			    					<div class="results__body-part">
+			    						<ul class="search-results__acreage">
+			    							<li class="acreage-info"><strong>100 triệu/ m2</strong></li>
+			    							<li class="more-detail"><a href="#">Xem chi tiết</a></li>
+			    						</ul>
+			    					</div>
+			    				</div>
+			    			</div>
 		    			</div>
 		    		</div>
 		    	</div>
 		    	<div class="vingroup-project">
 		    		<div class="container">
-		    			<ul class="tabs">
-							<li class="tab-link current" data-tab="tab-1"><img src="assets/images/dong-san-moi-nhat/logo-white.png" alt="logo"></li>
-							<li class="tab-link" data-tab="tab-2"><img src="assets/images/dong-san-moi-nhat/logo-white.png" alt="logo"></li>
-							<li class="tab-link" data-tab="tab-3"><img src="assets/images/dong-san-moi-nhat/logo-white.png" alt="logo"></li>
-						</ul>
-
-						<div id="tab-1" class="tab-content current">
-							<h3 class="tab-content__title">Dự án VinGroup</h3>
-							<div class="project__list">
-			    				<div class="project__item">
-			    					<figure class="overlay"><img src="assets/images/home/img-04.png" alt="Dự án 1"></figure>
-			    					<div class="project__ct">
-				    					<div class="project__info">
-				    						<h2 class="project__item_title">Dự án 1</h2>
-					    					<p>Thông tin dự án (1 dòng)<br />Thông tin dự án dòng 2</p>
-					    					<a href="#" class="project___more">Xem chi tiết</a>
-				    					</div>
-				    					<ul class="project__button">
-				    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
-				    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
-				    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
-				    					</ul>
-			    					</div>
-			    				</div>
-			    				<div class="project__item">
-			    					<figure class="overlay"><img src="assets/images/home/img-05.png" alt="Dự án 2"></figure>
-			    					<div class="project__ct">
-				    					<div class="project__info">
-				    						<h2 class="project__item_title">Dự án 2</h2>
-					    					<p>Thông tin dự án (1 dòng)<br />Thông tin dự án dòng 2</p>
-					    					<a href="#" class="project___more">Xem chi tiết</a>
-				    					</div>
-				    					<ul class="project__button">
-				    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
-				    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
-				    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
-				    					</ul>
-				    				</div>
-			    				</div>
-			    				<div class="project__item">
-			    					<figure class="overlay"><img src="assets/images/home/img-06.png" alt="Dự án 3"></figure>
-			    					<div class="project__ct">
-				    					<div class="project__info">
-				    						<h2 class="project__item_title">Dự án 3</h2>
-					    					<p>Thông tin dự án (1 dòng)<br />Thông tin dự án dòng 2</p>
-					    					<a href="#" class="project___more">Xem chi tiết</a>
-				    					</div>
-				    					<ul class="project__button">
-				    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
-				    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
-				    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
-				    					</ul>
-				    				</div>
-			    				</div>
-			    			</div>
-			    			<a href="#" class="btn__more">Xem tất cả</a>
-						</div>
-						<div id="tab-2" class="tab-content">
+		    			<div class="vingroup-project-ctn">
+			    			<ul class="tabs dl-pc">
+								<li class="tab-link current" data-tab="tab-1"><img src="assets/images/dong-san-moi-nhat/logo-color.png" alt="logo"></li>
+								<li class="tab-link" data-tab="tab-2"><img src="assets/images/dong-san-moi-nhat/logo-white.png" alt="logo"></li>
+								<li class="tab-link" data-tab="tab-3"><img src="assets/images/dong-san-moi-nhat/logo-white.png" alt="logo"></li>
+							</ul>
 							
-						</div>
-						<div id="tab-3" class="tab-content">
-							
-						</div>
+							<div class="tabs-sp">
+								<div class="accordion current dl-sp">
+									<div class="accordion-link" data-tab="tab-1"><img src="assets/images/dong-san-moi-nhat/logo-color.png" alt="logo"></div>
+								</div>
+								<div id="tab-1" class="tab-content current">
+									<h3 class="tab-content__title">Dự án VinGroup</h3>
+									<div class="project__list">
+					    				<div class="project__item">
+					    					<figure class="overlay"><img src="assets/images/home/img-04.png" alt="Dự án 1"></figure>
+					    					<div class="project__ct">
+						    					<div class="project__info">
+						    						<h2 class="project__item_title">Dự án 1</h2>
+							    					<p>Thông tin dự án (1 dòng)<br />Thông tin dự án dòng 2</p>
+							    					<a href="#" class="project___more">Xem chi tiết</a>
+						    					</div>
+						    					<ul class="btn-act">
+						    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
+						    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
+						    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
+						    					</ul>
+					    					</div>
+					    				</div>
+					    				<div class="project__item">
+					    					<figure class="overlay"><img src="assets/images/home/img-05.png" alt="Dự án 2"></figure>
+					    					<div class="project__ct">
+						    					<div class="project__info">
+						    						<h2 class="project__item_title">Dự án 2</h2>
+							    					<p>Thông tin dự án (1 dòng)<br />Thông tin dự án dòng 2</p>
+							    					<a href="#" class="project___more">Xem chi tiết</a>
+						    					</div>
+						    					<ul class="btn-act">
+						    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
+						    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
+						    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
+						    					</ul>
+						    				</div>
+					    				</div>
+					    				<div class="project__item">
+					    					<figure class="overlay"><img src="assets/images/home/img-06.png" alt="Dự án 3"></figure>
+					    					<div class="project__ct">
+						    					<div class="project__info">
+						    						<h2 class="project__item_title">Dự án 3</h2>
+							    					<p>Thông tin dự án (1 dòng)<br />Thông tin dự án dòng 2</p>
+							    					<a href="#" class="project___more">Xem chi tiết</a>
+						    					</div>
+						    					<ul class="btn-act">
+						    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
+						    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
+						    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
+						    					</ul>
+						    				</div>
+					    				</div>
+					    			</div>
+					    			<a href="#" class="btn-view-all">Xem tất cả</a>
+								</div>
+							</div>
+							<div class="tabs-sp">
+								<div class="accordion dl-sp">
+									<div class="accordion-link" data-tab="tab-2"><img src="assets/images/dong-san-moi-nhat/logo-white.png" alt="logo"></div>
+								</div>
+								<div id="tab-2" class="tab-content">
+									<h3 class="tab-content__title">Dự án VinGroup</h3>
+									<div class="project__list">
+					    				<div class="project__item">
+					    					<figure class="overlay"><img src="assets/images/home/img-04.png" alt="Dự án 1"></figure>
+					    					<div class="project__ct">
+						    					<div class="project__info">
+						    						<h2 class="project__item_title">Dự án 1</h2>
+							    					<p>Thông tin dự án (1 dòng)<br />Thông tin dự án dòng 2</p>
+							    					<a href="#" class="project___more">Xem chi tiết</a>
+						    					</div>
+						    					<ul class="btn-act">
+						    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
+						    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
+						    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
+						    					</ul>
+					    					</div>
+					    				</div>
+					    				<div class="project__item">
+					    					<figure class="overlay"><img src="assets/images/home/img-05.png" alt="Dự án 2"></figure>
+					    					<div class="project__ct">
+						    					<div class="project__info">
+						    						<h2 class="project__item_title">Dự án 2</h2>
+							    					<p>Thông tin dự án (1 dòng)<br />Thông tin dự án dòng 2</p>
+							    					<a href="#" class="project___more">Xem chi tiết</a>
+						    					</div>
+						    					<ul class="btn-act">
+						    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
+						    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
+						    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
+						    					</ul>
+						    				</div>
+					    				</div>
+					    				<div class="project__item">
+					    					<figure class="overlay"><img src="assets/images/home/img-06.png" alt="Dự án 3"></figure>
+					    					<div class="project__ct">
+						    					<div class="project__info">
+						    						<h2 class="project__item_title">Dự án 3</h2>
+							    					<p>Thông tin dự án (1 dòng)<br />Thông tin dự án dòng 2</p>
+							    					<a href="#" class="project___more">Xem chi tiết</a>
+						    					</div>
+						    					<ul class="btn-act">
+						    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
+						    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
+						    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
+						    					</ul>
+						    				</div>
+					    				</div>
+					    			</div>
+					    			<a href="#" class="btn-view-all">Xem tất cả</a>
+								</div>
+							</div>
+							<div class="tabs-sp">
+								<div class="accordion dl-sp">
+									<div class="accordion-link" data-tab="tab-3"><img src="assets/images/dong-san-moi-nhat/logo-white.png" alt="logo"></div>
+								</div>
+								<div id="tab-3" class="tab-content">
+								</div>
+							</div>
+		    			</div>
 		    		</div>
 		    	</div>
 		    	<div class="about-homebrokers">
@@ -321,21 +408,21 @@
 						<div class="ft-col">
 							<div class="ft-dau-title">Hợp tác với HomeBrokers</div>
 							<ul class="ft-contact__info">
-								<li><a href="tel:0999 999 0999" title="0999 999 0999">0999 999 0999</a></li>
+								<li><a href="tel:0999-999-0999" title="0999 999 0999">0999 999 0999</a></li>
 								<li><a href="mailto:info@homebrokers.com" title="info@homebrokers.com">info@homebrokers.com</a></li>
 							</ul>
 						</div>
 						<div class="ft-col">
 							<div class="ft-dau-title">Kinh doanh</div>
 							<ul class="ft-contact__info">
-								<li><a href="tel:0999 999 0999" title="0999 999 0999">0999 999 0999</a></li>
+								<li><a href="tel:0999-999-0999" title="0999 999 0999">0999 999 0999</a></li>
 								<li><a href="mailto:info@homebrokers.com" title="info@homebrokers.com">info@homebrokers.com</a></li>
 							</ul>
 						</div>
 						<div class="ft-col">
 							<div class="ft-dau-title">Chăm sóc khách hàng</div>
 							<ul class="ft-contact__info">
-								<li><a href="tel:0999 999 0999" title="0999 999 0999">0999 999 0999</a></li>
+								<li><a href="tel:0999-999-0999" title="0999 999 0999">0999 999 0999</a></li>
 								<li><a href="mailto:info@homebrokers.com" title="info@homebrokers.com">info@homebrokers.com</a></li>
 							</ul>
 						</div>

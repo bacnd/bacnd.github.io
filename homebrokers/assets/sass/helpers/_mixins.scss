@@ -14,7 +14,7 @@
 	@return $value / ($value * 0 + 1);
 }
 
-@mixin resizefont($min-vw, $max-vw, $min-font-size, $max-font-size) {
+@mixin resizefont($min-font-size, $max-font-size, $min-vw: $min_width, $max-vw: $max_width) {
 	$u1: unit($min-vw);
 	$u2: unit($max-vw);
 	$u3: unit($min-font-size);

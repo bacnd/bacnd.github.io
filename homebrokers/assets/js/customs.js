@@ -31,10 +31,10 @@ $(document).ready(function() {
         }]
     });
 
-    $('.tintuc__list').slick({
+    $('.tintuc__list, .project__list').slick({
         dots: true,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 2000,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -46,8 +46,26 @@ $(document).ready(function() {
         }]
     });
 
+    $('.documents__list').slick({
+        dots: false,
+        // autoplay: true,
+        autoplaySpeed: 4000,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true
+            }
+        }]
+    });
+
     $(window).on('resize', function() {
-        $('.tintuc__list').slick('resize');
+        $('.tintuc__list, .project__list').slick('resize');
     });
 
     $('#scrollUp').click(function(e){
@@ -68,6 +86,9 @@ $(document).ready(function() {
         $(this).next().toggleClass('active');
     });
 
+    // let img = $('.tab-link.current').find('img');
+    // img.attr('src', img.attr('src').replace('white.png', 'color.png'));
+
     $('ul.tabs li').click(function(){
         var tab_id = $(this).attr('data-tab');
 
@@ -76,7 +97,27 @@ $(document).ready(function() {
 
         $(this).addClass('current');
         $("#"+tab_id).addClass('current');
-    })
+
+        let img = $('.tab-link').find('img');
+        img.attr('src', img.attr('src').replace('color.png', 'white.png'));
+
+        let this_img = $(this).find('img');
+        this_img.attr('src', this_img.attr('src').replace('white.png', 'color.png'));
+    });
+
+    $('.accordion').click(function(){
+        $('.accordion').removeClass('current');
+        $('.tab-content').removeClass('current');
+
+        $(this).addClass('current');
+        $(this).next().addClass('current');
+
+        let img = $('.accordion').find('img');
+        img.attr('src', img.attr('src').replace('color.png', 'white.png'));
+
+        let this_img = $(this).find('img');
+        this_img.attr('src', this_img.attr('src').replace('white.png', 'color.png'));
+    });
 });
 
 $(function() {
