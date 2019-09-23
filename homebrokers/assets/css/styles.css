@@ -566,6 +566,114 @@ img.dl-pc {
 .overlay.fv-overlay:before {
   background: rgba(0, 0, 0, 0.7); }
 
+.about-homebrokers .about-homebrokers-ct {
+  max-height: 489px;
+  max-width: 1366px;
+  width: 100%;
+  margin: auto;
+  display: table;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between; }
+
+@media screen and (max-width: 768px) {
+  .about-homebrokers .about-homebrokers-ct {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-height: inherit; } }
+
+.about-homebrokers .about-homebrokers-ct .about__content {
+  max-width: 425px;
+  margin-left: 125px;
+  margin-right: 20px; }
+
+@media screen and (max-width: 1270px) and (min-width: 769px) {
+  .about-homebrokers .about-homebrokers-ct .about__content {
+    margin-left: 0; } }
+
+@media screen and (max-width: 768px) {
+  .about-homebrokers .about-homebrokers-ct .about__content {
+    float: none;
+    margin: 0;
+    order: 2;
+    text-align: center;
+    max-width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: relative;
+    top: -45px;
+    z-index: 2;
+    background: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-bottom: 50px; } }
+
+.about-homebrokers .about-homebrokers-ct .about__content .about__title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 0.8;
+  letter-spacing: normal;
+  color: #a66636;
+  padding-top: 80px; }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .about-homebrokers .about-homebrokers-ct .about__content .about__title {
+    font-size: calc(23px + 7 * ((100vw - 320px) / 448)); } }
+
+@media screen and (max-width: 768px) {
+  .about-homebrokers .about-homebrokers-ct .about__content .about__title {
+    padding-top: 25px; } }
+
+.about-homebrokers .about-homebrokers-ct .about__content p {
+  margin-top: 64px;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: normal; }
+
+@media screen and (max-width: 768px) {
+  .about-homebrokers .about-homebrokers-ct .about__content p {
+    margin-top: 30px;
+    font-size: 16px; } }
+
+.about-homebrokers .about-homebrokers-ct .about__content .about_more {
+  margin-top: 80px;
+  display: block;
+  font-size: 16px;
+  letter-spacing: normal;
+  color: #a66636; }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .about-homebrokers .about-homebrokers-ct .about__content .about_more {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 448)); } }
+
+@media screen and (max-width: 768px) {
+  .about-homebrokers .about-homebrokers-ct .about__content .about_more {
+    margin-top: 30px; } }
+
+.about-homebrokers .about-homebrokers-ct .img-lf img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+@media screen and (max-width: 768px) {
+  .about-homebrokers .about-homebrokers-ct .img-lf {
+    position: relative;
+    z-index: 1;
+    float: none;
+    order: 1; } }
+
 @media screen and (max-width: 768px) {
   body.show-menu {
     margin: 0;
@@ -1193,9 +1301,12 @@ footer #scrollUp {
   color: #fff;
   margin-bottom: 85px; }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .main-img__description {
+    font-size: calc(22px + 24 * ((100vw - 320px) / 448)); } }
+
 @media screen and (max-width: 768px) {
   .main-img__description {
-    font-size: 22px;
     line-height: 1.36;
     letter-spacing: normal;
     text-align: center;
@@ -1219,9 +1330,12 @@ footer #scrollUp {
   color: #fff;
   border-radius: 50px; }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .main-img .btn-readmore {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 448)); } }
+
 @media screen and (max-width: 768px) {
   .main-img .btn-readmore {
-    font-size: 16px;
     letter-spacing: normal;
     margin: auto; } }
 
@@ -1237,9 +1351,9 @@ footer #scrollUp {
   text-align: center;
   font-weight: normal; }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .title-block {
-    font-size: 22px; } }
+    font-size: calc(22px + 8 * ((100vw - 320px) / 448)); } }
 
 .btn__more {
   width: 250px;
@@ -1456,6 +1570,10 @@ footer #scrollUp {
   padding: 30px 0;
   position: relative; }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .chuyengia__list .chuyengia__item__title {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 448)); } }
+
 @media screen and (max-width: 768px) {
   .chuyengia__list .chuyengia__item__title {
     padding: 10px 0;
@@ -1464,7 +1582,6 @@ footer #scrollUp {
     border-radius: 5px;
     margin-top: 5px;
     padding-left: 43px;
-    font-size: 14px;
     letter-spacing: normal; } }
 
 .chuyengia__list .chuyengia__item__title:after {
@@ -1557,107 +1674,6 @@ footer #scrollUp {
 .duannoibat .btn__more {
   margin-top: 63px; }
 
-.about-homebrokers {
-  height: 489px;
-  max-width: 1366px;
-  width: 100%;
-  margin: auto;
-  display: table;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-between; }
-
-@media screen and (max-width: 768px) {
-  .about-homebrokers {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    height: auto; } }
-
-.about-homebrokers .about__content {
-  max-width: 425px;
-  margin-left: 125px;
-  margin-right: 20px; }
-
-@media screen and (max-width: 1270px) and (min-width: 769px) {
-  .about-homebrokers .about__content {
-    margin-left: 0; } }
-
-@media screen and (max-width: 768px) {
-  .about-homebrokers .about__content {
-    float: none;
-    margin: 0;
-    order: 2;
-    text-align: center;
-    max-width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    position: relative;
-    top: -45px;
-    z-index: 2;
-    background: #fff;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding-bottom: 50px; } }
-
-.about-homebrokers .about__content .about__title {
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 0.8;
-  letter-spacing: normal;
-  color: #a66636;
-  padding-top: 80px; }
-
-@media screen and (max-width: 768px) {
-  .about-homebrokers .about__content .about__title {
-    padding-top: 25px;
-    font-size: 23px; } }
-
-.about-homebrokers .about__content p {
-  margin-top: 64px;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: normal; }
-
-@media screen and (max-width: 768px) {
-  .about-homebrokers .about__content p {
-    margin-top: 30px;
-    font-size: 16px; } }
-
-.about-homebrokers .about__content .about_more {
-  margin-top: 80px;
-  display: block;
-  font-size: 16px;
-  letter-spacing: normal;
-  color: #a66636; }
-
-@media screen and (max-width: 768px) {
-  .about-homebrokers .about__content .about_more {
-    margin-top: 30px;
-    font-size: 14px; } }
-
-.about-homebrokers .img-lf img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%; }
-
-@media screen and (max-width: 768px) {
-  .about-homebrokers .img-lf {
-    position: relative;
-    z-index: 1;
-    float: none;
-    order: 1; } }
-
 .tintuc {
   background: #fbfafb;
   padding-bottom: 50px; }
@@ -1718,6 +1734,10 @@ footer #scrollUp {
   padding-bottom: 6px;
   position: relative; }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .tintuc__list .tintuc__item p {
+    font-size: calc(12px + 4 * ((100vw - 320px) / 448)); } }
+
 .tintuc__list .tintuc__item p:after {
   content: '';
   position: absolute;
@@ -1737,18 +1757,14 @@ footer #scrollUp {
     background: url("../images/home/cta-hover.png") no-repeat; } }
 
 .box-search .box-search__ct {
-  position: relative;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center; }
+  position: relative; }
 
 @media screen and (max-width: 768px) {
   .box-search .box-search__ct {
     min-height: 350px; } }
+
+.box-search .box-search__ct figure {
+  width: 100%; }
 
 .box-search .box-search__ct figure.overlay:before {
   background: rgba(0, 0, 0, 0.7); }
@@ -1771,6 +1787,14 @@ footer #scrollUp {
   margin: auto;
   display: table;
   width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center; }
 
 @media screen and (max-width: 768px) {
@@ -2541,6 +2565,9 @@ footer #scrollUp {
   .market-info__header {
     min-height: 350px; } }
 
+.market-info__header figure {
+  width: 100%; }
+
 .market-info__header figure img {
   width: 100%; }
 
@@ -2557,15 +2584,36 @@ footer #scrollUp {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
   right: 0;
+  left: 0;
   margin: auto;
-  display: table;
-  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center; }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .market-info__header .market-info__title {
+    font-size: calc(19px + 11 * ((100vw - 320px) / 448)); } }
+
+@media screen and (max-width: 768px) {
+  .market-info__header .market-info__title {
+    padding-left: 20px;
+    padding-right: 20px; } }
+
 .market-info__body .documents {
-  margin-bottom: 46px; }
+  margin-bottom: 46px;
+  margin-top: 35px;
+  position: relative; }
+
+@media screen and (max-width: 768px) {
+  .market-info__body .documents {
+    padding-bottom: 62px; } }
 
 .market-info__body .documents .documents__title {
   font-size: 24px;
@@ -2573,11 +2621,33 @@ footer #scrollUp {
   color: #1b1b1b;
   display: inline-block; }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .market-info__body .documents .documents__title {
+    font-size: calc(19px + 5 * ((100vw - 320px) / 448)); } }
+
+@media screen and (max-width: 768px) {
+  .market-info__body .documents .documents__title {
+    text-align: center;
+    display: block; } }
+
 .market-info__body .documents .document__more {
   float: right;
   font-size: 16px;
   line-height: 3;
-  color: #a86738; }
+  color: #a86738;
+  text-decoration: underline; }
+
+@media screen and (max-width: 768px) {
+  .market-info__body .documents .document__more {
+    float: none;
+    position: absolute;
+    bottom: -30px;
+    text-align: center;
+    right: 0;
+    left: 0; } }
+
+.market-info__body .documents .documents__list {
+  margin-top: 15px; }
 
 .market-info__body .documents .documents__list .documents__item {
   border: solid 1px #c8c8c8;
@@ -2590,29 +2660,70 @@ footer #scrollUp {
   display: flex;
   margin-right: 15px; }
 
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  .market-info__body .documents .documents__list .documents__item {
+    flex-direction: column; } }
+
+@media screen and (max-width: 768px) {
+  .market-info__body .documents .documents__list .documents__item {
+    margin-right: 10px; } }
+
 .market-info__body .documents .documents__list .documents__item .documents__item__img {
   width: 127px; }
 
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  .market-info__body .documents .documents__list .documents__item .documents__item__img {
+    width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .market-info__body .documents .documents__list .documents__item .documents__item__img {
+    width: auto; } }
+
 .market-info__body .documents .documents__list .documents__item .documents__item__img img {
   width: 100%; }
+
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  .market-info__body .documents .documents__list .documents__item .documents__item__img img {
+    width: auto;
+    margin: auto;
+    margin-bottom: 20px; } }
 
 .market-info__body .documents .documents__list .documents__item .documents__item__info {
   margin-left: 20px;
   color: #1b1b1b;
   width: calc(100% - 147px); }
 
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  .market-info__body .documents .documents__list .documents__item .documents__item__info {
+    width: 100%;
+    margin-left: 0; } }
+
+@media screen and (max-width: 768px) {
+  .market-info__body .documents .documents__list .documents__item .documents__item__info {
+    width: calc(60% - 20px); } }
+
 .market-info__body .documents .documents__list .documents__item .documents__item__info .documents__item__title {
   font-size: 16px;
   font-weight: bold;
   line-height: 1.5; }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .market-info__body .documents .documents__list .documents__item .documents__item__info .documents__item__title {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 448)); } }
 
 .market-info__body .documents .documents__list .documents__item .documents__item__info p {
   font-size: 14px;
   line-height: 1.71;
   margin-top: 10px; }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .market-info__body .documents .documents__list .documents__item .documents__item__info p {
+    font-size: calc(12px + 2 * ((100vw - 320px) / 448)); } }
+
 .market-info__body .documents .documents__list .documents__item .documents__item__info .download-now {
-  width: 139px;
+  max-width: 139px;
+  font-size: 16px;
+  width: 100%;
   height: 38px;
   background-color: #a86738;
   color: #fff;
@@ -2625,6 +2736,10 @@ footer #scrollUp {
   align-items: center;
   justify-content: center;
   margin-top: 33px; }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .market-info__body .documents .documents__list .documents__item .documents__item__info .download-now {
+    font-size: calc(12px + 4 * ((100vw - 320px) / 448)); } }
 
 .market-info__body .market-info__list {
   background: #f4f5f9;
@@ -2641,9 +2756,19 @@ footer #scrollUp {
   display: flex;
   margin: 10px 0; }
 
+@media screen and (max-width: 768px) {
+  .market-info__body .market-info__list .market-info__item {
+    flex-direction: column;
+    margin: 20px -10px; } }
+
 .market-info__body .market-info__list .market-info__item .market-info__img {
   width: calc(50% - 28px);
   margin-right: 28px; }
+
+@media screen and (max-width: 768px) {
+  .market-info__body .market-info__list .market-info__item .market-info__img {
+    width: 100%;
+    margin-right: 0; } }
 
 .market-info__body .market-info__list .market-info__item .market-info__img img {
   height: 100%;
@@ -2659,10 +2784,20 @@ footer #scrollUp {
   color: #1b1b1b;
   padding: 20px 0; }
 
+@media screen and (max-width: 768px) {
+  .market-info__body .market-info__list .market-info__item .market-info__detail {
+    padding: 20px 30px 20px 10px;
+    width: 100%;
+    margin-right: 0; } }
+
 .market-info__body .market-info__list .market-info__item .market-info__detail .market__detail__title {
   font-size: 22px;
   line-height: 1.5;
   margin-top: 6px; }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .market-info__body .market-info__list .market-info__item .market-info__detail .market__detail__title {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 448)); } }
 
 .market-info__body .market-info__list .market-info__item .market-info__detail .market__detail__title a {
   color: #1b1b1b; }
@@ -2677,6 +2812,10 @@ footer #scrollUp {
   display: -moz-flex;
   display: -webkit-flex;
   display: flex; }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .market-info__body .market-info__list .market-info__item .market-info__detail .meta-info {
+    font-size: calc(11px + 3 * ((100vw - 320px) / 448)); } }
 
 .market-info__body .market-info__list .market-info__item .market-info__detail .meta-info li + li {
   position: relative;
@@ -2699,6 +2838,10 @@ footer #scrollUp {
   line-height: 1.5;
   margin-top: 14px; }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .market-info__body .market-info__list .market-info__item .market-info__detail .market__detail__excerpt {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 448)); } }
+
 .market-info__body .market-info__list .market-info__item .market-info__detail .read-more {
   font-size: 14px;
   line-height: 1.71;
@@ -2706,6 +2849,10 @@ footer #scrollUp {
   margin-top: 30px;
   display: block;
   text-decoration: underline; }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .market-info__body .market-info__list .market-info__item .market-info__detail .read-more {
+    font-size: calc(12px + 2 * ((100vw - 320px) / 448)); } }
 
 .market-info__body .market-info__list .pagination {
   margin: auto;
@@ -2718,6 +2865,13 @@ footer #scrollUp {
   align-items: center;
   justify-content: center;
   margin-top: 46px; }
+
+@media screen and (max-width: 768px) {
+  .market-info__body .market-info__list .pagination {
+    display: none; } }
+
+.market-info__body .market-info__list .pagination li.hidden {
+  display: none; }
 
 .market-info__body .market-info__list .pagination li a {
   color: #2f2f2f;
@@ -2747,3 +2901,23 @@ footer #scrollUp {
 
 .market-info__body .market-info__list .pagination li:last-child:hover, .market-info__body .market-info__list .pagination li:first-child {
   border: none; }
+
+@media screen and (max-width: 768px) {
+  .market-info__body .market-info__list .load-more {
+    max-width: 336px;
+    width: 100%;
+    height: 57px;
+    background-color: #a66636;
+    color: #fff;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 38px auto 0; } }
+
+.market-info__body .about-homebrokers {
+  width: 100%; }

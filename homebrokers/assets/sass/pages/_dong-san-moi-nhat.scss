@@ -1,12 +1,13 @@
 .box-search {
 	.box-search__ct {
 		position: relative;
-		@include dlflex;
-		align-items: center;
+		// @include dlflex;
+		// align-items: center;
 		@media screen and (max-width: $screen-sp) {
 			min-height: 350px;
 		}
 		figure {
+			width: 100%;
 			&.overlay {
 				&:before {
 					background: rgba($clr-black, .7);
@@ -30,6 +31,9 @@
 			margin: auto;
 	    	display: table;
 		    width: 100%;
+		    @include dlflex;
+		    flex-direction: column;
+		    justify-content: center;
 		    text-align: center;
 		    @media screen and (max-width: $screen-sp) {
 		    	padding-right: 20px;

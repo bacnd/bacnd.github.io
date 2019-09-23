@@ -17,7 +17,7 @@ $(document).ready(function() {
         prevArrow:"<div class='arrow-slider'><span class='slick-prev'></span></div>",
         nextArrow:"<div class='arrow-slider'><span class='slick-next'></span></div>",
         responsive: [{
-            breakpoint: 768,
+            breakpoint: 769,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 3
@@ -41,25 +41,27 @@ $(document).ready(function() {
         mobileFirst: true,
         arrows: false,
         responsive: [{
-            breakpoint: 768,
+            breakpoint: 769,
             settings: 'unslick'
         }]
     });
 
     $('.documents__list').slick({
         dots: false,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 4000,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
         arrows: false,
         responsive: [{
-            breakpoint: 768,
+            breakpoint: 769,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                dots: true
+                dots: true,
+                centerMode: true,
+                centerPadding: '10px'
             }
         }]
     });

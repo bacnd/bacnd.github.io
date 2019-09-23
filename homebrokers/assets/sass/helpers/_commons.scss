@@ -411,3 +411,100 @@ img.dl-pc {
 		}
 	}
 }
+
+
+.about-homebrokers {
+	.about-homebrokers-ct {
+		max-height: 489px;
+		max-width: 1366px;
+		width: 100%;
+		margin: auto;
+		display: table;
+		@include dlflex;
+		justify-content: space-between;
+		@media screen and (max-width: $screen-sp) {
+			@include dlflex;
+			flex-direction: column;
+			height: auto;
+			max-height: inherit;
+		}
+		.about__content {
+			max-width: 425px;
+			margin-left: 125px;
+			margin-right: 20px;
+			// float: left;
+			@media screen and (max-width: 1270px) and (min-width: 769px) {
+				margin-left: 0;
+			}
+			@media screen and (max-width: $screen-sp) {
+				float: none;
+				margin: 0;
+				order: 2;
+				text-align: center;
+				max-width: 100%;
+				margin-left: 10px;
+				margin-right: 10px;
+				padding-left: 25px;
+				padding-right: 25px;
+				position: relative;
+				top: -45px;
+				z-index: 2;
+				background: $clr-white;
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				padding-bottom: 50px;
+			}
+			.about__title {
+				font-size: 30px;
+				font-weight: 600;
+				line-height: 0.8;
+				letter-spacing: normal;
+				color: $clr-asau;
+				padding-top: 80px;
+				@include resizefont(23px, 30px);
+				@media screen and (max-width: $screen-sp) {
+					padding-top: 25px;
+				}
+			}
+			p {
+				margin-top: 64px;
+				font-size: 18px;
+				line-height: 1.67;
+				letter-spacing: normal;
+				@media screen and (max-width: $screen-sp) {
+					margin-top: 30px;
+					font-size: 16px;
+				}
+			}
+			.about_more {
+				margin-top: 80px;
+				display: block;
+				font-size: 16px;
+				letter-spacing: normal;
+				color: $clr-asau;
+				@include resizefont(14px, 16px);
+				@media screen and (max-width: $screen-sp) {
+					margin-top: 30px;
+				}
+			}
+		}
+		.img-lf {
+			// float: right;
+			// @media screen and (max-width: 1300px) and (min-width: 769px) {
+			// 	width: 90%;
+			// 	float: initial;
+			// }
+			img {
+			    object-fit: cover;
+			    width: 100%;
+			    height: 100%;
+			}
+			@media screen and (max-width: $screen-sp) {
+				position: relative;
+				z-index: 1;
+				float: none;
+				order: 1;
+			}
+		}
+	}
+}
