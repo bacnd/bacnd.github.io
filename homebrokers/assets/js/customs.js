@@ -179,4 +179,13 @@ $(function() {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #a66636}";
         document.body.appendChild(css);
     };
+
+    $('#header').on('click', '.search-toggle', function(e) {
+        var selector = $(this).data('selector');
+
+        $(selector).toggleClass('show').find('.search-input').focus();
+        $(this).toggleClass('active');
+
+        e.preventDefault();
+    });
 });
