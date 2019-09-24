@@ -15,9 +15,9 @@
 	<body class="news-detail">
 		<div id="wrapper">
 			<header id="header">
-            	<div class="logo">
+            	<h1 class="logo">
                 	<a href="index.html"><img src="assets/images/commons/logo.png" alt="logo"></a>
-                </div>
+                </h1>
         		<div class="nav-menu">
                 	<ul class="hd-menu">
                 		<li class="active"><a href="index.html">Trang chủ</a></li>
@@ -46,9 +46,12 @@
 					<div class="hd-acse">
 						<ul class="box-acse">
 							<li><a href="#"><img src="assets/images/commons/ic-user.png" alt="ic user"></a></li>
-							<li><a href="#"><img src="assets/images/commons/ic-search.png" alt="ic search"></a></li>
+							<li><a href="#" class="search-toggle" data-selector="#header"></a></li>
 						</ul>
 					</div>
+					<form action="" class="search-box">
+						<input type="text" class="text search-input" placeholder="Tìm kiếm...">
+					</form>
                 </div>
                 <button id="navLine" class="nav-toggle">
                     <span></span>
