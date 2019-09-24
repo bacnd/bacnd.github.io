@@ -391,7 +391,8 @@ img.dl-pc {
   display: block; }
 
 .btn-act li a:hover {
-  opacity: 1; }
+  opacity: 1;
+  background-color: #a66636; }
 
 .btn-act li:hover {
   opacity: 1; }
@@ -1390,7 +1391,8 @@ footer #scrollUp {
     padding-bottom: 41px; } }
 
 .best-project__content .title-block {
-  font-weight: 600; }
+  font-weight: 600;
+  color: #a66636; }
 
 .best-project__list {
   margin-top: 42px;
@@ -1665,7 +1667,8 @@ footer #scrollUp {
 
 .duannoibat .title-block {
   padding-top: 43px;
-  font-weight: 600; }
+  font-weight: 600;
+  color: #a66636; }
 
 @media screen and (max-width: 768px) {
   .duannoibat .title-block {

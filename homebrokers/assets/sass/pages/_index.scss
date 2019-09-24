@@ -113,6 +113,7 @@
 	&__content {
 		.title-block {
 			font-weight: 600;
+			color: $clr-asau;
 		}
 	}
 	&__list {
@@ -407,6 +408,7 @@
 	.title-block {
 		padding-top: 43px;
 		font-weight: 600;
+		color: $clr-asau;
 		@media screen and (max-width: $screen-sp) {
 			padding-top: 23px;
 		}
