@@ -880,7 +880,8 @@ img.dl-pc {
   position: relative; }
 
 #wrapper #header .nav-menu .hd-acse .box-acse li + li {
-  padding-left: 30px; }
+  padding-left: 30px;
+  padding-right: 5px; }
 
 #wrapper #header .nav-menu .hd-acse .box-acse li + li:before {
   content: '';
@@ -3013,7 +3014,8 @@ footer #scrollUp {
   display: -moz-flex;
   display: -webkit-flex;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
 .tim-can-ho .search-results__lists .search-results__item {
   max-width: 360px;
@@ -3024,7 +3026,18 @@ footer #scrollUp {
   border-bottom: none;
   margin-bottom: 30px; }
 
+@media screen and (max-width: 1096px) and (min-width: 640px) {
+  .tim-can-ho .search-results__lists .search-results__item {
+    max-width: 49%; } }
+
+@media screen and (max-width: 639px) {
+  .tim-can-ho .search-results__lists .search-results__item {
+    max-width: 100%; } }
+
 .tim-can-ho .search-results__lists .search-results__item .search-results__header {
+  width: 100%; }
+
+.tim-can-ho .search-results__lists .search-results__item .search-results__header .search-results__img img {
   width: 100%; }
 
 .tim-can-ho .search-results__lists .search-results__item .search-results__header .btn-act {
@@ -3041,7 +3054,7 @@ footer #scrollUp {
 .tim-can-ho .search-results__lists .search-results__item .search-results__body {
   width: calc(100% - 26px);
   margin-left: 13px;
-  padding-right: 13px; }
+  margin-right: 13px; }
 
 .tim-can-ho .search-results__lists .search-results__item .search-results__body .search-location {
   font-size: 14px;
@@ -3103,7 +3116,8 @@ footer #scrollUp {
   padding-top: 26px; }
 
 .tim-can-ho .search-results__lists .search-results__item .search-results__body .view-evaluation {
-  width: 333px;
+  max-width: 333px;
+  width: 100%;
   height: 60px;
   background-color: #e4e4e4;
   font-size: 16px;
@@ -3119,6 +3133,10 @@ footer #scrollUp {
   padding-left: 61px;
   position: relative;
   margin-top: 36px; }
+
+@media screen and (max-width: 1096px) {
+  .tim-can-ho .search-results__lists .search-results__item .search-results__body .view-evaluation {
+    max-width: 100%; } }
 
 .tim-can-ho .search-results__lists .search-results__item .search-results__body .view-evaluation:before {
   content: '';
@@ -3145,7 +3163,8 @@ footer #scrollUp {
   margin-top: 0; }
 
 .tim-can-ho .load-more-projects {
-  width: 361px;
+  max-width: 361px;
+  width: 100%;
   height: 57px;
   background-color: #a66636;
   font-size: 16px;

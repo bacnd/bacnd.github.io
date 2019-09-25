@@ -184,6 +184,7 @@ body {
 							position: relative;
 							& + li {
 								padding-left: 30px;
+								padding-right: 5px;
 								&:before {
 									content: '';
 									border-left: 1px solid $clr-abay;
