@@ -60,8 +60,10 @@
 		    <main id="contents">
 		    	<div class="box-compare">
 		    		<div class="container">
-		    			<h1 class="compare-title">So sánh những lựa chọn bạn đang cân nhắc</h1>
-		    			<div class="compare__des">Lựa chọn 3 dự án bạn quan tâm</div>
+		    			<div class="box-compare-hd">
+		    				<h1 class="compare-title">So sánh những lựa chọn bạn đang cân nhắc</h1>
+		    				<div class="compare__des">Lựa chọn 3 dự án bạn quan tâm</div>
+		    			</div>
 		    			<div class="compare__lists">
 		    				<div class="compare__item">
 		    					<div class="compare__header">
@@ -80,20 +82,20 @@
 		    						<a href="#" title="Xem chi tiết" class="view-detail">Xem chi tiết</a>
 		    					</div>
 		    				</div>
-		    				<div class="compare__item">
+		    				<div class="compare__item add-project">
 		    					<div class="compare__header">
-		    						<div class="btn-add-project"></div>
+		    						<div data-popup-open="popup-compare" class="btn-add-project"></div>
 		    					</div>
 		    					<div class="compare__body">
-		    						<p class="compare__txt">Thêm dự án để so sánh</p>
+		    						<p data-popup-open="popup-compare" class="compare__txt">Thêm dự án để so sánh</p>
 		    					</div>
 		    				</div>
-		    				<div class="compare__item">
+		    				<div class="compare__item add-project">
 		    					<div class="compare__header">
-		    						<div class="btn-add-project"></div>
+		    						<div data-popup-open="popup-compare" class="btn-add-project"></div>
 		    					</div>
 		    					<div class="compare__body">
-		    						<p class="compare__txt">Thêm dự án để so sánh</p>
+		    						<p data-popup-open="popup-compare" class="compare__txt">Thêm dự án để so sánh</p>
 		    					</div>
 		    				</div>
 		    			</div>
@@ -134,9 +136,9 @@
 											</tr>
 											<tr>
 												<td>Số lượng sản phẩm</td>
-												<td>1000</td>
-												<td>900</td>
-												<td>1200</td>
+												<td><strong>1000</strong></td>
+												<td><strong>900</strong></td>
+												<td><strong>1200</strong></td>
 											</tr>
 											<tr>
 												<td>Mật độ xây dựng</td>
@@ -160,6 +162,27 @@
 									</table>
 								</div>
 							</div>
+							<div class="tabs-sp">
+								<div class="accordion current dl-sp">
+									<div class="accordion-link" data-tab="tab-2">Chi tiết dự án</div>
+								</div>
+								<div id="tab-2" class="tab-content current">
+								</div>
+							</div>
+							<div class="tabs-sp">
+								<div class="accordion current dl-sp">
+									<div class="accordion-link" data-tab="tab-3">Tiện ích nội khu</div>
+								</div>
+								<div id="tab-3" class="tab-content current">
+								</div>
+							</div>
+							<div class="tabs-sp">
+								<div class="accordion current dl-sp">
+									<div class="accordion-link" data-tab="tab-4">Tiện ích ngoại khu</div>
+								</div>
+								<div id="tab-4" class="tab-content current">
+								</div>
+							</div>
 		    			</div>
 		    		</div>
 		    	</div>
@@ -175,6 +198,50 @@
 						</figure>
 	    			</div>
 		    	</div>
+		    	<div class="popup-modal popup-compare" data-popup="popup-compare">
+					<div class="popup-inner">
+						<h4 class="popup-compare-title">Lựa chọn dự án để so sánh</h4>
+						<form action="#" id="form-compare" method="POST" role="form">
+							<div class="form-group-input">
+		    					<div class="form-group">
+			    					<input type="text" class="form-control" name="tenduan" id="inputTenduan" placeholder="Nhập dự án">
+			    					<div class="search-bar"></div>
+			    				</div>
+			    				<div class="form-group">
+			    					<select name="chudautu" id="inputChudautu" class="form-select form-control">
+			    						<option value="">Chủ đầu tư</option>
+			    						<option value="NovaLand">NovaLand</option>
+			    					</select>
+			    				</div>
+		    					<div class="form-group">
+			    					<select name="loaibatdongsan" id="inputLoaibatdongsan" class="form-select form-control">
+			    						<option value="">Loại bất động sản</option>
+			    						<option value="Biệt thự">Biệt thự</option>
+			    						<option value="Chung cư">Chung cư</option>
+			    						<option value="Shop House">Shop House</option>
+			    						<option value="Đất nền">Đất nền</option>
+			    					</select>
+			    				</div>
+								<button type="submit" id="btn-compare-submit" class="btn-compare btn-primary">Tìm</button>
+		    				</div>
+						</form>
+						<div class="popup-search-results">
+							<h4 class="pop-search__ttl">Kết quả tìm kiếm</h4>
+							<ul class="pop-search__list">
+								<li class="pop-search__item">
+									<figure class="pop-search__img"><img src="assets/images/so-sanh/popup-search.png" alt="search__img"></figure>
+									<div class="pop-search__info">
+										<div class="pop-search__title">Căn hộ The Tresor 1PN 1WC, đầy đủ nội thất,...</div>
+										<p class="pop-search__txt">Đường Nội Khu 1, Tân Phú, Quận 7, Hồ Chí Mi...</p>
+										<p class="pop-search__investor">Chủ đầu tư: <strong>Novaland</strong></p>
+									</div>
+									<div class="btn-choose-project">Chọn dự án</div>
+								</li>
+							</ul>
+						</div>
+						<a class="popup-close" data-popup-close="popup-compare" href="#"><img src="assets/images/commons/ic-close-form.png"></a>
+					</div>
+				</div>
 		    </main>
 		    <footer id="footer">
 				<div class="container">

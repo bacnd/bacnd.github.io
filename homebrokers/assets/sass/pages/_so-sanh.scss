@@ -1,14 +1,19 @@
 .compare-page {
 	.box-compare {
-		.compare-title {
-			font-size: 24px;
-			line-height: 1.17;
-			text-align: center;
-		}
-		.compare__des {
-			font-size: 16px;
-			line-height: 1.75;
-			text-align: center;
+		background: #f4f5f9;
+		padding-bottom: 97px;
+		.box-compare-hd {
+			padding: 45px 0;
+			.compare-title {
+				font-size: 24px;
+				line-height: 1.17;
+				text-align: center;
+			}
+			.compare__des {
+				font-size: 16px;
+				line-height: 1.75;
+				text-align: center;
+			}
 		}
 		.compare__lists {
 			@include dlflex;
@@ -18,9 +23,13 @@
 				width: 100%;
 				box-shadow: 2.5px 4.3px 5px 0 rgba(0, 0, 0, 0.12);
 				@include transition;
+			    background: $clr-white;
 				.compare__header {
 					position: relative;
 					width: 100%;
+					max-height: 204px;
+					height: 100%;
+					display: block;
 					.compare__img {
 						img {
 							height: 100%;
@@ -104,6 +113,243 @@
 						color: $clr-asau;
 						text-decoration: underline;
 						margin-top: 27px;
+					}
+				}
+				&.add-project {
+					border: solid 0.5px #acacac;
+					.compare__header {
+						width: calc(100% - 1px);
+						background: #ffebd5;
+						margin: auto;
+						border-bottom: solid 0.5px #acacac;
+						.btn-add-project {
+							position: absolute;
+							width: 44px;
+							height: 44px;
+							border: solid 0.5px #acacac;
+							background: $clr-white;
+							border-radius: 50%;
+							top: 0;
+							bottom: 0;
+							right: 0;
+							left: 0;
+							margin: auto;
+							cursor: pointer;
+							&:before, &:after {
+								content: '';
+								position: absolute;
+								background: #acacac;
+								top: 0;
+								bottom: 0;
+								right: 0;
+								left: 0;
+								margin: auto;
+							}
+							&:before {
+								width: 18px;
+								height: 1px;
+							}
+							&:after {
+								width: 1px;
+								height: 18px;
+							}
+						}
+					}
+					.compare__body {
+						.compare__txt {
+						 	font-size: 16px;
+							line-height: 1.88;
+							text-align: center;
+							color: $clr-mobe;
+							text-decoration: underline;
+							padding-top: 11px;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+		.compare_detail {
+			width: 100%;
+			// height: 413px;
+			box-shadow: 2.5px 4.3px 5px 0 rgba(0, 0, 0, 0.12);
+			background-color: $clr-white;
+			margin-top: 20px;
+			.tabs {
+				@include dlflex;
+				justify-content: space-between;
+				background: #f4f5f9;
+				.tab-link {
+					width: calc(25% - 2px);
+					height: 60px;
+					@include dlflex;
+					align-items: center;
+					justify-content: center;
+					background-color: #996633;
+					font-size: 18px;
+					color: $clr-white;
+					cursor: pointer;
+					&.current {
+						background: $clr-white;
+						font-weight: 600;
+						color: #333333;
+					}
+				}
+			}
+			.tab-content {
+				display: none;
+				padding: 25px 15px 40px;
+				&.current {
+					display: block;
+				}
+				.table {
+					width: 100%;
+					thead {
+						th {
+							padding: 10px 0;
+							font-size: 16px;
+							font-weight: bold;
+							line-height: 1.88;
+							text-align: center;
+							color: #333333;
+							width: 25%;
+						}
+					}
+					tbody {
+						tr {
+							td {
+								padding: 10px 23px;
+								border: solid 0.5px #999999;
+								font-size: 16px;
+								line-height: 1.88;
+								color: #333333;
+								text-align: center;
+								&:first-child {
+									text-align: left;
+								}
+							}
+							&:nth-child(odd) {
+								background: #e4e4e4;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.popup-modal {
+		&.popup-compare {
+			.popup-inner {
+				padding: 20px 70px;
+				.popup-compare-title {
+					font-size: 24px;
+					font-weight: bold;
+					text-align: center;
+				}
+				.form-group-input {
+					@include dlflex;
+					justify-content: center;
+					margin-top: 33px;
+					@media screen and (max-width: $screen-sp) {
+						flex-direction: column;
+					}
+					.form-group {
+						position: relative;
+						#inputTenduan {
+							width: 380px;
+							padding-left: 38px;
+						}
+						.search-bar{
+							position: absolute;
+							background: url('../images/commons/ic-search-grey.png') no-repeat;
+							width: 16px;
+							height: 16px;
+							left: 11px;
+							top: 0;
+							bottom: 0;
+							margin: auto;
+						}
+					}
+				}
+				.form-control {
+					height: 43px;
+					border-radius: 5px;
+					background-color: $clr-white;
+					border: none;
+					padding: 10px 15px;
+					font-size: 16px;
+					line-height: 1.5;
+					text-align: left;
+					color: $clr-sade;
+					background-color: #f4f5f9;
+					@media screen and (max-width: $screen-sp) {
+						width: 100% !important;
+					}
+				}
+				.form-select {
+					width: 180px;
+					margin-left: 4px;
+					padding: 10px 7px;
+					@media screen and (max-width: $screen-sp) {
+						margin-left: 0;
+						margin-top: 11px;
+					}
+				}
+				.btn-compare {
+					width: 180px;
+					height: 43px;
+					border-radius: 5px;
+					background-color: #996633;
+					font-size: 16px;
+					font-weight: bold;
+					text-align: center;
+					color: $clr-white;
+					margin-left: 4px;
+				}
+				.popup-search-results {
+					.pop-search__ttl {
+						font-size: 18px;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						letter-spacing: normal;
+						text-align: left;
+					}
+					.pop-search__list {
+						border-top: 1px solid #cecece;
+						.pop-search__item {
+							@include dlflex;
+							.pop-search__img {
+								max-height: 168px;
+								width: 100%;
+							}
+							.pop-search__info {
+								.pop-search__title {
+									font-size: 16px;
+									font-weight: bold;
+									line-height: 1.63;
+								}
+								.pop-search__txt {
+									font-size: 12px;
+									line-height: 2.17;
+								}
+								.pop-search__investor {
+									  	font-size: 12px;
+									line-height: 2.17;
+									letter-spacing: normal;
+								}
+							}
+							.btn-choose-project {
+								max-width: 180px;
+								width: 100%;
+								height: 43px;
+								background-color: #996633;
+								@include dlflex;
+								align-items: center;
+								justify-content: center;
+								color: $clr-white;
+							}
+						}
 					}
 				}
 			}
