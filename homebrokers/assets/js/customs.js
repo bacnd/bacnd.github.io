@@ -108,7 +108,7 @@ $(document).ready(function() {
     });
 
     $('.accordion').click(function(){
-        $('.accordion').removeClass('current');
+        $('.accordion, ul.tabs li').removeClass('current');
         $('.tab-content').removeClass('current');
 
         $(this).addClass('current');

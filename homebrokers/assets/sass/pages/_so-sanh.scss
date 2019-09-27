@@ -18,19 +18,32 @@
 		.compare__lists {
 			@include dlflex;
 			justify-content: space-between;
+			@media screen and (max-width: $screen-sp) {
+				flex-wrap: wrap;
+			}
 			.compare__item {
 				max-width: 360px;
 				width: 100%;
 				box-shadow: 2.5px 4.3px 5px 0 rgba(0, 0, 0, 0.12);
-				@include transition;
 			    background: $clr-white;
+			    @include dlflex;
+			    flex-direction: column;
+			    @media screen and (max-width: $screen-sp) {
+			    	margin-bottom: 20px;
+			    }
+			    @media screen and (max-width: $screen-sp) and (min-width: 476px) {
+					max-width: 49%;
+				}
+				@media screen and (max-width: 480px) {
+					max-width: 100%;
+				}
 				.compare__header {
 					position: relative;
 					width: 100%;
-					max-height: 204px;
-					height: 100%;
+					height: 204px;
 					display: block;
 					.compare__img {
+						height: 100%;
 						img {
 							height: 100%;
 							width: 100%;
@@ -120,7 +133,7 @@
 					.compare__header {
 						width: calc(100% - 1px);
 						background: #ffebd5;
-						margin: auto;
+						margin: 0 auto;
 						border-bottom: solid 0.5px #acacac;
 						.btn-add-project {
 							position: absolute;
@@ -179,6 +192,9 @@
 				@include dlflex;
 				justify-content: space-between;
 				background: #f4f5f9;
+				@media screen and (max-width: $screen-sp) {
+					display: none;
+				}
 				.tab-link {
 					width: calc(25% - 2px);
 					height: 60px;
@@ -199,11 +215,20 @@
 			.tab-content {
 				display: none;
 				padding: 25px 15px 40px;
+				@media screen and (max-width: $screen-sp) {
+					.table-ct {
+						overflow-x: scroll;
+					}
+				}
 				&.current {
 					display: block;
+					background: $clr-white;
 				}
 				.table {
 					width: 100%;
+					@media screen and (max-width: $screen-sp) {
+						min-width: 1000px;
+					}
 					thead {
 						th {
 							padding: 10px 0;
@@ -235,28 +260,70 @@
 					}
 				}
 			}
+			@media screen and (max-width: $screen-sp) {
+				.tabs-sp {
+					.accordion {
+						height: 50px;
+						@include dlflex;
+						align-items: center;
+						justify-content: center;
+						background: #996633;
+						border-bottom: 2px solid #f4f5f9;
+						.accordion-link {
+							font-size: 16px;
+							line-height: 1.88;
+							color: $clr-white;
+						}
+						&.current {
+							background: $clr-white;
+							border: none;
+							.accordion-link {
+								font-weight: bold;
+								color: #333;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 	.popup-modal {
 		&.popup-compare {
 			.popup-inner {
 				padding: 20px 70px;
+				padding: 20px 3.65vw 30px;
+				@media screen and (max-width: $screen-sp) {
+					overflow-y: auto;
+				    max-height: 85vh;
+				}
 				.popup-compare-title {
 					font-size: 24px;
 					font-weight: bold;
 					text-align: center;
+					@include resizefont(18px, 24px);
+					padding: 0 30px;
 				}
 				.form-group-input {
 					@include dlflex;
-					justify-content: center;
+					// justify-content: center;
 					margin-top: 33px;
 					@media screen and (max-width: $screen-sp) {
 						flex-direction: column;
 					}
 					.form-group {
 						position: relative;
-						#inputTenduan {
+						width: 180px;
+						margin-left: 4px;
+						&:nth-child(1) {
 							width: 380px;
+							margin-left: 0;
+						}
+						@media screen and (max-width: $screen-sp) {
+							width: 100% !important;
+							margin-left: 0;
+							margin-top: 11px;
+						}
+						#inputTenduan {
 							padding-left: 38px;
 						}
 						.search-bar{
@@ -272,9 +339,9 @@
 					}
 				}
 				.form-control {
+					width: 100%;
 					height: 43px;
 					border-radius: 5px;
-					background-color: $clr-white;
 					border: none;
 					padding: 10px 15px;
 					font-size: 16px;
@@ -287,16 +354,10 @@
 					}
 				}
 				.form-select {
-					width: 180px;
-					margin-left: 4px;
 					padding: 10px 7px;
-					@media screen and (max-width: $screen-sp) {
-						margin-left: 0;
-						margin-top: 11px;
-					}
 				}
 				.btn-compare {
-					width: 180px;
+					width: 100%;
 					height: 43px;
 					border-radius: 5px;
 					background-color: #996633;
@@ -304,9 +365,10 @@
 					font-weight: bold;
 					text-align: center;
 					color: $clr-white;
-					margin-left: 4px;
+					min-width: 100px;
 				}
 				.popup-search-results {
+					margin-top: 35px;
 					.pop-search__ttl {
 						font-size: 18px;
 						font-weight: normal;
@@ -314,29 +376,52 @@
 						font-stretch: normal;
 						letter-spacing: normal;
 						text-align: left;
+						padding-bottom: 7px;
+						border-bottom: 1px solid #cecece;
+						@include resizefont(14px, 18px);
 					}
 					.pop-search__list {
-						border-top: 1px solid #cecece;
+						max-height: 300px;
+						overflow-y: auto;
 						.pop-search__item {
 							@include dlflex;
+							justify-content: space-between;
+							align-items: center;
+							margin-top: 10px;
+    						padding-top: 10px;
+    						@media screen and (max-width: $screen-sp) {
+								flex-direction: column;
+							}
 							.pop-search__img {
-								max-height: 168px;
+								max-width: 168px;
 								width: 100%;
+								display: block;
+								@media screen and (max-width: $screen-sp) {
+									max-width: 100%;
+									text-align: center;
+								}
 							}
 							.pop-search__info {
+								width: calc(100% - 440px);
+								@media screen and (max-width: $screen-sp) {
+									width: 100%;
+									padding: 15px 0;
+								}
 								.pop-search__title {
 									font-size: 16px;
 									font-weight: bold;
 									line-height: 1.63;
+									@include resizefont(14px, 16px);
 								}
 								.pop-search__txt {
 									font-size: 12px;
 									line-height: 2.17;
 								}
 								.pop-search__investor {
-									  	font-size: 12px;
+								  	font-size: 12px;
 									line-height: 2.17;
 									letter-spacing: normal;
+									margin-top: 12px;
 								}
 							}
 							.btn-choose-project {
@@ -348,6 +433,18 @@
 								align-items: center;
 								justify-content: center;
 								color: $clr-white;
+								cursor: pointer;
+								border-radius: 5px;
+								font-size: 16px;
+								@include resizefont(14px, 16px);
+							}
+							& + .pop-search__item {
+								border-top: 1px solid #cecece;
+							}
+							@media screen and (max-width: $screen-sp) {
+								&:last-child {
+									padding-bottom: 30px;
+								}
 							}
 						}
 					}
