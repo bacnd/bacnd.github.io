@@ -5,14 +5,14 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="format-detection" content="telephone=no"/>
-		<title>Lựa chọn căn hộ phù hợp</title>
+		<title>Chọn dự án và xem đánh giá</title>
 		<meta name="keywords" content="">
 		<meta name="description" content="">
 		<!-- CSS -->
 		<link rel="stylesheet" href="assets/css/slick.css">
 		<link rel="stylesheet" href="assets/css/styles.css">
 	</head>
-	<body class="tim-can-ho">
+	<body class="compare-page review-page">
 		<div id="wrapper">
 			<header id="header">
             	<h1 class="logo">
@@ -60,167 +60,139 @@
 		    <main id="contents">
 		    	<div class="box-search">
 		    		<div class="box-search__ct">
-		    			<figure class="overlay"><img src="assets/images/tim-can-ho/fv-tim-can-ho.png" alt="tim can ho"></figure>
+		    			<figure class="overlay"><img src="assets/images/danh-gia/fv-danh-gia.png" alt="danh gia"></figure>
 		    			<div class="box-search__form">
 			    			<form action="#" method="POST">
-			    				<p class="box-search__form__title">Lựa chọn căn hộ phù hợp</p>
+			    				<p class="box-search__form__title">Chọn dự án và xem đánh giá</p>
 			    				<div class="form-group-input">
-			    					<select name="chudautu" id="inputChudautu" class="form-select form-control">
+			    					<select name="investor" id="inputInvestor" class="form-select form-control">
 			    						<option value="">Chủ đầu tư</option>
 			    						<option value="NovaLand">NovaLand</option>
 			    					</select>
-			    					<select name="loaibatdongsan" id="inputLoaibatdongsan" class="form-select form-control">
+			    					<select name="realestate" id="inputRealestate" class="form-select form-control">
 			    						<option value="">Loại bất động sản</option>
 			    						<option value="Biệt thự">Biệt thự</option>
 			    						<option value="Chung cư">Chung cư</option>
 			    						<option value="Shop House">Shop House</option>
 			    						<option value="Đất nền">Đất nền</option>
 			    					</select>
-			    					<select name="vitri" id="inputVitri" class="form-select form-control">
+			    					<select name="location" id="inputLocation" class="form-select form-control">
 			    						<option value="">Chọn vị trí</option>
 			    						<option value="Hà Nội">Hà Nội</option>
 			    					</select>
-			    					<select name="mucgia" id="inputMucgia" class="form-select form-control">
-			    						<option value="">Chọn mức giá</option>
+			    					<select name="project" id="inputProject" class="form-select form-control">
+			    						<option value="">Chọn dự án</option>
 			    						<option value="1 tỷ">1 tỷ</option>
 			    					</select>
 			    				</div>
+			    				<p class="box-search__form__description">Short Description: Hãy cho phép chúng tôi lắng nghe ý kiến chuyên môn từ bạn.<br />Thông tin đánh giá từng dự án là tổng hợp ý kiến từ nhiều KH khác của chúng tôi</p>
 			    			</form>
 		    			</div>
 		    		</div>
 		    	</div>
-		    	<div class="box-search-results">
+		    	<div class="box-compare">
 		    		<div class="container">
-		    			<h2 class="search-results-title">Dự án nổi bật theo lựa chọn</h2>
-		    			<div class="search-results__lists">
-		    				<div class="search-results__item">
-		    					<div class="search-results__header">
-		    						<figure class="search-results__img"><img src="assets/images/tim-can-ho/tim-can-ho-01.png" alt="tim can ho"></figure>
+		    			<h2 class="box-review-title">Dự án có đánh giá tốt nhất</h2>
+		    			<div class="compare__lists">
+		    				<div class="compare__item">
+		    					<div class="compare__header">
+		    						<figure class="compare__img"><img src="assets/images/tim-can-ho/tim-can-ho-01.png" alt="tim can ho"></figure>
 		    						<ul class="btn-act">
 			    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
 			    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
-			    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
 			    					</ul>
 			    					<div class="favorite-label"><strong>134</strong>lượt yêu thích</div>
 		    					</div>
-		    					<div class="search-results__body">
-		    						<div class="results__body-part">
-			    						<div class="search-location">Thành phố Phan Thiết</div>
-			    						<h3 class="search-results__title">NovaWorld Phan Thiết</h3>
-			    						<div class="project-overview">
-			    							<div class="project-overview__title">Tổng quan dự án</div>
-			    							<ul class="project-overview__list">
-			    								<li class="project-overview__item">Chủ đầu tư: <strong>VinGroup</strong></li>
-			    								<li class="project-overview__item">Vị trí dự án: <strong>123 Hai Bà Trưng,...</strong></li>
-			    								<li class="project-overview__item">Quy mô dự án: <strong>70.000 m2</strong></li>
-			    								<li class="project-overview__item">Số lượng sản phẩm: <strong>1.000</strong></li>
-			    								<li class="project-overview__item">Mật độ xây dựng: <strong>15%</strong></li>
-			    								<li class="project-overview__item">Thời điểm bàn giao dự kiến: <strong>2022</strong></li>
-			    							</ul>
-			    						</div>
-			    						<div class="details-design">
-			    							<div class="details-design__title">Thiết kế chi tiết</div>
-			    							<ul class="details-design__list">
-			    								<li class="details-design__item">Số tầng cao: <strong>3</strong></li>
-			    								<li class="details-design__item">Diện tích sử dụng: <strong>100 m2</strong></li>
-			    								<li class="details-design__item">Số phòng ngủ: <strong>3</strong></li>
-			    								<li class="details-design__item">Số WC: <strong>3</strong></li>
-			    								<li class="details-design__item">Tiêu chuẩn bàn giao: <strong>Full nội thất</strong></li>
-			    								<li class="details-design__item">Phong cách kiến trúc: <strong>Hiện đại</strong></li>
-			    							</ul>
-			    						</div>
+		    					<div class="compare__body">
+		    						<div class="compare__body-part">
+			    						<div class="location">Thành phố Phan Thiết</div>
+			    						<h3 class="compare__title">NovaWorld Phan Thiết</h3>
 		    						</div>
-		    						<div class="price-project">100 triệu/ m2</div>
-		    						<a href="#" class="view-evaluation">Xem đánh giá dự án</a>
-		    						<a href="#" title="Xem chi tiết" class="view-detail">Xem chi tiết</a>
+		    						<a href="#" title="Xem đánh giá" class="view-detail">Xem đánh giá</a>
 		    					</div>
 		    				</div>
-		    				<div class="search-results__item">
-		    					<div class="search-results__header">
-		    						<figure class="search-results__img"><img src="assets/images/tim-can-ho/tim-can-ho-01.png" alt="tim can ho"></figure>
+		    				<div class="compare__item">
+		    					<div class="compare__header">
+		    						<figure class="compare__img"><img src="assets/images/tim-can-ho/tim-can-ho-01.png" alt="tim can ho"></figure>
 		    						<ul class="btn-act">
 			    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
 			    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
-			    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
 			    					</ul>
 			    					<div class="favorite-label"><strong>134</strong>lượt yêu thích</div>
 		    					</div>
-		    					<div class="search-results__body">
-		    						<div class="results__body-part">
-			    						<div class="search-location">Thành phố Phan Thiết</div>
-			    						<h3 class="search-results__title">NovaWorld Phan Thiết</h3>
-			    						<div class="project-overview">
-			    							<div class="project-overview__title">Tổng quan dự án</div>
-			    							<ul class="project-overview__list">
-			    								<li class="project-overview__item">Chủ đầu tư: <strong>VinGroup</strong></li>
-			    								<li class="project-overview__item">Vị trí dự án: <strong>123 Hai Bà Trưng,...</strong></li>
-			    								<li class="project-overview__item">Quy mô dự án: <strong>70.000 m2</strong></li>
-			    								<li class="project-overview__item">Số lượng sản phẩm: <strong>1.000</strong></li>
-			    								<li class="project-overview__item">Mật độ xây dựng: <strong>15%</strong></li>
-			    								<li class="project-overview__item">Thời điểm bàn giao dự kiến: <strong>2022</strong></li>
-			    							</ul>
-			    						</div>
-			    						<div class="details-design">
-			    							<div class="details-design__title">Thiết kế chi tiết</div>
-			    							<ul class="details-design__list">
-			    								<li class="details-design__item">Số tầng cao: <strong>3</strong></li>
-			    								<li class="details-design__item">Diện tích sử dụng: <strong>100 m2</strong></li>
-			    								<li class="details-design__item">Số phòng ngủ: <strong>3</strong></li>
-			    								<li class="details-design__item">Số WC: <strong>3</strong></li>
-			    								<li class="details-design__item">Tiêu chuẩn bàn giao: <strong>Full nội thất</strong></li>
-			    								<li class="details-design__item">Phong cách kiến trúc: <strong>Hiện đại</strong></li>
-			    							</ul>
-			    						</div>
+		    					<div class="compare__body">
+		    						<div class="compare__body-part">
+			    						<div class="location">Thành phố Phan Thiết</div>
+			    						<h3 class="compare__title">NovaWorld Phan Thiết</h3>
 		    						</div>
-		    						<div class="price-project">100 triệu/ m2</div>
-		    						<a href="#" class="view-evaluation">Xem đánh giá dự án</a>
-		    						<a href="#" title="Xem chi tiết" class="view-detail">Xem chi tiết</a>
+		    						<a href="#" title="Xem đánh giá" class="view-detail">Xem đánh giá</a>
 		    					</div>
 		    				</div>
-		    				<div class="search-results__item">
-		    					<div class="search-results__header">
-		    						<figure class="search-results__img"><img src="assets/images/tim-can-ho/tim-can-ho-01.png" alt="tim can ho"></figure>
+		    				<div class="compare__item">
+		    					<div class="compare__header">
+		    						<figure class="compare__img"><img src="assets/images/tim-can-ho/tim-can-ho-01.png" alt="tim can ho"></figure>
 		    						<ul class="btn-act">
 			    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
 			    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
-			    						<li><a href="#" title="add"><img src="assets/images/commons/ic-add.png" alt="add"></a></li>
 			    					</ul>
 			    					<div class="favorite-label"><strong>134</strong>lượt yêu thích</div>
 		    					</div>
-		    					<div class="search-results__body">
-		    						<div class="results__body-part">
-			    						<div class="search-location">Thành phố Phan Thiết</div>
-			    						<h3 class="search-results__title">NovaWorld Phan Thiết</h3>
-			    						<div class="project-overview">
-			    							<div class="project-overview__title">Tổng quan dự án</div>
-			    							<ul class="project-overview__list">
-			    								<li class="project-overview__item">Chủ đầu tư: <strong>VinGroup</strong></li>
-			    								<li class="project-overview__item">Vị trí dự án: <strong>123 Hai Bà Trưng,...</strong></li>
-			    								<li class="project-overview__item">Quy mô dự án: <strong>70.000 m2</strong></li>
-			    								<li class="project-overview__item">Số lượng sản phẩm: <strong>1.000</strong></li>
-			    								<li class="project-overview__item">Mật độ xây dựng: <strong>15%</strong></li>
-			    								<li class="project-overview__item">Thời điểm bàn giao dự kiến: <strong>2022</strong></li>
-			    							</ul>
-			    						</div>
-			    						<div class="details-design">
-			    							<div class="details-design__title">Thiết kế chi tiết</div>
-			    							<ul class="details-design__list">
-			    								<li class="details-design__item">Số tầng cao: <strong>3</strong></li>
-			    								<li class="details-design__item">Diện tích sử dụng: <strong>100 m2</strong></li>
-			    								<li class="details-design__item">Số phòng ngủ: <strong>3</strong></li>
-			    								<li class="details-design__item">Số WC: <strong>3</strong></li>
-			    								<li class="details-design__item">Tiêu chuẩn bàn giao: <strong>Full nội thất</strong></li>
-			    								<li class="details-design__item">Phong cách kiến trúc: <strong>Hiện đại</strong></li>
-			    							</ul>
-			    						</div>
+		    					<div class="compare__body">
+		    						<div class="compare__body-part">
+			    						<div class="location">Thành phố Phan Thiết</div>
+			    						<h3 class="compare__title">NovaWorld Phan Thiết</h3>
 		    						</div>
-		    						<div class="price-project">100 triệu/ m2</div>
-		    						<a href="#" class="view-evaluation">Xem đánh giá dự án</a>
-		    						<a href="#" title="Xem chi tiết" class="view-detail">Xem chi tiết</a>
+		    						<a href="#" title="Xem đánh giá" class="view-detail">Xem đánh giá</a>
 		    					</div>
 		    				</div>
 		    			</div>
-		    			<a href="#" class="load-more-projects">Tải thêm dự án</a>
+		    			<div class="see-review">
+		    				<div class="see-review-title">Xem đánh giá dự án</div>
+		    				<div class="review__item">
+		    					<div class="review__header">
+		    						<figure class="review__img"><img src="assets/images/tim-can-ho/tim-can-ho-01.png" alt="tim can ho"></figure>
+		    						<ul class="btn-act">
+			    						<li><a href="#" title="star"><img src="assets/images/commons/ic-star.png" alt="star"></a></li>
+			    						<li><a href="#" title="heart"><img src="assets/images/commons/ic-heart.png" alt="heart"></a></li>
+			    					</ul>
+			    					<div class="favorite-label"><strong>134</strong>lượt yêu thích</div>
+		    					</div>
+		    					<div class="review__body">
+		    						<div class="review__body-part">
+			    						<div class="location">Thành phố Phan Thiết</div>
+			    						<h3 class="review__title">NovaWorld Phan Thiết</h3>
+		    						</div>
+		    					</div>
+		    				</div>
+		    				<p class="review__des">Điểm từ 1-10 tương ứng từ không đồng ý đến rất đồng ý cho mỗi tiêu chí</p>
+		    				<ul class="review-note">
+		    					<li><span class="review-homebroker"></span>Đánh giá từ HomeBrokers</li>
+		    					<li><span class="review-customer"></span>Đánh giá trung bình từ khách hàng</li>
+		    				</ul>
+		    				<div class="review-info__list">
+		    					<div class="review-info__item">
+		    						<div class="criteria">Cơ hội lớn để đầu tư</div>
+		    						<div class="point-review"><span class="review-homebroker"></span><span class="review-customer"></span></div>
+		    					</div>
+		    					<div class="review-info__item">
+		    						<div class="criteria">Tổ ấm tuyệt vời cho gia đình</div>
+		    						<div class="point-review"><span class="review-homebroker"></span><span class="review-customer"></span></div>
+		    					</div>
+		    					<div class="review-info__item">
+		    						<div class="criteria">Chủ đầu tư uy tín cao</div>
+		    						<div class="point-review"><span class="review-homebroker"></span><span class="review-customer"></span></div>
+		    					</div>
+		    				</div>
+		    				<div class="comments">
+		    					<div class="comment__title">Nhận xét khác <span class="total">(50 nhận xét)</span></div>
+		    					<a href="#" class="send-review">Gửi đánh giá của bạn</a>
+		    					<div class="comments__list">
+		    						<div class="comment__item">
+		    							
+		    						</div>
+		    					</div>
+		    				</div>
+		    			</div>
 		    		</div>
 		    	</div>
 		    	<div class="about-homebrokers bg-white">
