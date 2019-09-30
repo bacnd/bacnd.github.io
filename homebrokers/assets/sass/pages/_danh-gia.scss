@@ -1,0 +1,164 @@
+.tim-can-ho {
+	.box-search-results {
+		padding-bottom: 57px;
+	}
+	.search-results__lists {
+		@include dlflex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.search-results__item {
+			max-width: 360px;
+			width: 100%;
+			flex-direction: column;
+			box-shadow: 2.5px 4.3px 5px 0 rgba(0, 0, 0, 0.12);
+			border-top: 4px solid #a66636;
+			border-bottom: none;
+			margin-bottom: 30px;
+			@media screen and (max-width: 1096px) and (min-width: 640px){
+				max-width: 49%;
+			}
+			@media screen and (max-width: 639px) {
+				max-width: 100%;
+			}
+			.search-results__header {
+				width: 100%;
+				.search-results__img {
+					img {
+						width: 100%;
+					}
+				}
+				.btn-act {
+					top: initial;
+				    bottom: 28px;
+				    left: 12px;
+				    right: initial;
+				}
+				.favorite-label {
+					font-size: 13px;
+					height: 24px;
+					padding-left: 13px;
+				}
+			}
+			.search-results__body {
+				width: calc(100% - 26px);
+				margin-left: 13px;
+				margin-right: 13px;
+				.search-location {
+					font-size: 14px;
+				    padding-left: 25px;
+					&:before {
+					    width: 16px;
+					    height: 21px;
+					    background-size: contain;
+					}
+				}
+				.search-results__title {
+					font-size: 18px;
+					line-height: 1.67;
+					padding-top: 5px;
+				}
+				.project-overview, .details-design {
+				    margin-top: 14px;
+					&__title {
+						font-size: 16px;
+						font-weight: bold;
+					    margin-bottom: 4px;
+					}
+					&__list {
+						position: relative;
+						&:before {
+							content: '';
+							position: absolute;
+							background: url('../images/tim-can-ho/ic-dot.png') repeat-y;
+							width: 3px;
+							height: calc(100% - 32px);
+						    left: 5px;
+						    top: 0;
+						    bottom: 0;
+						    margin: auto;
+						}
+						.project-overview__item, .details-design__item {
+							font-size: 14px;
+							font-weight: normal;
+							line-height: 2;
+							padding-left: 18px;
+							position: relative;
+							&:before {
+								content: '';
+								position: absolute;
+								background: url('../images/tim-can-ho/ic-ellipse.png') no-repeat;
+								width: 8px;
+								height: 8px;
+								left: 2px;
+								top: 11px;
+							}
+						}
+					}
+				}
+				.price-project {
+					font-size: 20px;
+					font-weight: bold;
+					line-height: 1.5;
+					text-align: center;
+					padding-top: 26px;
+				}
+				.view-evaluation {
+					max-width: 333px;
+					width: 100%;
+					height: 60px;
+					background-color: #e4e4e4;
+					font-size: 16px;
+					line-height: 1.88;
+					@include dlflex;
+					align-items: center;
+					color: $clr-mobe;
+					padding-left: 61px;
+					position: relative;
+				    margin-top: 36px;
+				    @media screen and (max-width: 1096px) {
+						max-width: 100%;
+					}
+					&:before {
+						content: '';
+						position: absolute;
+						background: url('../images/tim-can-ho/ic-editor.png') no-repeat;
+						width: 32px;
+						height: 26px;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+						left: 18px;
+					}
+				}
+				.view-detail {
+					font-size: 16px;
+					font-weight: bold;
+					line-height: 1.75;
+					text-align: center;
+					text-decoration: underline;
+					color: $clr-asau;
+					margin-top: 43px;
+					margin-bottom: 12px;
+				}
+			}
+			& + .search-results__item {
+				margin-top: 0;
+			}
+		}
+	}
+
+	.load-more-projects {
+		max-width: 361px;
+		width: 100%;
+		height: 57px;
+		background-color: $clr-asau;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 1.75;
+		color: $clr-white;
+		@include dlflex;
+		align-items: center;
+		justify-content: center;
+		margin: 33px auto 0;
+	}
+}
