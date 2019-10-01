@@ -44,7 +44,7 @@
 				font-weight: bold;
 				line-height: 0.8;
 				letter-spacing: normal;
-				color: #b47c53;
+				color: $clr-asau;
 				margin-bottom: 35px;
 				@include resizefont(19px, 30px);
 				@media screen and (max-width: $screen-sp) {

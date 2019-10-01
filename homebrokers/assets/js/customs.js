@@ -189,6 +189,15 @@ $(function() {
         e.preventDefault();
     });
 
+    $(".point-review > span").each(function() {
+        $(this)
+            .data("origWidth", $(this).width())
+            .width(0)
+            .animate({
+                width: $(this).data("origWidth")
+            }, 1200);
+    });
+
     //----- OPEN
     $('[data-popup-open]').on('click', function(e) {
         var targeted_popup_class = jQuery(this).attr('data-popup-open');

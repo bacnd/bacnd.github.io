@@ -1931,7 +1931,7 @@ footer #scrollUp {
   font-weight: bold;
   line-height: 0.8;
   letter-spacing: normal;
-  color: #b47c53;
+  color: #a66636;
   margin-bottom: 35px; }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -3741,179 +3741,189 @@ footer #scrollUp {
   .compare-page .popup-modal.popup-compare .popup-inner .popup-search-results .pop-search__list .pop-search__item:last-child {
     padding-bottom: 30px; } }
 
-.tim-can-ho .box-search-results {
-  padding-bottom: 57px; }
+.review-page .box-search .box-search__ct .box-search__form__description {
+  font-size: 22px;
+  line-height: 1.55;
+  text-align: center;
+  color: #fff;
+  padding-top: 29px; }
 
-.tim-can-ho .search-results__lists {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
+.review-page .box-review .box-review-title {
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  color: #333333;
+  padding-top: 42px;
+  padding-bottom: 26px; }
 
-.tim-can-ho .search-results__lists .search-results__item {
+.review-page .box-review .compare__lists .compare__item .compare__body .view-detail {
+  padding-bottom: 20px; }
+
+.review-page .box-review .see-review {
+  padding: 30px;
+  background: #fff;
+  margin-top: 20px; }
+
+.review-page .box-review .see-review .see-review-title {
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  color: #1b1b1b;
+  padding-bottom: 27px; }
+
+.review-page .box-review .see-review .review__item {
   max-width: 360px;
   width: 100%;
+  background: #fff;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
   flex-direction: column;
-  box-shadow: 2.5px 4.3px 5px 0 rgba(0, 0, 0, 0.12);
-  border-top: 4px solid #a66636;
-  border-bottom: none;
-  margin-bottom: 30px; }
-
-@media screen and (max-width: 1096px) and (min-width: 640px) {
-  .tim-can-ho .search-results__lists .search-results__item {
-    max-width: 49%; } }
-
-@media screen and (max-width: 639px) {
-  .tim-can-ho .search-results__lists .search-results__item {
-    max-width: 100%; } }
-
-.tim-can-ho .search-results__lists .search-results__item .search-results__header {
-  width: 100%; }
-
-.tim-can-ho .search-results__lists .search-results__item .search-results__header .search-results__img img {
-  width: 100%; }
-
-.tim-can-ho .search-results__lists .search-results__item .search-results__header .btn-act {
-  top: initial;
-  bottom: 28px;
-  left: 12px;
-  right: initial; }
-
-.tim-can-ho .search-results__lists .search-results__item .search-results__header .favorite-label {
-  font-size: 13px;
-  height: 24px;
-  padding-left: 13px; }
-
-.tim-can-ho .search-results__lists .search-results__item .search-results__body {
-  width: calc(100% - 26px);
-  margin-left: 13px;
-  margin-right: 13px; }
-
-.tim-can-ho .search-results__lists .search-results__item .search-results__body .search-location {
-  font-size: 14px;
-  padding-left: 25px; }
-
-.tim-can-ho .search-results__lists .search-results__item .search-results__body .search-location:before {
-  width: 16px;
-  height: 21px;
-  background-size: contain; }
-
-.tim-can-ho .search-results__lists .search-results__item .search-results__body .search-results__title {
-  font-size: 18px;
-  line-height: 1.67;
-  padding-top: 5px; }
-
-.tim-can-ho .search-results__lists .search-results__item .search-results__body .project-overview, .tim-can-ho .search-results__lists .search-results__item .search-results__body .details-design {
-  margin-top: 14px; }
-
-.tim-can-ho .search-results__lists .search-results__item .search-results__body .project-overview__title, .tim-can-ho .search-results__lists .search-results__item .search-results__body .details-design__title {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 4px; }
-
-.tim-can-ho .search-results__lists .search-results__item .search-results__body .project-overview__list, .tim-can-ho .search-results__lists .search-results__item .search-results__body .details-design__list {
-  position: relative; }
-
-.tim-can-ho .search-results__lists .search-results__item .search-results__body .project-overview__list:before, .tim-can-ho .search-results__lists .search-results__item .search-results__body .details-design__list:before {
-  content: '';
-  position: absolute;
-  background: url("../images/tim-can-ho/ic-dot.png") repeat-y;
-  width: 3px;
-  height: calc(100% - 32px);
-  left: 5px;
-  top: 0;
-  bottom: 0;
   margin: auto; }
 
-.tim-can-ho .search-results__lists .search-results__item .search-results__body .project-overview__list .project-overview__item, .tim-can-ho .search-results__lists .search-results__item .search-results__body .project-overview__list .details-design__item, .tim-can-ho .search-results__lists .search-results__item .search-results__body .details-design__list .project-overview__item, .tim-can-ho .search-results__lists .search-results__item .search-results__body .details-design__list .details-design__item {
+.review-page .box-review .see-review .review__item .review__header {
+  position: relative;
+  width: 100%;
+  height: 204px;
+  display: block; }
+
+.review-page .box-review .see-review .review__item .review__header .review__img {
+  height: 100%; }
+
+.review-page .box-review .see-review .review__item .review__header .review__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+.review-page .box-review .see-review .review__item .review__header .btn-act {
+  position: absolute;
+  bottom: 28px;
+  left: 12px; }
+
+.review-page .box-review .see-review .review__item .review__header .favorite-label {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 2;
+  width: 100%;
+  color: #fff;
+  padding-left: 28px;
+  font-size: 13px;
+  height: 24px;
+  padding-left: 13px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center; }
+
+.review-page .box-review .see-review .review__item .review__header .favorite-label strong {
+  margin-right: 5px; }
+
+.review-page .box-review .see-review .review__item .review__body .review__body-part .location {
+  position: relative;
   font-size: 14px;
   font-weight: normal;
-  line-height: 2;
-  padding-left: 18px;
-  position: relative; }
+  color: #1b1b1b;
+  padding-top: 10px;
+  text-align: center; }
 
-.tim-can-ho .search-results__lists .search-results__item .search-results__body .project-overview__list .project-overview__item:before, .tim-can-ho .search-results__lists .search-results__item .search-results__body .project-overview__list .details-design__item:before, .tim-can-ho .search-results__lists .search-results__item .search-results__body .details-design__list .project-overview__item:before, .tim-can-ho .search-results__lists .search-results__item .search-results__body .details-design__list .details-design__item:before {
-  content: '';
-  position: absolute;
-  background: url("../images/tim-can-ho/ic-ellipse.png") no-repeat;
-  width: 8px;
-  height: 8px;
-  left: 2px;
-  top: 11px; }
+.review-page .box-review .see-review .review__item .review__body .review__body-part .location .ic-location img {
+  width: 16px;
+  height: 21px;
+  vertical-align: inherit; }
 
-.tim-can-ho .search-results__lists .search-results__item .search-results__body .price-project {
-  font-size: 20px;
+.review-page .box-review .see-review .review__item .review__body .review__body-part .review__title {
+  font-size: 18px;
   font-weight: bold;
-  line-height: 1.5;
-  text-align: center;
-  padding-top: 26px; }
+  line-height: 1.67;
+  text-align: center; }
 
-.tim-can-ho .search-results__lists .search-results__item .search-results__body .view-evaluation {
-  max-width: 333px;
-  width: 100%;
-  height: 60px;
-  background-color: #e4e4e4;
+.review-page .box-review .see-review .review__des {
   font-size: 16px;
-  line-height: 1.88;
+  font-style: italic;
+  text-align: center;
+  color: #333333;
+  padding-top: 7px; }
+
+.review-page .box-review .see-review .point {
+  height: 5px; }
+
+.review-page .box-review .see-review .point.review-homebroker {
+  background: #996633; }
+
+.review-page .box-review .see-review .point.review-customer {
+  background: #999999; }
+
+.review-page .box-review .see-review .review-note {
+  font-size: 16px;
+  color: #333333;
+  display: table;
+  margin: auto;
+  margin-top: 28px; }
+
+.review-page .box-review .see-review .review-note li {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -moz-flex;
   display: -webkit-flex;
   display: flex;
-  align-items: center;
-  color: #1b1b1b;
-  padding-left: 61px;
+  align-items: center; }
+
+.review-page .box-review .see-review .review-note .point {
+  width: 46px;
+  margin-right: 20px; }
+
+.review-page .box-review .see-review .review-info__list .review-info__item {
+  padding: 25px 55px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center; }
+
+.review-page .box-review .see-review .review-info__list .review-info__item .criteria, .review-page .box-review .see-review .review-info__list .review-info__item .point-review {
+  width: 50%; }
+
+.review-page .box-review .see-review .review-info__list .review-info__item .point-review {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column; }
+
+.review-page .box-review .see-review .review-info__list .review-info__item .point-review .point {
   position: relative;
-  margin-top: 36px; }
+  margin: 5px 0; }
 
-@media screen and (max-width: 1096px) {
-  .tim-can-ho .search-results__lists .search-results__item .search-results__body .view-evaluation {
-    max-width: 100%; } }
-
-.tim-can-ho .search-results__lists .search-results__item .search-results__body .view-evaluation:before {
-  content: '';
+.review-page .box-review .see-review .review-info__list .review-info__item .point-review .point:after {
+  content: attr(data-point);
   position: absolute;
-  background: url("../images/tim-can-ho/ic-editor.png") no-repeat;
-  width: 32px;
-  height: 26px;
-  top: 0;
+  right: -15px;
+  top: -11px;
   bottom: 0;
   margin: auto;
-  left: 18px; }
-
-.tim-can-ho .search-results__lists .search-results__item .search-results__body .view-detail {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
-  line-height: 1.75;
-  text-align: center;
-  text-decoration: underline;
-  color: #a66636;
-  margin-top: 43px;
-  margin-bottom: 12px; }
+  color: #1b1b1b; }
 
-.tim-can-ho .search-results__lists .search-results__item + .search-results__item {
-  margin-top: 0; }
+.review-page .box-review .see-review .review-info__list .review-info__item:nth-child(odd) {
+  background-color: #f4f5f9; }
 
-.tim-can-ho .load-more-projects {
-  max-width: 361px;
-  width: 100%;
-  height: 57px;
-  background-color: #a66636;
-  font-size: 16px;
+.review-page .box-review .see-review .comments .comment__title {
+  font-size: 18px;
   font-weight: bold;
-  line-height: 1.75;
-  color: #fff;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 33px auto 0; }
+  color: #333333; }
+
+.review-page .box-review .see-review .comments .comment__title .total {
+  font-weight: normal; }
