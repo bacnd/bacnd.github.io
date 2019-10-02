@@ -189,14 +189,14 @@ $(function() {
         e.preventDefault();
     });
 
-    $(".point-review > span").each(function() {
-        $(this)
-            .data("origWidth", $(this).width())
-            .width(0)
-            .animate({
-                width: $(this).data("origWidth")
-            }, 1200);
-    });
+    // $(".point-review > span").each(function() {
+    //     $(this)
+    //         .data("origWidth", $(this).width())
+    //         .width(0)
+    //         .animate({
+    //             width: $(this).data("origWidth")
+    //         }, 1200);
+    // });
 
     //----- OPEN
     $('[data-popup-open]').on('click', function(e) {

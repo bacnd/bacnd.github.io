@@ -1,8 +1,13 @@
 .review-page {
 	.box-search {
 		.box-search__ct {
+			figure {
+				img {
+					min-height: 350px;
+				}
+			}
 			.box-search__form__description {
-				font-size: 22px;
+				font-size: 20px;
 				line-height: 1.55;
 				text-align: center;
 				color: $clr-white;
@@ -18,10 +23,14 @@
 			color: #333333;
 			padding-top: 42px;
 			padding-bottom: 26px;
+			@include resizefont(19px, 30px);
 		}
 		.compare__lists {
 			.compare__item {
 				.compare__body {
+					@media screen and (max-width: $screen-sp) {
+						padding-bottom: 0;
+					}
 					.view-detail {
 						padding-bottom: 20px;
 					}
@@ -32,12 +41,19 @@
 			padding: 30px;
 			background: $clr-white;
 			margin-top: 20px;
+			@media screen and (max-width: $screen-sp) {
+				padding: 30px 10px;
+			}
 			.see-review-title {
 				font-size: 30px;
 				font-weight: normal;
 				text-align: center;
 				color: $clr-mobe;
 				padding-bottom: 27px;
+				@include resizefont(19px, 30px);
+				@media screen and (max-width: $screen-sp) {
+					padding-bottom: 20px;
+				}
 			}
 			.review__item {
 			    max-width: 360px;
@@ -114,6 +130,7 @@
 				text-align: center;
 				color: #333333;
 				padding-top: 7px;
+				@include resizefont(14px, 16px);
 			}
 			.point {
 				height: 5px;
@@ -130,6 +147,7 @@
 			    display: table;
     			margin: auto;
     			margin-top: 28px;
+    			@include resizefont(14px, 16px);
 				li {
 					@include dlflex;
 					align-items: center;
@@ -140,12 +158,29 @@
 				}
 			}
 			.review-info__list {
+				margin-top: 33px;
 				.review-info__item {
 					padding: 25px 55px;
+					@media screen and (max-width: $screen-sp) {
+						padding: 10px 25px 10px 15px;
+					}
 					@include dlflex;
 					align-items: center;
+					@media screen and (max-width: $screen-sp) {
+						flex-direction: column;
+					}
 					.criteria, .point-review {
 						width: 50%;
+						@media screen and (max-width: $screen-sp) {
+							width: 100%;
+						}
+					}
+					.criteria {
+						font-size: 16px;
+						@include resizefont(14px, 16px);
+						@media screen and (max-width: $screen-sp) {
+							text-align: center;
+						}
 					}
 					.point-review {
 						@include dlflex;
@@ -163,6 +198,7 @@
 								font-size: 18px;
 								font-weight: bold;
 								color: $clr-mobe;
+								@include resizefont(14px, 18px);
 							}
 						}
 					}
@@ -172,14 +208,105 @@
 				}
 			}
 			.comments {
-				.comment__title {
-					font-size: 18px;
-					font-weight: bold;
-					color: #333333;
-					.total {
-						font-weight: normal;
+				margin-top: 57px;
+				padding-bottom: 20px;
+				border-bottom: 1px solid #e1e1e1;
+				margin-bottom: 70px;
+				@media screen and (max-width: $screen-sp) {
+					margin-top: 20px;
+				}
+				.comments__hd {
+					border-bottom: 1px solid #e1e1e1;
+					padding-bottom: 8px;
+					margin-bottom: 20px;
+					@media screen and (max-width: $screen-sp) {
+						@include dlflex;
+						flex-direction: column;
+					}
+					.comment__title {
+						font-size: 18px;
+						font-weight: bold;
+						color: #333333;
+						display: inline-block;
+						@include resizefont(14px, 18px);
+						.total {
+							font-weight: normal;
+						}
+						@media screen and (max-width: $screen-sp) {
+							order: 2;
+							margin-top: 30px;
+						}
+					}
+					.send-review {
+						float: right;
+						font-size: 18px;
+						font-weight: bold;
+						text-align: right;
+						text-decoration: underline;
+						color: #996633;
+						@include resizefont(14px, 18px);
+						@media screen and (max-width: $screen-sp) {
+							text-align: center;
+							float: none;
+							order: 1;
+						}
 					}
 				}
+				.comments__list {
+					max-height: 365px;
+					overflow-y: auto;
+					.comment__item {
+						.people-info {
+							@include dlflex;
+							align-items: center;
+							.people-name {
+								margin-left: 19px;
+								font-size: 16px;
+								line-height: 1.63;
+								@include resizefont(14px, 16px);
+								.date-update {
+									display: block;
+									font-size: 12px;
+									font-weight: normal;
+									line-height: 2.17;
+									color: #5b5b5b;
+								}
+							}
+						}
+						.comment_content {
+							margin-left: 82px;
+							font-size: 16px;
+							line-height: 1.63;
+							@include resizefont(14px, 16px);
+						}
+						.reply {
+							margin-left: 82px;
+							border-left: 4px solid #e1e1e1;
+							padding-left: 18px;
+							margin-top: 14px;
+							.reply-info {
+								font-size: 16px;
+								line-height: 1.63;
+								text-align: left;
+								@include resizefont(14px, 16px);
+								.date-update {
+									font-size: 12px;
+									line-height: 2.17;
+									color: #5b5b5b;
+									margin-left: 18px;
+								}
+							}
+							.reply-content {
+								font-size: 16px;
+								line-height: 1.63;
+								@include resizefont(14px, 16px);
+							}
+						}
+						& + .comment__item {
+							margin-top: 50px;
+						}
+					}
+				}				
 			}
 		}
 	}

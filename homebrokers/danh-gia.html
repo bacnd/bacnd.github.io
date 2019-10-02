@@ -85,7 +85,7 @@
 			    						<option value="1 tỷ">1 tỷ</option>
 			    					</select>
 			    				</div>
-			    				<p class="box-search__form__description">Short Description: Hãy cho phép chúng tôi lắng nghe ý kiến chuyên môn từ bạn.<br />Thông tin đánh giá từng dự án là tổng hợp ý kiến từ nhiều KH khác của chúng tôi</p>
+			    				<p class="box-search__form__description dl-pc">Short Description: Hãy cho phép chúng tôi lắng nghe ý kiến chuyên môn từ bạn.<br />Thông tin đánh giá từng dự án là tổng hợp ý kiến từ nhiều KH khác của chúng tôi</p>
 			    			</form>
 		    			</div>
 		    		</div>
@@ -197,9 +197,55 @@
 		    					</div>
 		    				</div>
 		    				<div class="comments">
-		    					<div class="comment__title">Nhận xét khác <span class="total">(50 nhận xét)</span></div>
-		    					<a href="#" class="send-review">Gửi đánh giá của bạn</a>
+		    					<div class="comments__hd">
+			    					<div class="comment__title">Nhận xét khác <span class="total">(50 nhận xét)</span></div>
+			    					<a href="#" class="send-review">Gửi đánh giá của bạn</a>
+		    					</div>
 		    					<div class="comments__list">
+		    						<div class="comment__item">
+		    							<div class="people-info">
+		    								<img src="assets/images/danh-gia/avata.png" alt="avata">
+		    								<div class="people-name"><strong>Khưu Oanh</strong><span class="date-update">1 ngày trước</span></div>
+		    							</div>
+		    							<div class="comment_content">Dịch vụ tốt, giá cả dự án hợp lý.</div>
+		    							<div class="reply">
+		    								<div class="reply-info"><strong>HomeBrokers</strong><span class="date-update">1 ngày trước</span></div>
+		    								<div class="reply-content">Cảm ơn bạn đã dùng dịch vụ của HomeBrokers.</div>
+		    							</div>
+		    						</div>
+		    						<div class="comment__item">
+		    							<div class="people-info">
+		    								<img src="assets/images/danh-gia/avata.png" alt="avata">
+		    								<div class="people-name"><strong>Khưu Oanh</strong><span class="date-update">1 ngày trước</span></div>
+		    							</div>
+		    							<div class="comment_content">Dịch vụ tốt, giá cả dự án hợp lý.</div>
+		    							<div class="reply">
+		    								<div class="reply-info"><strong>HomeBrokers</strong><span class="date-update">1 ngày trước</span></div>
+		    								<div class="reply-content">Cảm ơn bạn đã dùng dịch vụ của HomeBrokers.</div>
+		    							</div>
+		    						</div>
+		    						<div class="comment__item">
+		    							<div class="people-info">
+		    								<img src="assets/images/danh-gia/avata.png" alt="avata">
+		    								<div class="people-name"><strong>Khưu Oanh</strong><span class="date-update">1 ngày trước</span></div>
+		    							</div>
+		    							<div class="comment_content">Dịch vụ tốt, giá cả dự án hợp lý.</div>
+		    							<div class="reply">
+		    								<div class="reply-info"><strong>HomeBrokers</strong><span class="date-update">1 ngày trước</span></div>
+		    								<div class="reply-content">Cảm ơn bạn đã dùng dịch vụ của HomeBrokers.</div>
+		    							</div>
+		    						</div>
+		    						<div class="comment__item">
+		    							<div class="people-info">
+		    								<img src="assets/images/danh-gia/avata.png" alt="avata">
+		    								<div class="people-name"><strong>Khưu Oanh</strong><span class="date-update">1 ngày trước</span></div>
+		    							</div>
+		    							<div class="comment_content">Dịch vụ tốt, giá cả dự án hợp lý.</div>
+		    							<div class="reply">
+		    								<div class="reply-info"><strong>HomeBrokers</strong><span class="date-update">1 ngày trước</span></div>
+		    								<div class="reply-content">Cảm ơn bạn đã dùng dịch vụ của HomeBrokers.</div>
+		    							</div>
+		    						</div>
 		    						<div class="comment__item">
 		    							<div class="people-info">
 		    								<img src="assets/images/danh-gia/avata.png" alt="avata">
@@ -228,6 +274,52 @@
 						</figure>
 	    			</div>
 		    	</div>
+		    	<div class="popup-modal popup-review" data-popup="popup-review">
+					<div class="popup-inner">
+						<h4 class="popup-review-title">Lựa chọn dự án để so sánh</h4>
+						<form action="#" id="form-review" method="POST" role="form">
+							<div class="form-group-input">
+		    					<div class="form-group">
+			    					<input type="text" class="form-control" name="tenduan" id="inputTenduan" placeholder="Nhập dự án">
+			    					<div class="search-bar"></div>
+			    				</div>
+			    				<div class="form-group">
+			    					<select name="chudautu" class="form-select form-control">
+			    						<option value="">Chủ đầu tư</option>
+			    						<option value="NovaLand">NovaLand</option>
+			    					</select>
+			    				</div>
+		    					<div class="form-group">
+			    					<select name="loaibatdongsan" id="inputLoaibatdongsan" class="form-select form-control">
+			    						<option value="">Loại bất động sản</option>
+			    						<option value="Biệt thự">Biệt thự</option>
+			    						<option value="Chung cư">Chung cư</option>
+			    						<option value="Shop House">Shop House</option>
+			    						<option value="Đất nền">Đất nền</option>
+			    					</select>
+			    				</div>
+			    				<div class="form-group">
+									<button type="submit" id="btn-compare-submit" class="btn-compare btn-primary">Tìm</button>
+								</div>
+		    				</div>
+						</form>
+						<div class="popup-search-results">
+							<h4 class="pop-search__ttl">Kết quả tìm kiếm</h4>
+							<ul class="pop-search__list">
+								<li class="pop-search__item">
+									<figure class="pop-search__img"><img src="assets/images/so-sanh/popup-search.png" alt="search__img"></figure>
+									<div class="pop-search__info">
+										<div class="pop-search__title">Căn hộ The Tresor 1PN 1WC, đầy đủ nội thất,...</div>
+										<p class="pop-search__txt">Đường Nội Khu 1, Tân Phú, Quận 7, Hồ Chí Mi...</p>
+										<p class="pop-search__investor">Chủ đầu tư: <strong>Novaland</strong></p>
+									</div>
+									<div class="btn-choose-project">Chọn dự án</div>
+								</li>
+							</ul>
+						</div>
+						<a class="popup-close" data-popup-close="popup-review" href="#"><img src="assets/images/commons/ic-close-form.png"></a>
+					</div>
+				</div>
 		    </main>
 		    <footer id="footer">
 				<div class="container">
