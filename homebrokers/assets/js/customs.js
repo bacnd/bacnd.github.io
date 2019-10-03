@@ -14,8 +14,8 @@ $(document).ready(function() {
         slidesToShow: 5,
         slidesToScroll: 1,
         // centerMode: true,
-        prevArrow:"<div class='arrow-slider'><span class='slick-prev'></span></div>",
-        nextArrow:"<div class='arrow-slider'><span class='slick-next'></span></div>",
+        prevArrow: "<div class='arrow-slider'><span class='slick-prev'></span></div>",
+        nextArrow: "<div class='arrow-slider'><span class='slick-next'></span></div>",
         responsive: [{
             breakpoint: 769,
             settings: {
@@ -24,7 +24,7 @@ $(document).ready(function() {
             }
         }, {
             breakpoint: 480,
-                settings: {
+            settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
             }
@@ -70,10 +70,10 @@ $(document).ready(function() {
         $('.tintuc__list, .project__list').slick('resize');
     });
 
-    $('#scrollUp').click(function(e){
+    $('#scrollUp').click(function(e) {
         e.preventDefault();
         $('html, body').animate({ scrollTop: 0 }, 600);
-        return false; 
+        return false;
     });
 
     // click show menu
@@ -91,14 +91,14 @@ $(document).ready(function() {
     // let img = $('.tab-link.current').find('img');
     // img.attr('src', img.attr('src').replace('white.png', 'color.png'));
 
-    $('ul.tabs li').click(function(){
+    $('ul.tabs li').click(function() {
         var tab_id = $(this).attr('data-tab');
 
         $('ul.tabs li').removeClass('current');
         $('.tab-content').removeClass('current');
 
         $(this).addClass('current');
-        $("#"+tab_id).addClass('current');
+        $("#" + tab_id).addClass('current');
 
         let img = $('.tab-link').find('img');
         img.attr('src', img.attr('src').replace('color.png', 'white.png'));
@@ -107,7 +107,7 @@ $(document).ready(function() {
         this_img.attr('src', this_img.attr('src').replace('white.png', 'color.png'));
     });
 
-    $('.accordion').click(function(){
+    $('.accordion').click(function() {
         $('.accordion, ul.tabs li').removeClass('current');
         $('.tab-content').removeClass('current');
 
@@ -138,12 +138,12 @@ $(function() {
         var fullTxt = this.toRotate[i];
 
         if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
         } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
 
-        this.el.innerHTML = 'Tự mình <span class="title-block--upbi wrap">'+this.txt+'</span> với SmartTools';
+        this.el.innerHTML = 'Tự mình <span class="title-block--upbi wrap">' + this.txt + '</span> với SmartTools';
 
         var that = this;
         var delta = 200 - Math.random() * 100;
@@ -151,26 +151,26 @@ $(function() {
         if (this.isDeleting) { delta /= 2; }
 
         if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
+            delta = this.period;
+            this.isDeleting = true;
         } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
         }
 
         setTimeout(function() {
-        that.tick();
+            that.tick();
         }, delta);
     };
 
     window.onload = function() {
         var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
+        for (var i = 0; i < elements.length; i++) {
             var toRotate = elements[i].getAttribute('data-type');
             var period = elements[i].getAttribute('data-period');
             if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
+                new TxtType(elements[i], JSON.parse(toRotate), period);
             }
         }
         // INJECT CSS
@@ -223,7 +223,7 @@ $(function() {
         // Callback function
         onSlideEnd: function(position, value) {}
     });
-    
+
     //----- OPEN
     $('[data-popup-open]').on('click', function(e) {
         var targeted_popup_class = jQuery(this).attr('data-popup-open');
@@ -239,4 +239,26 @@ $(function() {
 
         e.preventDefault();
     });
+});
+
+$(function() {
+    var $document = $(document);
+    var selector = '[data-rangeslider]';
+    var $inputRange = $(selector); /** * Example functionality to demonstrate a value feedback * and change the output's value. */
+
+
+    function valueOutput(element) {
+        var value = element.value;
+        var output = element.parentNode.getElementsByTagName('output')[0];
+        output.innerHTML = value;
+    } /** * Initial value output */
+    for (var i = $inputRange.length - 1; i >= 0; i--) {
+        valueOutput($inputRange[i]);
+    }; /** * Update value output */
+    $document.on('input', selector, function(e) {
+        valueOutput(e.target);
+    }); /** * Initialize the elements */
+    $inputRange.rangeslider({
+        polyfill: false
+    }); /** * Example functionality to demonstrate programmatic value changes */
 });
