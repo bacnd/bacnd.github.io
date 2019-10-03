@@ -27,6 +27,7 @@
 		}
 		.compare__lists {
 			.compare__item {
+				box-shadow: none;
 				.compare__body {
 					@media screen and (max-width: $screen-sp) {
 						padding-bottom: 0;
@@ -311,13 +312,78 @@
 			}
 		}
 	}
+	.popup-review {
+		.popup-review-title {
+			font-size: 24px;
+			font-weight: bold;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		.popup-review-txt {
+			font-size: 15px;
+			text-align: center;
+			margin-bottom: 25px;
+		}
+		.form-group-input {
+			.form-group {
+				padding: 15px 40px;
+				@include dlflex;
+				// align-items: center;
+				@media screen and (max-width: $screen-sp) {
+					flex-direction: column;
+					padding: 15px 20px;
+				}
+				font-size: 16px;
+				.criteria {
+					font-size: 18px;
+				}
+				.criteria, .point-review, .comments-input {
+					width: 50%;
+					@media screen and (max-width: $screen-sp) {
+						width: 100%;
+					}
+				}
+				.verification-group {
+					margin: auto;
+					@include dlflex;
+					align-items: center;
+				}
+				.verificationCode {
+					width: 150px;
+					// background-color: #f4f5f9;
+					border: none;
+					padding: 5px;
+					margin-left: 10px;
+				}
+				textarea {
+					resize: vertical;
+					width: 100%;
+					padding: 5px 10px;
+				}
+				&:nth-child(odd) {
+					background-color: #f4f5f9;
+				}
+			}
+			.btn-review {
+				width: 280px;
+				height: 54px;
+				background-color: $clr-asau;
+				@include dlflex;
+				align-items: center;
+				justify-content: center;
+				color: $clr-white;
+				margin: auto;
+				margin-top: 20px;
+			}
+		}
+	}
 }
 
 output {
-            display: block;
-            font-size: 30px;
-            font-weight: bold;
-            text-align: center;
-            margin: 30px 0;
-            width: 100%;
-        }
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0;
+    width: 100%;
+}

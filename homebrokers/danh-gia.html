@@ -93,12 +93,12 @@
 		    	</div>
 		    	<div class="box-compare box-review">
 		    		<div class="container">
-		    			<input type="range" max="10" class="rangeslider rangeslider--horizontal" data-rangeslider>
+		    			<!-- <input type="range" max="10" class="rangeslider rangeslider--horizontal" data-rangeslider>
 						<div class="rangeslider rangeslider--horizontal" id="js-rangeslider-5">
 							<div class="rangeslider__fill"></div>
 							<div class="rangeslider__handle"></div>
 						</div>
-						<output></output>
+						<output></output> -->
 
 		    			<h2 class="box-review-title">Dự án có đánh giá tốt nhất</h2>
 		    			<div class="compare__lists">
@@ -308,11 +308,15 @@
 			    				</div>
 			    				<div class="form-group">
 			    					<div class="criteria">Ý kiến khác:</div>
-		    						<textarea name="otherOpinions"></textarea>
+		    						<textarea name="commentContent" rows="3" class="comments-input"></textarea>
 			    				</div>
 			    				<div class="form-group">
-									<button type="submit" id="btn-compare-submit" class="btn-compare btn-primary">Tìm</button>
-								</div>
+			    					<div class="verification-group">
+				    					<div class="verification-code">Mã xác minh: </div>
+			    						<input type="text" name="verificationCode" value="" placeholder="Mã xác minh" class="verificationCode">
+		    						</div>
+			    				</div>
+			    				<button type="submit" id="btn-review-submit" class="btn-review btn-primary">Gửi đánh giá của bạn</button>
 		    				</div>
 						</form>
 						<a class="popup-close" data-popup-close="popup-review" href="#"><img src="assets/images/commons/ic-close-form.png"></a>
