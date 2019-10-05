@@ -2,11 +2,6 @@ $(document).ready(function() {
 
     'use strict';
 
-    var fullUrl = window.location.protocol + "//" + window.location.hostname + ":" + window.location.port + window.location.pathname;
-    var parts = fullUrl.split('/');
-    parts.pop();
-    var url = parts.join('/');
-
     $('.best-project__list').slick({
         autoplay: true,
         autoplaySpeed: 5000,
@@ -27,6 +22,23 @@ $(document).ready(function() {
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
+            }
+        }]
+    });
+
+    $('.slider-img__list').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        prevArrow: "<div class='arrow-slider'><span class='slick-prev'></span></div>",
+        nextArrow: "<div class='arrow-slider'><span class='slick-next'></span></div>",
+        responsive: [{
+            breakpoint: 769,
+            settings: {
+                dots: false,
             }
         }]
     });
@@ -120,6 +132,36 @@ $(document).ready(function() {
         let this_img = $(this).find('img');
         this_img.attr('src', this_img.attr('src').replace('white.png', 'color.png'));
     });
+
+    // review point
+    var valueBubble = '<output class="rangeslider__value-bubble" />';
+
+    function updateValueBubble(pos, value, context) {
+        pos = pos || context.position;
+        value = value || context.value;
+        var $valueBubble = $('.rangeslider__value-bubble', context.$range);
+        var tempPosition = pos + context.grabPos;
+        var position = (tempPosition <= context.handleDimension) ? context.handleDimension : (tempPosition >= context.maxHandlePos) ? context.maxHandlePos : tempPosition;
+
+        if ($valueBubble.length) {
+            $valueBubble[0].style.left = Math.ceil(position) + 'px';
+            $valueBubble[0].innerHTML = value;
+        }
+    }
+
+    if($('input[type="range"]').length){
+        $('input[type="range"]').rangeslider({
+            polyfill: false,
+            onInit: function() {
+                this.$range.append($(valueBubble));
+                updateValueBubble(null, null, this);
+            },
+            onSlide: function(pos, value) {
+                updateValueBubble(pos, value, this);
+            }
+        });
+    }
+
 });
 
 $(function() {
@@ -198,32 +240,6 @@ $(function() {
     //         }, 1200);
     // });
 
-    $('input[type="range"]').rangeslider({
-
-        // Feature detection the default is `true`.
-        // Set this to `false` if you want to use
-        // the polyfill also in Browsers which support
-        // the native <input type="range"> element.
-        polyfill: true,
-
-        // Default CSS classes
-        rangeClass: 'rangeslider',
-        disabledClass: 'rangeslider--disabled',
-        horizontalClass: 'rangeslider--horizontal',
-        verticalClass: 'rangeslider--vertical',
-        fillClass: 'rangeslider__fill',
-        handleClass: 'rangeslider__handle',
-
-        // Callback function
-        onInit: function() {},
-
-        // Callback function
-        onSlide: function(position, value) {},
-
-        // Callback function
-        onSlideEnd: function(position, value) {}
-    });
-
     //----- OPEN
     $('[data-popup-open]').on('click', function(e) {
         var targeted_popup_class = jQuery(this).attr('data-popup-open');
@@ -239,26 +255,4 @@ $(function() {
 
         e.preventDefault();
     });
-});
-
-$(function() {
-    var $document = $(document);
-    var selector = '[data-rangeslider]';
-    var $inputRange = $(selector); /** * Example functionality to demonstrate a value feedback * and change the output's value. */
-
-
-    function valueOutput(element) {
-        var value = element.value;
-        var output = element.parentNode.getElementsByTagName('output')[0];
-        output.innerHTML = value;
-    } /** * Initial value output */
-    for (var i = $inputRange.length - 1; i >= 0; i--) {
-        valueOutput($inputRange[i]);
-    }; /** * Update value output */
-    $document.on('input', selector, function(e) {
-        valueOutput(e.target);
-    }); /** * Initialize the elements */
-    $inputRange.rangeslider({
-        polyfill: false
-    }); /** * Example functionality to demonstrate programmatic value changes */
 });
