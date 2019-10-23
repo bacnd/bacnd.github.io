@@ -211,47 +211,50 @@
 			.comments {
 				margin-top: 57px;
 				padding-bottom: 20px;
-				border-bottom: 1px solid #e1e1e1;
-				margin-bottom: 70px;
-				@media screen and (max-width: $screen-sp) {
-					margin-top: 20px;
-					margin-bottom: 0;
-				}
+				// border-bottom: 1px solid #e1e1e1;
+				// margin-bottom: 70px;
+				// @media screen and (max-width: $screen-sp) {
+				// 	margin-top: 20px;
+				// 	margin-bottom: 0;
+				// }
 				.comments__hd {
-					border-bottom: 1px solid #e1e1e1;
-					padding-bottom: 8px;
-					margin-bottom: 20px;
-					@media screen and (max-width: $screen-sp) {
-						@include dlflex;
-						flex-direction: column;
-					}
-					.comment__title {
-						font-size: 18px;
-						font-weight: bold;
-						color: #333333;
-						display: inline-block;
-						@include resizefont(14px, 18px);
-						.total {
-							font-weight: normal;
-						}
-						@media screen and (max-width: $screen-sp) {
-							order: 2;
-							margin-top: 30px;
-						}
-					}
+					// border-bottom: 1px solid #e1e1e1;
+					// padding-bottom: 8px;
+					// margin-bottom: 20px;
+					// @media screen and (max-width: $screen-sp) {
+					// 	@include dlflex;
+					// 	flex-direction: column;
+					// }
+					// .comment__title {
+					// 	font-size: 18px;
+					// 	font-weight: bold;
+					// 	color: #333333;
+					// 	display: inline-block;
+					// 	@include resizefont(14px, 18px);
+					// 	.total {
+					// 		font-weight: normal;
+					// 	}
+					// 	@media screen and (max-width: $screen-sp) {
+					// 		order: 2;
+					// 		margin-top: 30px;
+					// 	}
+					// }
+					text-align: center;
 					.send-review {
-						float: right;
+						// float: right;
 						font-size: 18px;
-						font-weight: bold;
-						text-align: right;
-						text-decoration: underline;
-						color: #996633;
+						// font-weight: bold;
+						// text-align: right;
+						// text-decoration: underline;
+						color: $clr-white;
 						@include resizefont(14px, 18px);
-						@media screen and (max-width: $screen-sp) {
-							text-align: center;
-							float: none;
-							order: 1;
-						}
+						background: #996633;
+						padding: 12px;
+						// @media screen and (max-width: $screen-sp) {
+						// 	text-align: center;
+						// 	float: none;
+						// 	order: 1;
+						// }
 					}
 				}				
 			}
