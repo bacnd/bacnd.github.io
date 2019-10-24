@@ -723,6 +723,42 @@ img.dl-pc {
   -webkit-transform: translate(50%, -50%) rotate(330deg);
   transform: translate(50%, -50%) rotate(180deg); }
 
+.breadcrumb {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  padding-top: 17px; }
+
+@media screen and (max-width: 768px) {
+  .breadcrumb {
+    display: none; } }
+
+.breadcrumb li {
+  font-size: 16px; }
+
+.breadcrumb li a {
+  color: #a66636; }
+
+.breadcrumb li.active {
+  color: #5a5a5a; }
+
+.breadcrumb li + li {
+  position: relative;
+  margin-left: 10px;
+  padding-left: 15px; }
+
+.breadcrumb li + li:before {
+  content: '/';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+
 @media screen and (max-width: 768px) {
   body.show-menu {
     margin: 0;
@@ -2471,44 +2507,6 @@ footer #scrollUp {
 .about-homebrokers {
   background: #f4f5f9; }
 
-.breadcrumb {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  padding-top: 23px; }
-
-@media screen and (max-width: 768px) {
-  .breadcrumb {
-    display: none; } }
-
-.breadcrumb li {
-  font-size: 12px;
-  line-height: 0.75; }
-
-.breadcrumb li a {
-  color: #a66636; }
-
-.breadcrumb li.active {
-  font-size: 8px;
-  color: #5a5a5a; }
-
-.breadcrumb li + li {
-  position: relative;
-  margin-left: 10px;
-  padding-left: 13px; }
-
-.breadcrumb li + li:before {
-  content: '>';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto; }
-
 .news-detail__header {
   background: #f5f5f5; }
 
@@ -3163,7 +3161,7 @@ footer #scrollUp {
   display: flex;
   align-items: center;
   color: #1b1b1b;
-  padding-left: 61px;
+  padding-left: 52px;
   position: relative;
   margin-top: 36px; }
 
@@ -3180,7 +3178,7 @@ footer #scrollUp {
   top: 0;
   bottom: 0;
   margin: auto;
-  left: 18px; }
+  left: 10px; }
 
 .tim-can-ho .search-results__lists .search-results__item .search-results__body .view-detail {
   font-size: 16px;
@@ -3486,7 +3484,9 @@ footer #scrollUp {
   background: #fff; }
 
 .compare-page .box-compare .compare_detail .tab-content .table {
-  width: 100%; }
+  width: calc(100% - 1px);
+  margin: auto;
+  table-layout: fixed; }
 
 @media screen and (max-width: 768px) {
   .compare-page .box-compare .compare_detail .tab-content .table {
@@ -3498,12 +3498,11 @@ footer #scrollUp {
   font-weight: bold;
   line-height: 1.88;
   text-align: center;
-  color: #333333;
-  width: 25%; }
+  color: #333333; }
 
 .compare-page .box-compare .compare_detail .tab-content .table tbody tr td {
   padding: 10px 23px;
-  border: solid 0.5px #999999;
+  border: solid 1px #999999;
   font-size: 16px;
   line-height: 1.88;
   color: #333333;
@@ -4192,56 +4191,6 @@ footer #scrollUp {
   text-align: center;
   padding-bottom: 5px; }
 
-progress[value] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  background-color: transparent;
-  width: 100%;
-  height: 5px;
-  color: #996633; }
-
-progress[value]::-webkit-progress-bar {
-  background-color: transparent; }
-
-progress[value]::-webkit-progress-value {
-  background-color: #996633; }
-
-progress[value]::-webkit-progress-value::before {
-  content: '80%';
-  position: absolute;
-  right: 0;
-  top: -125%; }
-
-progress[value]::-webkit-progress-value::after {
-  content: '';
-  width: 6px;
-  height: 6px;
-  position: absolute;
-  border-radius: 100%;
-  right: 7px;
-  top: 7px;
-  background-color: white; }
-
-progress[value]::-moz-progress-bar {
-  background-color: #996633; }
-
-.progress-bar {
-  background-color: whiteSmoke;
-  border-radius: 2px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25) inset;
-  width: 250px;
-  height: 20px;
-  position: relative;
-  display: block; }
-
-.progress-bar > span {
-  background-color: blue;
-  border-radius: 2px;
-  display: block;
-  text-indent: -9999px; }
-
 .projectDetailPage #contents {
   background: #f5f5f5; }
 
@@ -4258,12 +4207,12 @@ progress[value]::-moz-progress-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0; }
+  padding: 20px 0;
+  justify-content: center;
+  text-align: center; }
 
-@media screen and (max-width: 768px) {
-  .projectDetailPage .project-detail__header .project-detail__info {
-    justify-content: center;
-    text-align: center; } }
+.projectDetailPage .project-detail__header .project-detail__info .project-detail__float {
+  padding: 5px 25px; }
 
 .projectDetailPage .project-detail__header .project-detail__info .project-detail__float .project-detail__title {
   font-size: 30px;
@@ -4280,7 +4229,8 @@ progress[value]::-moz-progress-bar {
   font-weight: normal;
   color: #1b1b1b;
   padding-left: 30px;
-  padding-top: 10px; }
+  padding-top: 10px;
+  display: inline; }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .projectDetailPage .project-detail__header .project-detail__info .project-detail__float .localtion {
