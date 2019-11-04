@@ -100,9 +100,6 @@ $(document).ready(function() {
         $(this).next().toggleClass('active');
     });
 
-    // let img = $('.tab-link.current').find('img');
-    // img.attr('src', img.attr('src').replace('white.png', 'color.png'));
-
     $('ul.tabs li').click(function() {
         var tab_id = $(this).attr('data-tab');
 
@@ -230,15 +227,6 @@ $(function() {
 
         e.preventDefault();
     });
-
-    // $(".point-review > span").each(function() {
-    //     $(this)
-    //         .data("origWidth", $(this).width())
-    //         .width(0)
-    //         .animate({
-    //             width: $(this).data("origWidth")
-    //         }, 1200);
-    // });
 
     //----- OPEN
     $('[data-popup-open]').on('click', function(e) {

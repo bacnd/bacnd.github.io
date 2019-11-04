@@ -1,0 +1,38 @@
+.about__header {
+	position: relative;
+	@media screen and (max-width: $screen-sp) {
+		min-height: 350px;
+	}
+	figure {
+		width: 100%;
+		&.overlay {
+			&:before {
+				background: rgba($clr-black, .7);
+			}
+		}
+		img {
+			width: 100%;
+			@media screen and (max-width: $screen-sp) {
+				min-height: 350px;
+				height: 100%;
+			    object-fit: cover;
+			}
+		}
+	}
+	.about__title {
+		font-size: 30px;
+		line-height: 1.6;
+		color: #f4f5f9;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+    	display: table;
+	    @include dlflex;
+	    flex-direction: column;
+	    justify-content: center;
+	    text-align: center;
+	}
+}
