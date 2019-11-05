@@ -173,6 +173,10 @@ body {
 				}
 				.hd-acse {
 					margin-left: 45px;
+					@media screen and (max-width: 1140px) {
+						position: absolute;
+    					right: 10px;
+					}
 					@media screen and (max-width: $screen-sp) {
 				    	margin-left: 0;
 			    	    position: absolute;

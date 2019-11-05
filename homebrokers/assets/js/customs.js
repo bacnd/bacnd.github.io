@@ -78,6 +78,31 @@ $(document).ready(function() {
         }]
     });
 
+    $('.staff__list').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: '41px',
+        prevArrow: "<div class='arrow-slider'><span class='slick-prev'></span></div>",
+        nextArrow: "<div class='arrow-slider'><span class='slick-next'></span></div>",
+        responsive: [{
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 2,
+                centerMode: false,
+            }
+        }, {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                centerMode: false,
+            }
+        }]
+    });
+
     $(window).on('resize', function() {
         $('.tintuc__list, .project__list').slick('resize');
     });

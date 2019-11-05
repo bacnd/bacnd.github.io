@@ -34,5 +34,314 @@
 	    flex-direction: column;
 	    justify-content: center;
 	    text-align: center;
+	    @include resizefont(24px, 30px);
+	    @media screen and (max-width: $screen-sp) {
+	    	padding-left: 10px;
+	    	padding-right: 10px;
+	    }
+	}
+}
+
+.about__body {
+	.introduce {
+		text-align: center;
+		padding-top: 50px;
+		padding-bottom: 68px;
+		@media screen and (max-width: $screen-sp) {
+			padding-top: 20px;
+			padding-bottom: 28px;
+		}
+		&__title {
+			font-size: 28px;
+			line-height: 1.71;
+			padding-left: 70px;
+			padding-right: 70px;
+			@include resizefont(22px, 28px);
+			@media screen and (max-width: $screen-sp) {
+				padding-left: 0;
+				padding-right: 0;
+		    }
+		}
+		&__description {
+			font-size: 18px;
+			line-height: 2;
+			padding-left: 70px;
+			padding-right: 70px;
+			padding-top: 40px;
+			@include resizefont(14px, 18px);
+			@media screen and (max-width: $screen-sp) {
+				padding-left: 0;
+				padding-right: 0;
+				padding-top: 20px;
+		    }
+		}
+	}
+	.staff {
+		text-align: center;
+		background: #f4f5f9;
+		padding-bottom: 77px;
+		@media screen and (max-width: $screen-sp) {
+			padding-bottom: 35px;
+		}
+		&__title {
+			font-size: 28px;
+			line-height: 1.71;
+			padding-top: 30px;
+			@include resizefont(22px, 28px);
+		}
+		&__list {
+			padding-top: 49px;
+			max-width: 1114px;
+			margin: auto;
+			.slick-arrow {
+				&.arrow-slider {
+					max-width: 1114px;
+				    width: 100%;
+				    position: absolute;
+				    top: 185px;
+				    z-index: 9;
+				    left: 0;
+				    right: 0;
+				    margin: 0 auto;
+				}
+				.slick-prev, .slick-next {
+				    position: absolute;
+				    top: 0;
+				    bottom: 0;
+				    max-width: 1114px;
+				    margin: auto;
+				    cursor: pointer;
+				    width: 50px;
+				    height: 48px;
+				    display: -webkit-box !important;
+				    display: -moz-box !important;
+				    display: -ms-flexbox !important;
+				    display: -moz-flex !important;
+				    display: -webkit-flex !important;
+				    display: flex !important;
+				    align-items: center;
+				    justify-content: center;
+				    z-index: 2;
+				    @media screen and (max-width: $screen-sp) {
+				    	width: 30px;
+				    }
+				    &:after {
+					    content: '';
+					    width: 14px;
+					    height: 32px;
+					}
+				}
+				.slick-prev {
+					left: 0;
+				    &:after {
+				    	background: url(../images/gioi-thieu/ic-arrow-left.png) no-repeat;
+				    }
+				}
+				.slick-next {
+					right: 0;
+				    &:after {
+				    	background: url(../images/gioi-thieu/ic-arrow-right.png) no-repeat;
+				    }
+				}
+			}
+		}
+		&__item {
+			max-width: 243px;
+			margin: 0 50px;
+			@media screen and (max-width: $screen-sp) {
+				max-width: 100%;
+				margin: 0 10px;
+			}
+			.staff__img {
+				&.gray {
+					-webkit-filter: grayscale(100%);
+				    -moz-filter: grayscale(100%);
+				    -o-filter: grayscale(100%);
+				    filter: grayscale(100%);
+				}
+				img {
+					margin: auto;
+				}
+			}
+			.staff__name, .staff__position, .staff__info {
+				line-height: 1.67;
+				text-align: center;
+				@include resizefont(14px, 18px);
+			}
+			.staff__name {
+				font-weight: bold;
+				padding-top: 22px;
+			}
+			.staff__position {
+				color: $clr-abay;
+				font-weight: bold;				
+			}
+			.staff__info {
+				max-width: 243px;
+				margin: auto;
+			}
+			&:hover {
+				.staff__img{
+					&.gray {
+						-webkit-filter: grayscale(0);
+					    -moz-filter: grayscale(0);
+					    -o-filter: grayscale(0);
+					    filter: grayscale(0);
+					}
+				}
+			}
+		}
+	}
+	.information {
+		.information-ct {
+			@include dlflex;
+			max-width: 1366px;
+			margin: auto;
+			@media screen and (max-width: $screen-sp) {
+				display: block;
+			}
+			.information-col {
+				width: 50%;
+				@media screen and (max-width: $screen-sp) {
+					width: 100%;
+				}
+				.information__img {
+					height: 100%;
+					img {
+						height: 100%;
+						object-position: 0;
+    					object-fit: cover;
+					}
+					@media screen and (max-width: $screen-sp) {
+						img {
+							width: 100%;
+						}
+					}
+				}
+				.information-col-txt {
+					margin-left: 70px;
+					padding-top: 65px;
+					max-width: 490px;
+					padding-bottom: 65px;
+					@media screen and (max-width: 1114px) {
+						margin-left: 40px;
+						padding-right: 15px;
+						padding-bottom: 10px;
+					}
+					@media screen and (max-width: $screen-sp) {
+						max-width: 100%;
+						margin-left: 10px;
+						margin-right: 10px;
+						padding-top: 30px;
+					}
+					.info__title {
+						font-size: 24px;
+						@include resizefont(18px, 24px);
+					}
+					.info__txt {
+						font-size: 18px;
+						padding-top: 20px;
+						padding-bottom: 40px;
+						@include resizefont(14px, 18px);
+						@media screen and (max-width: $screen-sp) {
+							padding-bottom: 30px;
+						}
+					}
+					.info-contact {
+						font-size: 16px;
+						padding-top: 14px;
+						@include resizefont(13px, 16px);
+						@media screen and (max-width: $screen-sp) {
+							padding-bottom: 30px;
+						}
+						.address {
+							position: relative;
+							padding-left: 31px;
+							@media screen and (max-width: 1114px) {
+								width: 100%;
+								display: block;
+								margin-bottom: 15px;
+								padding-left: 29px;
+							}
+							&:before {
+								content: '';
+								background: url('../images/commons/ic-location.png') center no-repeat;
+								position: absolute;
+								width: 18px;
+								height: 24px;
+								left: 0;
+								@media screen and (max-width: $screen-sp) {
+									width: 12px;
+									background-size: contain;
+								}
+							}
+						}
+						.phone {
+							color: $clr-mobe;
+							position: relative;
+							padding-left: 36px;
+							margin-left: 42px;
+							@media screen and (max-width: 1114px) {
+								margin-left: 0;
+								padding-left: 30px;
+							}
+							&:before {
+								content: '';
+								background: url('../images/commons/ic-phone.png') center no-repeat;
+								position: absolute;
+								width: 22px;
+								height: 23px;
+								left: 0;
+								@media screen and (max-width: $screen-sp) {
+									width: 16px;
+									background-size: contain;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.cultural {
+		background-color: #f4f5f9;
+		text-align: center;
+		padding-top: 64px;
+		@media screen and (max-width: $screen-sp) {
+			padding-top: 35px;
+		}
+		&__title {
+			font-size: 28px;
+			@include resizefont(22px, 28px);
+			@media screen and (max-width: $screen-sp) {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+		&__txt {
+			max-width: 970px;
+			font-size: 18px;
+			line-height: 2;
+			margin: auto;
+			padding-top: 31px;
+			@include resizefont(14px, 18px);
+			@media screen and (max-width: $screen-sp) {
+				padding-top: 20px;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+		&__img {
+			margin-top: 45px;
+			@media screen and (max-width: $screen-sp) {
+				margin-top: 20px;
+			}
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.chuyengia {
+		margin-top: 60px;
 	}
 }
