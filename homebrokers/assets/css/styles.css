@@ -840,7 +840,7 @@ img.dl-pc {
 #wrapper #header .nav-menu .hd-menu > li a {
   color: #4e4e50;
   position: relative;
-  font-size: 14px; }
+  font-size: 16px; }
 
 @media screen and (max-width: 768px) {
   #wrapper #header .nav-menu .hd-menu > li a {
