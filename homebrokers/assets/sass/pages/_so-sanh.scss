@@ -244,6 +244,7 @@
 					}
 					tbody {
 						tr {
+							background-color: #f4ecdc;
 							td {
 								padding: 10px 23px;
 								border: solid 1px #999999;
@@ -255,9 +256,9 @@
 									text-align: left;
 								}
 							}
-							&:nth-child(odd) {
-								background: #e4e4e4;
-							}
+							// &:nth-child(odd) {
+							// 	background: #e4e4e4;
+							// }
 						}
 					}
 				}

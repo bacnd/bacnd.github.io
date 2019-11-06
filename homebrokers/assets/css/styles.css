@@ -3505,6 +3505,9 @@ footer #scrollUp {
   text-align: center;
   color: #333333; }
 
+.compare-page .box-compare .compare_detail .tab-content .table tbody tr {
+  background-color: #f4ecdc; }
+
 .compare-page .box-compare .compare_detail .tab-content .table tbody tr td {
   padding: 10px 23px;
   border: solid 1px #999999;
@@ -3515,9 +3518,6 @@ footer #scrollUp {
 
 .compare-page .box-compare .compare_detail .tab-content .table tbody tr td:first-child {
   text-align: left; }
-
-.compare-page .box-compare .compare_detail .tab-content .table tbody tr:nth-child(odd) {
-  background: #e4e4e4; }
 
 @media screen and (max-width: 768px) {
   .compare-page .box-compare .compare_detail .tabs-sp .accordion {
