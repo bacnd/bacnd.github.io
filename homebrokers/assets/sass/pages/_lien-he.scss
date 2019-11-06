@@ -1,0 +1,63 @@
+.contact-info {
+	background-color: #f4f5f9;
+	.contact-info-hd {
+		padding-top: 25px;
+		padding-bottom: 55px;
+
+	}
+	&___title {
+		text-align: center;
+		font-size: 28px;
+		line-height: 1.71;
+	}
+	&___txt {
+		font-size: 18px;
+		line-height: 2;
+		text-align: center;
+		padding-top: 6px;
+	}
+	.contact-info-ct {
+		@include dlflex;
+		padding-top: 42px;
+		.contact-info__col {
+			width: 50%;
+			.place {
+				font-size: 20px;
+				line-height: 1.8;
+				padding-bottom: 56px;
+				.title-place {
+					font-size: 20px;
+				}
+				a {
+					color: $clr-mobe;
+				}
+			}
+			.contact-form {
+				padding-top: 47px;
+				margin-left: 69px;
+				.form-group {
+					margin-bottom: 35px;
+					&.capcha {
+						@include dlflex;
+						align-items: center;
+						.form-control {
+							max-width: 245px;
+						}
+					}
+				}
+				.form-control {
+					border: solid 1px #c3c3c3;
+					font-size: 16px;
+					padding: 15px 25px;
+					width: 100%;
+				}
+				input {
+					height: 52px;
+				}
+				textarea {
+					resize: vertical;
+				}
+			}
+		}
+	}
+}
