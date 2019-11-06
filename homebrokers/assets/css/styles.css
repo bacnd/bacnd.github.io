@@ -1656,12 +1656,14 @@ footer #scrollUp {
 .best-project__item .gray {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   filter: grayscale(100%); }
 
 .best-project__item.slick-center .gray, .best-project__item:hover .gray {
   -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);
+  -ms-filter: grayscale(0);
   -o-filter: grayscale(0);
   filter: grayscale(0); }
 
@@ -5305,6 +5307,7 @@ footer #scrollUp {
 .about__body .staff__item .staff__img.gray {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   filter: grayscale(100%); }
 
@@ -5334,6 +5337,7 @@ footer #scrollUp {
 .about__body .staff__item:hover .staff__img.gray {
   -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);
+  -ms-filter: grayscale(0);
   -o-filter: grayscale(0);
   filter: grayscale(0); }
 
