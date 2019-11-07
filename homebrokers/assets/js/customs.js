@@ -184,6 +184,33 @@ $(document).ready(function() {
         });
     }
 
+    $("#contact-form").validate({
+        rules: {
+            name: "required",
+            phone:  {
+                required: true,
+                number: true,
+                minlength: 10
+            },
+            content: "required",
+            code: "required",
+        },
+
+        messages: {
+            name: "Vui lòng nhập họ tên",
+            phone: {
+                required: "Vui lòng nhập số điện thoại",
+                number: "Vui lòng chỉ nhập số"
+            },
+            content: "Vui lòng nhập nội dung",
+            code: "",
+        },
+
+        submitHandler: function(form) {
+            form.submit();
+        }
+    });
+
 });
 
 $(function() {

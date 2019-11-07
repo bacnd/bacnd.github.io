@@ -63,8 +63,10 @@
 				</div>
 				<div class="contact-info">
 					<div class="contact-info-hd bg-white">
-						<h1 class="contact-info___title">Liên hệ HomeBrokers</h1>
-						<p class="contact-info___txt">HomeBrokers rất vui được phục vụ bạn. Sau đây là những cách bạn có thể liên lạc với chúng tôi</p>
+						<div class="container">
+							<h1 class="contact-info___title">Liên hệ HomeBrokers</h1>
+							<p class="contact-info___txt">HomeBrokers rất vui được phục vụ bạn. Sau đây là những cách bạn có thể liên lạc với chúng tôi</p>
+						</div>
 					</div>
 					<div class="container">
 						<div class="contact-info-ct">
@@ -84,7 +86,7 @@
 								</div>
 							</div>
 							<div class="contact-info__col">
-								<form action="" method="POST" role="form" class="contact-form">
+								<form action="" method="POST" role="form" id="contact-form">
 									<div class="form-group">
 										<input type="text" class="form-control" id="nameInput" name="name" placeholder="Họ tên">
 									</div>
@@ -94,10 +96,12 @@
 									<div class="form-group">
 										<textarea name="content" id="inputContent" class="form-control" rows="4" required="required" placeholder="Nội dung"></textarea>
 									</div>
-									<div class="form-group capcha">
+									<div class="form-group form-capcha">
 										<input type="text" class="form-control" id="codeInput" name="code" placeholder="Nhập mã kiểm tra">
-										<div class="code-capcha"><img src="assets/images/commons/code.png" alt="code"></div>
-										<div class="btn-refresh"><img src="assets/images/commons/ic-refresh.png" alt="refresh"></div>
+										<div class="group-code">
+											<div class="code-capcha"><img src="assets/images/commons/code.png" alt="code"></div>
+											<div class="btn-refresh"><img src="assets/images/commons/ic-refresh.png" alt="refresh"></div>
+										</div>
 									</div>
 									<button type="submit" class="btn-send-form">GỬI</button>
 								</form>
@@ -211,6 +215,7 @@
 		<!-- jQuery -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/slick.min.js"></script>
+		<script src="assets/js/jquery.validate.min.js"></script>
 		<script src="assets/js/customs.js"></script>
 	</body>
 </html>

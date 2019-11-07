@@ -3,59 +3,128 @@
 	.contact-info-hd {
 		padding-top: 25px;
 		padding-bottom: 55px;
-
+		@media screen and (max-width: $screen-sp) {
+			padding-top: 10px;
+			padding-bottom: 30px;
+		}
 	}
 	&___title {
 		text-align: center;
 		font-size: 28px;
 		line-height: 1.71;
+		@include resizefont(22px, 28px);
 	}
 	&___txt {
 		font-size: 18px;
 		line-height: 2;
 		text-align: center;
 		padding-top: 6px;
+		@include resizefont(14px, 18px);
 	}
 	.contact-info-ct {
 		@include dlflex;
 		padding-top: 42px;
+		padding-bottom: 90px;
+		@media screen and (max-width: $screen-sp) {
+			flex-direction: column;
+			padding-bottom: 50px;
+		}
 		.contact-info__col {
 			width: 50%;
+			@media screen and (max-width: $screen-sp) {
+				width: 100%;
+			}
 			.place {
 				font-size: 20px;
 				line-height: 1.8;
 				padding-bottom: 56px;
+				@include resizefont(16px, 20px);
+				@media screen and (max-width: $screen-sp) {
+					padding-bottom: 35px;
+				}
 				.title-place {
 					font-size: 20px;
+					@include resizefont(16px, 20px);
 				}
 				a {
 					color: $clr-mobe;
 				}
 			}
-			.contact-form {
+			#contact-form {
 				padding-top: 47px;
 				margin-left: 69px;
+				@media screen and (max-width: $screen-sp) {
+					margin-left: 0;
+					padding-top: 30px;
+				}
 				.form-group {
 					margin-bottom: 35px;
-					&.capcha {
+					@media screen and (max-width: $screen-sp) {
+						margin-bottom: 20px;
+					}
+					&.form-capcha {
 						@include dlflex;
 						align-items: center;
+						@media screen and (max-width: 1024px) {
+							display: block;
+						}
 						.form-control {
 							max-width: 245px;
+							@media screen and (max-width: 375px) {
+								max-width: 100%;
+							}
+						}
+						.group-code {
+							margin-left: 40px;
+							@include dlflex;
+							align-items: center;
+							@media screen and (max-width: 1024px) {
+								margin-left: 0;
+								margin-top: 10px;
+							}
+
+							.btn-refresh {
+								margin-left: 30px;
+								cursor: pointer;
+							}
 						}
 					}
-				}
-				.form-control {
-					border: solid 1px #c3c3c3;
-					font-size: 16px;
-					padding: 15px 25px;
-					width: 100%;
+					.form-control {
+						border: solid 1px #c3c3c3;
+						font-size: 16px;
+						padding: 10px 20px;
+						width: 100%;
+						&.error {
+							border-color: red;
+							font-size: 16px;
+							background-color: #fff1f1;
+						}
+					}
+					.error {
+						font-size: 14px;
+						color: red;
+					}
 				}
 				input {
 					height: 52px;
+					@media screen and (max-width: $screen-sp) {
+						height: 45px;
+					}
 				}
 				textarea {
 					resize: vertical;
+				}
+				.btn-send-form {
+					max-width: 243px;
+					width: 100%;
+					height: 52px;
+					background-color: $clr-abay;
+					font-size: 18px;
+					line-height: 2;
+					color: $clr-white;
+					@media screen and (max-width: 375px) {
+						max-width: 100%;
+					}
 				}
 			}
 		}
