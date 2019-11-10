@@ -5030,8 +5030,11 @@ footer #scrollUp {
   .projectDetailPage .box-products-project .products-project-ct .products-project__list .products-project__item .products__td .products_pro__title {
     font-size: calc(13px + 3 * ((100vw - 320px) / 448)); } }
 
+.projectDetailPage .box-products-project .products-project-ct .products-project__list .products-project__item .products__td .products_pro__title a {
+  color: #1b1b1b; }
+
 .projectDetailPage .box-products-project .products-project-ct .products-project__list .products-project__item .products__td .products_pro__add {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 2.17; }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {

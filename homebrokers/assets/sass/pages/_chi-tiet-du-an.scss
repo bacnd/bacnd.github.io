@@ -674,9 +674,12 @@
                             font-size: 16px;
                             line-height: 1.63;
                             @include resizefont(13px, 16px);
+                            a {
+                                color: $clr-mobe;
+                            }
                         }
                         .products_pro__add {
-                            font-size: 12px;
+                            font-size: 13px;
                             line-height: 2.17;
                             @include resizefont(10px, 12px);
                         }
