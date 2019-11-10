@@ -1267,7 +1267,7 @@ footer .ft-content.ft-giua .ft-com-info .ft-social {
   display: -webkit-flex;
   display: flex;
   justify-content: space-between;
-  max-width: 119px;
+  max-width: 100px;
   margin-top: 13px; }
 
 @media screen and (max-width: 768px) {
@@ -4455,13 +4455,8 @@ footer #scrollUp {
   margin-top: 20px; }
 
 .projectDetailPage .project-detail__content .project-detail__ct {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-between; }
+  display: table;
+  width: 100%; }
 
 @media screen and (max-width: 768px) {
   .projectDetailPage .project-detail__content .project-detail__ct {
@@ -4470,7 +4465,8 @@ footer #scrollUp {
 .projectDetailPage .project-detail__content .project-detail__ct .project-detail__left {
   padding: 20px 20px 44px 20px;
   max-width: 740px;
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  float: left; }
 
 @media screen and (max-width: 768px) {
   .projectDetailPage .project-detail__content .project-detail__ct .project-detail__left {
@@ -4819,12 +4815,18 @@ footer #scrollUp {
 
 .projectDetailPage .project-detail__content .project-detail__ct .project-detail__right {
   max-width: 354px;
-  width: 100%; }
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: inline-block;
+  margin-left: 20px; }
 
 @media screen and (max-width: 768px) {
   .projectDetailPage .project-detail__content .project-detail__ct .project-detail__right {
     max-width: inherit;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px;
+    margin-left: 0; } }
 
 .projectDetailPage .project-detail__content .project-detail__ct .project-detail__right .counsulter {
   padding: 27px;
@@ -5039,7 +5041,7 @@ footer #scrollUp {
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .projectDetailPage .box-products-project .products-project-ct .products-project__list .products-project__item .products__td .products_pro__add {
-    font-size: calc(10px + 2 * ((100vw - 320px) / 448)); } }
+    font-size: calc(11px + 2 * ((100vw - 320px) / 448)); } }
 
 .projectDetailPage .box-products-project .products-project-ct .products-project__list .products-project__item .products-pro__list {
   display: -webkit-box;
