@@ -1191,15 +1191,6 @@ footer .ft-content.ft-dau .ft-col:before {
 footer .ft-content.ft-dau .ft-col .ft-dau-title {
   letter-spacing: normal; }
 
-footer .ft-content.ft-dau .ft-col .ft-contact__info {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center; }
-
 footer .ft-content.ft-dau .ft-col .ft-contact__info li {
   font-weight: 600;
   letter-spacing: normal;
@@ -1215,20 +1206,6 @@ footer .ft-content.ft-dau .ft-col .ft-contact__info li {
 
 footer .ft-content.ft-dau .ft-col .ft-contact__info li a {
   color: #a66636; }
-
-footer .ft-content.ft-dau .ft-col .ft-contact__info li + li {
-  padding-left: 30px; }
-
-footer .ft-content.ft-dau .ft-col .ft-contact__info li + li:before {
-  content: '';
-  border-left: 1px solid #a76636;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  height: 14px;
-  margin-left: 15px; }
 
 @media screen and (max-width: 768px) {
   footer .ft-content.ft-giua .ft-col {

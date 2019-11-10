@@ -211,19 +211,6 @@ $(document).ready(function() {
         }
     });
 
-    // Sticky sale
-
-    // var stickyTop = $('.sticky').offset().top;
-
-    // $(window).scroll(function() {
-    //     var windowTop = $(window).scrollTop();
-    //     if (stickyTop < windowTop && $(".box-price-act").height() + $(".box-price-act").offset().top - $(".sticky").height() > windowTop) {
-    //         $('.sticky').css('position', 'fixed');
-    //     } else {
-    //         $('.sticky').css('position', 'relative');
-    //     }
-    // });
-
 });
 
 $(function() {

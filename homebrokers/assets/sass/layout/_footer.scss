@@ -65,8 +65,8 @@ footer {
   					letter-spacing: normal;
 	    		}
 		    	.ft-contact__info {
-		    		@include dlflex;
-		    		align-items: center;
+		    		// @include dlflex;
+		    		// align-items: center;
     				li {
     					font-weight: 600;
 						letter-spacing: normal;
@@ -80,20 +80,20 @@ footer {
 						a {
 							color: $clr-asau;
 						}
-						& + li {
-							padding-left: 30px;
-							&:before {
-								content: '';
-								border-left: 1px solid $clr-abay;
-								position: absolute;
-								left: 0;
-								top: 0;
-								bottom: 0;
-								margin: auto;
-								height: 14px;
-								margin-left: 15px;
-							}
-						}
+						// & + li {
+						// 	padding-left: 20px;
+						// 	&:before {
+						// 		content: '';
+						// 		border-left: 1px solid $clr-abay;
+						// 		position: absolute;
+						// 		left: 0;
+						// 		top: 0;
+						// 		bottom: 0;
+						// 		margin: auto;
+						// 		height: 14px;
+						// 		margin-left: 10px;
+						// 	}
+						// }
     				}
 		    	}
 	    	}
