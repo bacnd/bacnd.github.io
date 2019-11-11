@@ -184,13 +184,17 @@ $(document).ready(function() {
         });
     }
 
-    $("#contact-form").validate({
+    $("#contact-form, #regdow-form, #regreview-form").validate({
         rules: {
             name: "required",
             phone:  {
                 required: true,
                 number: true,
                 minlength: 10
+            },
+            email: {
+                required: true,
+                email: true
             },
             content: "required",
             code: "required",
@@ -202,6 +206,7 @@ $(document).ready(function() {
                 required: "Vui lòng nhập số điện thoại",
                 number: "Vui lòng chỉ nhập số"
             },
+            email: "Vui lòng nhập email",
             content: "Vui lòng nhập nội dung",
             code: "",
         },
@@ -211,6 +216,10 @@ $(document).ready(function() {
         }
     });
 
+    $('.datepicker-here').datepicker({
+        autoClose: true,
+        dateFormat: 'dd/mm/yyyy'
+    });
 });
 
 $(function() {

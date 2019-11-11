@@ -19,6 +19,7 @@
 		<!-- CSS -->
 		<link rel="stylesheet" href="assets/css/slick.css">
 		<link rel="stylesheet" href="assets/css/styles.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/datepicker.min.css" />
 	</head>
 	<body class="projectDetailPage">
 		<div id="wrapper">
@@ -267,7 +268,7 @@
 								<a href="tel:0949-654-909" class="counsulter__phone">0949 654 909</a>
 								<p class="or_txt">Hoặc</p>
 								<ul class="counsulter__info">
-									<li><a href="#" title="Đăng ký tham quan dự án">Đăng ký tham quan dự án</a></li>
+									<li><a href="#" data-popup-open="popup-regreview" title="Đăng ký tham quan dự án">Đăng ký tham quan dự án</a></li>
 									<li><a href="#" title="Tải bảng giá chính thức">Tải bảng giá chính thức</a></li>
 									<li><a href="#" title="Nhận thông tin cập nhật">Nhận thông tin cập nhật</a></li>
 								</ul>
@@ -372,7 +373,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="about-homebrokers">
+				<div class="about-homebrokers bg-white">
 	    			<div class="about-homebrokers-ct">
 		    			<div class="about__content">
 			    			<h2 class="about__title">Về HomeBrokers</h2>
@@ -451,6 +452,51 @@
 						<a class="popup-close" data-popup-close="popup-view-review" href="#"><img src="assets/images/commons/ic-close-form.png" alt="close"></a>
 					</div>
 				</div>
+				<div class="popup-modal popup-regreview" data-popup="popup-regreview">
+					<div class="popup-inner">
+						<div class="popup-col dl-pc">							
+							<figure class="regreview-img"><img src="assets/images/chi-tiet-du-an/home-review.png" alt="home"></figure>
+							<h4 class="regreview-title">Căn hộ The Tresor 1PN 1WC, đầy đủ nội thất,...</h4>
+							<p class="localtion">Phường 22, Bình Thạnh</p>
+							<ul class="regreview-ifo">
+								<li><img src="assets/images/chi-tiet-du-an/area-black.png" alt="area"><strong>Diện tích:</strong> 100 m2</li>
+								<li><img src="assets/images/chi-tiet-du-an/bed-black.png" alt="bed"><strong>Phòng ngủ:</strong> 3</li>
+								<li><img src="assets/images/chi-tiet-du-an/bathtub-black.png" alt="bathtub"><strong>Phòng tắm:</strong> 2</li>
+								<li><strong>Giá:</strong> 8,5 tỷ</li>
+							</ul>
+							<div class="popup-social">
+								<img src="assets/images/commons/ic-share.png" alt="share">
+								<ul>
+									<li><a href="#"><img src="assets/images/commons/ic-share-fb.png" alt="Facebook" /></a></li>
+									<li><a href="#"><img src="assets/images/commons/ic-share-in.png" alt="Linker" /></a></li>
+									<li><a href="#"><img src="assets/images/commons/ic-share-pin.png" alt="Pinterest" /></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="popup-col bg-gray">
+							<h4 class="form-regreview-title">Đăng ký xem nhà</h4>
+							<p class="text-center">Hoặc gọi trực tiếp tới <a href="tel:0986333300">0986 333 300</a></p>
+							<form action="" id="regreview-form" method="POST" role="form">
+		    					<div class="form-group">
+			    					<input type="text" class="form-control" name="name" id="nameInput" placeholder="Họ tên">
+			    				</div>
+			    				<div class="form-group">
+			    					<input type="text" class="form-control" name="phone" id="phoneInput" placeholder="Số điện thoại">
+			    				</div>
+		    					<div class="form-group">
+			    					<input type="text" class="form-control" name="email" id="emailInput" placeholder="Email">
+			    				</div>
+			    				<div class="form-group">
+			    					<input type="text" data-language="en" class="datepicker-here" placeholder="Ngày" name="date">
+			    				</div>
+			    				<div class="form-group">
+									<button type="submit" id="btn-regdow-submit" class="btn-regdow">GỬI THÔNG TIN</button>
+								</div>
+							</form>
+						</div>
+						<a class="popup-close" data-popup-close="popup-regreview" href="#"><img src="assets/images/commons/ic-close-form.png"></a>
+					</div>
+				</div>
 		    </main>
 		    <footer id="footer">
 				<div class="container">
@@ -482,7 +528,7 @@
 							<div class="ft-logo">
 								<a href="index.html" title="logo"><img src="assets/images/commons/ft-logo.png" alt="ft logo"></a>
 							</div>
-							<div class="ft-address">Số 168, Đường, Phường, Quận, Thành phố</div>
+							<div class="ft-address">Thành phố Hạ Long, Quảng Ninh</div>
 							<ul class="ft-social">
 								<li><a href="#" title="facebook"><img src="assets/images/commons/ic-facebook.png" alt="facebook"></a></li>
 								<li><a href="#" title="linked"><img src="assets/images/commons/ic-linked.png" alt="linked"></a></li>
@@ -545,6 +591,8 @@
 		<script src="assets/js/rangeslider.min.js"></script>
 		<script src="assets/js/slick.min.js"></script>
 		<script src="assets/js/jquery.validate.min.js"></script>
+		<script src="assets/js/datepicker.min.js"></script>
+		<script src="assets/js/datepicker.en.js"></script>
 		<script src="assets/js/customs.js"></script>
 	</body>
 </html>

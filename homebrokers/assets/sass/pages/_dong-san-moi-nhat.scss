@@ -173,6 +173,7 @@
 					width: 100%;
 				}
 				.search-results__img {
+					height: 100%;
 					img {
 						height: 100%;
 					    object-fit: cover;
@@ -237,9 +238,8 @@
 				.search-results__title {
 					font-size: 28px;
 					font-weight: bold;
-					line-height: 1.07;
 					color: $clr-mobe;
-					padding-top: 23px;
+					padding-top: 16px;
 					@include resizefont(18px, 28px);
 					@media screen and (max-width: $screen-sp) {
 						padding-top: 10px;
@@ -331,6 +331,7 @@
 .vingroup-project {
 	background: #f4f5f9;
 	padding-top: 43px;
+	padding-bottom: 30px;
 	.vingroup-project-ctn {
 		background: $clr-white;
 		@media screen and (max-width: $screen-sp) {

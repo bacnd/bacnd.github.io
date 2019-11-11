@@ -304,10 +304,9 @@ img.dl-pc {
 			font-weight: normal;
 			line-height: 1.71;
 			letter-spacing: normal;
-			color: $clr-taha;
+			color: $clr-white;
 			text-decoration: underline;
 			@media screen and (max-width: $screen-sp) {
-				color: $clr-ceko;
 				text-decoration: none;
 			}
 		}
@@ -518,7 +517,7 @@ img.dl-pc {
 	top: 0px;
 	left: 0px;
 	background: rgba(0,0,0,0.75);
-	z-index: 9999;
+	z-index: 99;
 	.popup-inner {
 		width: 100%;
 		padding: 40px;

@@ -72,7 +72,7 @@
 	    							<div class="documents__item__info">
 	    								<div class="documents__item__title">Tốc độ tăng giá các dự án căn hộ Quận 2</div>
 	    								<p>Phân tích chi tiết tỷ lệ tăng giá các căn hộ tại khu...</p>
-	    								<a href="#" class="download-now" title="Tải ngay">Tải ngay</a>
+	    								<a href="#" data-popup-open="popup-regdow" class="download-now" title="Tải ngay">Tải ngay</a>
 	    							</div> 							
 	    						</li>
 	    						<li class="documents__item">
@@ -80,7 +80,7 @@
 	    							<div class="documents__item__info">
 	    								<div class="documents__item__title">Tốc độ tăng giá các dự án căn hộ Quận 2</div>
 	    								<p>Phân tích chi tiết tỷ lệ tăng giá các căn hộ tại khu...</p>
-	    								<a href="#" class="download-now" title="Tải ngay">Tải ngay</a>
+	    								<a href="#" data-popup-open="popup-regdow" class="download-now" title="Tải ngay">Tải ngay</a>
 	    							</div>
 	    						</li>
 	    						<li class="documents__item">
@@ -88,7 +88,7 @@
 	    							<div class="documents__item__info">
 	    								<div class="documents__item__title">Tốc độ tăng giá các dự án căn hộ Quận 2</div>
 	    								<p>Phân tích chi tiết tỷ lệ tăng giá các căn hộ tại khu...</p>
-	    								<a href="#" class="download-now" title="Tải ngay">Tải ngay</a>
+	    								<a href="#" data-popup-open="popup-regdow" class="download-now" title="Tải ngay">Tải ngay</a>
 	    							</div>
 	    						</li>
 	    						<li class="documents__item">
@@ -96,7 +96,7 @@
 	    							<div class="documents__item__info">
 	    								<div class="documents__item__title">Tốc độ tăng giá các dự án căn hộ Quận 2</div>
 	    								<p>Phân tích chi tiết tỷ lệ tăng giá các căn hộ tại khu...</p>
-	    								<a href="#" class="download-now" title="Tải ngay">Tải ngay</a>
+	    								<a href="#" data-popup-open="popup-regdow" class="download-now" title="Tải ngay">Tải ngay</a>
 	    							</div>
 	    						</li>
 	    					</ul>
@@ -179,7 +179,7 @@
 				    		<a href="#" class="load-more dl-sp">Tải thêm</a>
 		    			</div>
 		    		</div>
-			    	<div class="about-homebrokers">
+			    	<div class="about-homebrokers bg-white">
 		    			<div class="about-homebrokers-ct">
 			    			<div class="about__content">
 				    			<h2 class="about__title">Về HomeBrokers</h2>
@@ -192,6 +192,49 @@
 		    			</div>
 			    	</div>
 		    	</div>
+		    	<div class="popup-modal popup-regdow" data-popup="popup-regdow">
+					<div class="popup-inner">
+						<div class="popup-col dl-pc">
+							<h4 class="popup-regdow-title">Chuyên đề<br />Góc nhìn chuyên sâu về đầu tư Bất Động Sản</h4>
+							<p class="contact">Bạn muốn đặt câu hỏi cho chúng tôi: <strong><a href="tal:0986333300">0986 333 300</a></strong></p>
+							<figure class="regdow-img"><img src="assets/images/thong-tin-thi-truong/tangia-big.png" alt="tangia"></figure>
+							<strong class="regdow__tlt">Tài liệu này sẽ giúp bạn biết được:</strong>
+							<p class="regdow__txt">Danh sách các dự án nhà ở xã hội đang triển khai tại khu vực nội thành<br />Danh sách các dự án nhà ở xã hội đang triển khai tại khu vực ngoại thành</p>
+							<div class="regdow-social">
+								<img src="assets/images/commons/ic-share.png" alt="share">
+								<ul>
+									<li><a href="#"><img src="assets/images/commons/ic-share-fb.png" alt="Facebook" /></a></li>
+									<li><a href="#"><img src="assets/images/commons/ic-share-in.png" alt="Linker" /></a></li>
+									<li><a href="#"><img src="assets/images/commons/ic-share-pin.png" alt="Pinterest" /></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="popup-col bg-gray">
+							<h4 class="form-regdow-title">Đăng ký và nhận tài liệu miễn phí</h4>
+							<p class="text-center">Vui lòng điền đầy đủ thông tin</p>
+							<form action="" id="regdow-form" method="POST" role="form">
+		    					<div class="form-group">
+			    					<input type="text" class="form-control" name="name" id="nameInput" placeholder="Họ tên">
+			    				</div>
+			    				<div class="form-group">
+			    					<input type="text" class="form-control" name="phone" id="phoneInput" placeholder="Số điện thoại">
+			    				</div>
+		    					<div class="form-group">
+			    					<input type="text" class="form-control" name="email" id="emailInput" placeholder="Email">
+			    				</div>
+			    				<div class="form-group capcha">
+			    					<input type="text" class="form-control" name="code" id="codeInput" placeholder="Nhập mã kiểm tra">
+			    					<img src="assets/images/commons/code.png" alt="code">
+			    					<img src="assets/images/commons/ic-refresh.png" alt="refresh" class="btn-refresh">
+			    				</div>
+			    				<div class="form-group">
+									<button type="submit" id="btn-regdow-submit" class="btn-regdow">TẢI TÀI LIỆU NGAY</button>
+								</div>
+							</form>
+						</div>
+						<a class="popup-close" data-popup-close="popup-regdow" href="#"><img src="assets/images/commons/ic-close-form.png"></a>
+					</div>
+				</div>
 		    </main>
 		    <footer id="footer">
 				<div class="container">
@@ -223,7 +266,7 @@
 							<div class="ft-logo">
 								<a href="index.html" title="logo"><img src="assets/images/commons/ft-logo.png" alt="ft logo"></a>
 							</div>
-							<div class="ft-address">Số 168, Đường, Phường, Quận, Thành phố</div>
+							<div class="ft-address">Thành phố Hạ Long, Quảng Ninh</div>
 							<ul class="ft-social">
 								<li><a href="#" title="facebook"><img src="assets/images/commons/ic-facebook.png" alt="facebook"></a></li>
 								<li><a href="#" title="linked"><img src="assets/images/commons/ic-linked.png" alt="linked"></a></li>

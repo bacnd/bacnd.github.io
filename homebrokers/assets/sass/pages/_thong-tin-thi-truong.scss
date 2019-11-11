@@ -150,7 +150,8 @@
 		.market-info__item {
 			background: $clr-white;
 			@include dlflex;
-			margin: 10px 0;
+			margin: 20px 0;
+			@include transition;
 			@media screen and (max-width: $screen-sp) {
 				flex-direction: column;
 				margin: 20px -10px;
@@ -230,6 +231,11 @@
 				    @include resizefont(12px, 14px);
 				}
 			}
+			&:hover {
+				box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12), 0 -1px 2px 0 rgba(0, 0, 0, 0.08);
+			    -webkit-transform: translateY(-2px);
+			    transform: translateY(-2px);
+			}
 		}
 		.pagination {
 			margin: auto;
@@ -284,5 +290,126 @@
 	}
 	.about-homebrokers {
 		width: 100%;
+	}
+}
+
+.popup-regdow, .popup-regreview {
+	.popup-inner {
+		@include dlflex;
+		.popup-col {
+			width: 50%;
+			@media screen and (max-width: $screen-sp) {
+				width: 100%;
+			}
+			&.bg-gray {
+				background-color: #f4f5f9;
+				padding: 0 40px;
+				@media screen and (max-width: $screen-sp) {
+					padding: 0 10px;
+				}
+			}
+		}
+		.popup-regdow-title {
+			font-size: 20px;
+			padding-right: 20px;
+		}
+		.contact {
+			font-size: 14px;
+			a {
+				color: $clr-abay;
+			}
+		}
+		.regdow-img {
+			text-align: center;
+			padding-top: 45px;
+			padding-bottom: 40px;
+		}
+		.regdow__tlt, .regdow__txt {
+			font-size: 14px;
+			line-height: 1.71;
+		}
+		.regdow__tlt {
+			color: #81461d;
+		}
+		.regdow__txt {
+			color: #444444;
+			padding-right: 20px;
+		}
+		.popup-social {
+			@include dlflex;
+			align-items: center;
+			padding-top: 30px;
+			ul {
+				margin-left: 11.5px;
+				@include dlflex;
+				align-items: center;
+				li {
+					padding: 0 3.5px;
+				}
+			}
+		}
+		.form-regdow-title, .form-regreview-title {
+			font-size: 22px;
+			font-weight: bold;
+			color: #81461d;
+			text-align: center;
+			padding-top: 55px;
+			padding-bottom: 5px;
+			@include resizefont(18px, 22px);
+			@media screen and (max-width: $screen-sp) {
+				padding-top: 30px;
+			}
+		}
+		.text-center {
+			font-size: 16px;
+			@include resizefont(13px, 16px);
+		}
+		#regdow-form, #regreview-form {
+			padding-top: 40px;
+			@media screen and (max-width: $screen-sp) {
+				padding-top: 20px;
+			}
+			input {
+				border: solid 1px #c3c3c3;
+				background-color: $clr-white;
+				width: 100%;
+				height: 45px;
+				padding: 10px 15px;
+				font-size: 16px;
+				&.error {
+					border-color: red;
+					font-size: 16px !important;
+					background-color: #fff1f1;
+				}
+			}
+			.form-group {
+				margin-bottom: 25px;
+				&.capcha {
+					@include dlflex;
+					align-items: center;
+					justify-content: space-between;
+					#codeInput {
+						max-width: 200px;
+						@media screen and (max-width: $screen-sp) {
+							max-width: 110px;
+						}
+					}
+					.btn-refresh {
+						cursor: pointer;
+					}
+				}
+				.error {
+					font-size: 14px;
+					color: red;
+				}
+			}
+			.btn-regdow {
+				width: 100%;
+				height: 52px;
+				background-color: $clr-abay;
+				margin-top: 10px;
+				color: $clr-white;
+			}
+		}
 	}
 }
