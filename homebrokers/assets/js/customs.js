@@ -218,17 +218,19 @@ $(document).ready(function() {
         }
     });
 
-    $('#date').datepicker({
-        language: 'en',
-        autoClose: true,
-        dateFormat: 'dd/mm/yyyy',
-        firstDay: 1,
-        minDate: new Date(),
-        onSelect: function onSelect(selectedDates) {
-            console.log(selectedDates);
-            $("#date").val(selectedDates);
-        }
-    });
+    if($('#date').length){
+        $('#date').datepicker({
+            language: 'en',
+            autoClose: true,
+            dateFormat: 'dd/mm/yyyy',
+            firstDay: 1,
+            minDate: new Date(),
+            onSelect: function onSelect(selectedDates) {
+                console.log(selectedDates);
+                $("#date").val(selectedDates);
+            }
+        });
+    }
 });
 
 $(function() {
