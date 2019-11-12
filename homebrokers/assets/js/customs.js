@@ -198,6 +198,7 @@ $(document).ready(function() {
             },
             content: "required",
             code: "required",
+            date: "required",
         },
 
         messages: {
@@ -209,6 +210,7 @@ $(document).ready(function() {
             email: "Vui lòng nhập email",
             content: "Vui lòng nhập nội dung",
             code: "",
+            date: "Vui lòng nhập ngày",
         },
 
         submitHandler: function(form) {
@@ -216,9 +218,16 @@ $(document).ready(function() {
         }
     });
 
-    $('.datepicker-here').datepicker({
+    $('#date').datepicker({
+        language: 'en',
         autoClose: true,
-        dateFormat: 'dd/mm/yyyy'
+        dateFormat: 'dd/mm/yyyy',
+        firstDay: 1,
+        minDate: new Date(),
+        onSelect: function onSelect(selectedDates) {
+            console.log(selectedDates);
+            $("#date").val(selectedDates);
+        }
     });
 });
 

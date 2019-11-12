@@ -457,12 +457,12 @@
 						<div class="popup-col dl-pc">							
 							<figure class="regreview-img"><img src="assets/images/chi-tiet-du-an/home-review.png" alt="home"></figure>
 							<h4 class="regreview-title">Căn hộ The Tresor 1PN 1WC, đầy đủ nội thất,...</h4>
-							<p class="localtion">Phường 22, Bình Thạnh</p>
+							<p class="regreview-loc">Phường 22, Bình Thạnh</p>
 							<ul class="regreview-ifo">
 								<li><img src="assets/images/chi-tiet-du-an/area-black.png" alt="area"><strong>Diện tích:</strong> 100 m2</li>
 								<li><img src="assets/images/chi-tiet-du-an/bed-black.png" alt="bed"><strong>Phòng ngủ:</strong> 3</li>
 								<li><img src="assets/images/chi-tiet-du-an/bathtub-black.png" alt="bathtub"><strong>Phòng tắm:</strong> 2</li>
-								<li><strong>Giá:</strong> 8,5 tỷ</li>
+								<li><strong>Giá:</strong> <strong class="clr-orange">8,5 tỷ</strong></li>
 							</ul>
 							<div class="popup-social">
 								<img src="assets/images/commons/ic-share.png" alt="share">
@@ -474,25 +474,31 @@
 							</div>
 						</div>
 						<div class="popup-col bg-gray">
-							<h4 class="form-regreview-title">Đăng ký xem nhà</h4>
-							<p class="text-center">Hoặc gọi trực tiếp tới <a href="tel:0986333300">0986 333 300</a></p>
-							<form action="" id="regreview-form" method="POST" role="form">
-		    					<div class="form-group">
-			    					<input type="text" class="form-control" name="name" id="nameInput" placeholder="Họ tên">
-			    				</div>
-			    				<div class="form-group">
-			    					<input type="text" class="form-control" name="phone" id="phoneInput" placeholder="Số điện thoại">
-			    				</div>
-		    					<div class="form-group">
-			    					<input type="text" class="form-control" name="email" id="emailInput" placeholder="Email">
-			    				</div>
-			    				<div class="form-group">
-			    					<input type="text" data-language="en" class="datepicker-here" placeholder="Ngày" name="date">
-			    				</div>
-			    				<div class="form-group">
-									<button type="submit" id="btn-regdow-submit" class="btn-regdow">GỬI THÔNG TIN</button>
-								</div>
-							</form>
+							<div id="send-form">
+								<h4 class="form-regreview-title">Đăng ký xem nhà</h4>
+								<p class="text-center">Hoặc gọi trực tiếp tới <a href="tel:0986333300">0986 333 300</a></p>
+								<form action="" id="regreview-form" method="POST" role="form">
+			    					<div class="form-group">
+				    					<input type="text" class="form-control" name="name" id="nameInput" placeholder="Họ tên">
+				    				</div>
+				    				<div class="form-group">
+				    					<input type="text" class="form-control" name="phone" id="phoneInput" placeholder="Số điện thoại">
+				    				</div>
+			    					<div class="form-group">
+				    					<input type="text" class="form-control" name="email" id="emailInput" placeholder="Email">
+				    				</div>
+				    				<div class="form-group">
+				    					<input type="text" class="datepicker-here" placeholder="Ngày" name="date" id="date">
+				    				</div>
+				    				<div class="form-group">
+										<button type="submit" id="btn-regdow-submit" class="btn-regdow">GỬI THÔNG TIN</button>
+									</div>
+								</form>
+							</div>
+							<div id="send-sucess" style="display: none;">
+								<p class="text-center">Cảm ơn bạn đã gửi thông tin về HOMEBROKERS.<br />Chúng tôi sẽ liên hệ lại với bạn trong thời gian sớm nhất! <br />Hoặc bạn có thể gọi trực tiếp vào Hotline (24/7)<br /><a href="tel:0986333300">0986 333 300</a></p>
+								<button data-popup-close="popup-regreview" class="btn-close">ĐÓNG</button>
+							</div>
 						</div>
 						<a class="popup-close" data-popup-close="popup-regreview" href="#"><img src="assets/images/commons/ic-close-form.png"></a>
 					</div>

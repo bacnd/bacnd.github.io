@@ -705,8 +705,8 @@ img.dl-pc {
 .popup-modal .popup-inner .popup-close {
   display: inline-block;
   position: absolute;
-  top: 33px;
-  right: 33px;
+  top: 28px;
+  right: 28px;
   transition: ease 0.25s all;
   -webkit-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
@@ -3039,6 +3039,10 @@ footer #scrollUp {
   display: -webkit-flex;
   display: flex; }
 
+@media screen and (max-width: 768px) {
+  .popup-regdow .popup-inner, .popup-regreview .popup-inner {
+    padding: 20px; } }
+
 .popup-regdow .popup-inner .popup-col, .popup-regreview .popup-inner .popup-col {
   width: 50%; }
 
@@ -3068,6 +3072,55 @@ footer #scrollUp {
   text-align: center;
   padding-top: 45px;
   padding-bottom: 40px; }
+
+.popup-regdow .popup-inner .regreview-img, .popup-regreview .popup-inner .regreview-img {
+  margin-left: 10px;
+  margin-top: 50px;
+  margin-bottom: 20px; }
+
+.popup-regdow .popup-inner .regreview-title, .popup-regreview .popup-inner .regreview-title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  padding-right: 20px;
+  margin-bottom: 10px; }
+
+.popup-regdow .popup-inner .regreview-loc, .popup-regreview .popup-inner .regreview-loc {
+  font-size: 16px;
+  line-height: 1.63;
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 30px; }
+
+.popup-regdow .popup-inner .regreview-loc:before, .popup-regreview .popup-inner .regreview-loc:before {
+  content: '';
+  position: absolute;
+  background: url("../images/chi-tiet-du-an/location-black.png") no-repeat;
+  width: 17px;
+  height: 23px;
+  left: 0; }
+
+.popup-regdow .popup-inner .regreview-ifo, .popup-regreview .popup-inner .regreview-ifo {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap; }
+
+.popup-regdow .popup-inner .regreview-ifo li, .popup-regreview .popup-inner .regreview-ifo li {
+  width: 50%;
+  margin-bottom: 20px;
+  font-size: 16px; }
+
+.popup-regdow .popup-inner .regreview-ifo li img, .popup-regreview .popup-inner .regreview-ifo li img {
+  margin-right: 15px; }
+
+.popup-regdow .popup-inner .regreview-ifo li .clr-orange, .popup-regreview .popup-inner .regreview-ifo li .clr-orange {
+  color: #a76636; }
 
 .popup-regdow .popup-inner .regdow__tlt, .popup-regdow .popup-inner .regdow__txt, .popup-regreview .popup-inner .regdow__tlt, .popup-regreview .popup-inner .regdow__txt {
   font-size: 14px;
@@ -3117,7 +3170,7 @@ footer #scrollUp {
 
 @media screen and (max-width: 768px) {
   .popup-regdow .popup-inner .form-regdow-title, .popup-regdow .popup-inner .form-regreview-title, .popup-regreview .popup-inner .form-regdow-title, .popup-regreview .popup-inner .form-regreview-title {
-    padding-top: 30px; } }
+    padding-top: 20px; } }
 
 .popup-regdow .popup-inner .text-center, .popup-regreview .popup-inner .text-center {
   font-size: 16px; }
@@ -3125,6 +3178,9 @@ footer #scrollUp {
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .popup-regdow .popup-inner .text-center, .popup-regreview .popup-inner .text-center {
     font-size: calc(13px + 3 * ((100vw - 320px) / 448)); } }
+
+.popup-regdow .popup-inner .text-center a, .popup-regreview .popup-inner .text-center a {
+  color: #1b1b1b; }
 
 .popup-regdow .popup-inner #regdow-form, .popup-regdow .popup-inner #regreview-form, .popup-regreview .popup-inner #regdow-form, .popup-regreview .popup-inner #regreview-form {
   padding-top: 40px; }
@@ -3147,7 +3203,11 @@ footer #scrollUp {
   background-color: #fff1f1; }
 
 .popup-regdow .popup-inner #regdow-form .form-group, .popup-regdow .popup-inner #regreview-form .form-group, .popup-regreview .popup-inner #regdow-form .form-group, .popup-regreview .popup-inner #regreview-form .form-group {
-  margin-bottom: 25px; }
+  margin-bottom: 24px; }
+
+@media screen and (max-width: 768px) {
+  .popup-regdow .popup-inner #regdow-form .form-group, .popup-regdow .popup-inner #regreview-form .form-group, .popup-regreview .popup-inner #regdow-form .form-group, .popup-regreview .popup-inner #regreview-form .form-group {
+    margin-bottom: 20px; } }
 
 .popup-regdow .popup-inner #regdow-form .form-group.capcha, .popup-regdow .popup-inner #regreview-form .form-group.capcha, .popup-regreview .popup-inner #regdow-form .form-group.capcha, .popup-regreview .popup-inner #regreview-form .form-group.capcha {
   display: -webkit-box;
@@ -3179,6 +3239,28 @@ footer #scrollUp {
   background-color: #a76636;
   margin-top: 10px;
   color: #fff; }
+
+.popup-regdow .popup-inner #send-sucess, .popup-regreview .popup-inner #send-sucess {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; }
+
+.popup-regdow .popup-inner #send-sucess .text-center, .popup-regreview .popup-inner #send-sucess .text-center {
+  font-size: 16px; }
+
+.popup-regdow .popup-inner #send-sucess .btn-close, .popup-regreview .popup-inner #send-sucess .btn-close {
+  width: 100%;
+  height: 52px;
+  background-color: #a76636;
+  margin-top: 10px;
+  color: #fff;
+  margin-top: 60px; }
 
 .tim-can-ho .box-search-results {
   padding-bottom: 57px; }
@@ -4405,7 +4487,7 @@ footer #scrollUp {
 
 @media screen and (max-width: 768px) {
   .projectDetailPage .box-slider-img .slider-img__list .slider-img__item__img img {
-    height: 100%;
+    height: 350px;
     object-fit: cover;
     object-position: center; } }
 
