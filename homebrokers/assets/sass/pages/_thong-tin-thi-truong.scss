@@ -324,12 +324,11 @@
 		}
 		.regdow-img {
 			text-align: center;
-			padding-top: 45px;
-			padding-bottom: 40px;
+			padding-top: 15px;
+			padding-bottom: 10px;
 		}
 		.regreview-img {
 			margin-left: 10px;
-			margin-top: 50px;
 			margin-bottom: 20px;
 		}
 		.regreview-title {
@@ -385,7 +384,7 @@
 		.popup-social {
 			@include dlflex;
 			align-items: center;
-			padding-top: 30px;
+			padding-top: 20px;
 			ul {
 				margin-left: 11.5px;
 				@include dlflex;
@@ -400,7 +399,7 @@
 			font-weight: bold;
 			color: #81461d;
 			text-align: center;
-			padding-top: 55px;
+			padding-top: 45px;
 			padding-bottom: 5px;
 			@include resizefont(18px, 22px);
 			@media screen and (max-width: $screen-sp) {
